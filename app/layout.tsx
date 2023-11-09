@@ -3,6 +3,7 @@ import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
 import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
 
 export const metadata: Metadata = {
     title: 'welcome to ezpower',
@@ -38,6 +39,9 @@ export default function RootLayout( { children , }: { children: React.ReactNode 
                 </main>
 
                 <Toaster />
+
+                <QuickUp goto='#top' />
+
             </body>
         </html>
     )

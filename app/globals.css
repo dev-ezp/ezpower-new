@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* smooth scrolling */
-html { scroll-behavior: smooth; }
+html , body { scroll-behavior: smooth; }
 
 /* hidden title for iframe youtube */
 .youtube-container {

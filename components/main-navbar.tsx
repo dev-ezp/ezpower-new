@@ -22,7 +22,7 @@ export default function MainNavbar ( props: Props ) {
 
     return (
         <>
-            <nav className='bg-white border-gray-100 border-b w-full h-10'>
+            <nav id='top' className='bg-white border-gray-100 border-b w-full h-10'>
                 <div className='flex items-center justify-between h-full'>
 
                     <div className='flex items-center h-full'>
@@ -135,17 +135,12 @@ export default function MainNavbar ( props: Props ) {
                     </div>
 
                     <div className='flex items-center h-full'>
-                        <div className='flex items-center justify-center text-gray-900 font-medium h-full w-52 cursor-pointer transition ease-in-out duration-300 hover:bg-gray-100'>
-                            <button onClick={ () => setToggle( !toggle ) }>  
-                                {
-                                    toggle
-                                        ?   <Smartphone className='h-4 w-4 mr-2'/>
-                                        :   <Phone className='h-5 w-5 mr-2'/>
-                                }
-                            </button>
-                            <button
-                                className='w-max'
-                                onClick={ () => {
+                        <div
+                            onClick={ ( e: any ) => {
+
+                                if ( e.target.id === 'switch' ) {
+                                    setToggle( !toggle )
+                                } else {
                                     clipboard.write( toggle ? '09498854308' : '0444824405' )
                                     toast ( {
                                         title: toggle ? 'Mobile no.' : 'Telephone no.',
@@ -154,15 +149,42 @@ export default function MainNavbar ( props: Props ) {
                                             <ToastAction altText='Close'>Close</ToastAction>
                                         )
                                     } )
-                                } }
-                            >
-                                {
-                                    toggle
-                                        ?   '0949 885 4308'
-                                        :   '044 482 4405'
                                 }
-                            </button>
 
+                            } }
+                            className='relative flex items-center justify-start pl-5 text-gray-900 text-lg font-medium h-full w-52 cursor-pointer transition ease-in-out duration-300 hover:bg-gray-100'
+                        >
+                            <button id='switch' className='absolute top-0 bottom-0 right-0 bg-sky-700 text-white px-1 transition ease-in-out duration-300 hover:bg-sky-600'>
+                                <svg
+                                    id='switch'
+                                    className='h-4 w-4'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='1em'
+                                    height='1em'
+                                    viewBox='0 0 24 24'
+                                >
+                                    <path
+                                        id='switch'
+                                        fill='currentColor'
+                                        d='M5.825 16L7.7 17.875q.275.275.275.688t-.275.712q-.3.3-.713.3t-.712-.3L2.7 15.7q-.15-.15-.213-.325T2.426 15q0-.2.063-.375T2.7 14.3l3.6-3.6q.3-.3.7-.287t.7.312q.275.3.288.7t-.288.7L5.825 14H12q.425 0 .713.288T13 15q0 .425-.288.713T12 16H5.825Zm12.35-6H12q-.425 0-.713-.288T11 9q0-.425.288-.713T12 8h6.175L16.3 6.125q-.275-.275-.275-.688t.275-.712q.3-.3.713-.3t.712.3L21.3 8.3q.15.15.212.325t.063.375q0 .2-.063.375T21.3 9.7l-3.6 3.6q-.3.3-.7.288t-.7-.313q-.275-.3-.288-.7t.288-.7L18.175 10Z'
+                                    />
+                                </svg>
+                            </button>
+                            {
+                                toggle
+                                    ?   <>
+                                            <div className='flex items-center'>
+                                                <Smartphone className='text-sky-700 h-6 w-6 mr-1' />
+                                                0949 885 4308
+                                            </div>
+                                        </>
+                                    :   <>
+                                            <div className='flex items-center'>
+                                                <Phone className='text-sky-700 h-6 w-6 mr-1' />
+                                                044 482 4405
+                                            </div>
+                                        </>
+                            }
                         </div>
                         <div className='flex items-center justify-center bg-[#111827] h-full w-48'>
                             <Link href='/vcard/contact-info.vcf' className='text-white font-medium'>

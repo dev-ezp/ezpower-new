@@ -12,11 +12,12 @@ type Props = {}
 export default function FAQHome ( props: Props ) {
 
     return (
-        <div id='faq' className='bg-white h-max py-40'>
+        <div id='faq' className='bg-white py-20'>
             <div className='mx-96'>
                 
                 <div className='flex items-center justify-center w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
+                        <h5 className='text-sky-700 text-sm text-center font-semibold uppercase'>what our clients usually ask.</h5>
                         <h1 className='text-[#111827] text-4xl text-center font-bold'>Frequently Ask Questions</h1>
                     </div>
                 </div>
