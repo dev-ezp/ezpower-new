@@ -13,7 +13,7 @@ export default function WhyChooseUsHome ( props: Props ) {
                 <div className='flex items-center justify-start w-full py-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
                         <h5 className='text-sky-700 text-sm font-semibold uppercase'>why choose us?</h5>
-                        <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution.</h1>
+                        <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution</h1>
                         <p className='text-[#111827] font-medium py-5'>EZ Power offer the lowest price in this industry, but we make sure that what you pay for us is not that equal on what you may receive, why? Simple because we can give you not just the best but the most excellent service, quality and after market care you truly deserve. We plan success not just for our company success but also for our clients in achieving their own energy solutions.</p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ export default function WhyChooseUsHome ( props: Props ) {
                     <div className='col-span-2 bg-white rounded-sm w-full h-60'>
                         <div className='flex flex-col justify-center h-full p-3 space-y-2'>
                             <h5 className='text-sky-700 text-sm font-semibold uppercase'>we are experts in this field.</h5>
-                            <h1 className='text-[#111827] text-4xl font-bold'>Our competitive advantage.</h1>
+                            <h1 className='text-[#111827] text-4xl font-bold'>Our competitive advantage</h1>
                             <br />
                             <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-4 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
                                 Learn more about our energy solution
