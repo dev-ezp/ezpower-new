@@ -12,8 +12,8 @@ type Props = {}
 export default function FAQHome ( props: Props ) {
 
     return (
-        <div id='faq' className='bg-white py-20'>
-            <div className='mx-96'>
+        <div id='faq' className='bg-white'>
+            <div className='mx-96 py-20'>
                 
                 <div className='flex items-center justify-center w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>

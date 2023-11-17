@@ -7,10 +7,10 @@ type Props = {}
 export default function WhyChooseUsHome ( props: Props ) {
 
     return (
-        <div className='bg-white h-[900px]'>
-            <div className='mx-96'>
+        <div className='bg-white'>
+            <div className='mx-96 py-20'>
 
-                <div className='flex items-center justify-start w-full py-10'>
+                <div className='flex items-center justify-start w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
                         <h5 className='text-sky-700 text-sm font-semibold uppercase'>why choose us?</h5>
                         <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution</h1>

@@ -17,7 +17,29 @@ html , body { scroll-behavior: smooth; }
     height: 100%;
     margin-left: -100%;
 }
- 
+
+/* custom scroll bar */
+::-webkit-scrollbar { width: 5px; height: 4px; }
+::-webkit-scrollbar-track { background: #111827; }   
+::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+
+/* remove arrows in the input type number field */
+input::-webkit-outer-spin-button , input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[ type = number ] { -moz-appearance: textfield; }
+
+/* remove input autofill background */
+input:-webkit-autofill , input:-webkit-autofill:hover , input:-webkit-autofill:focus , input:-webkit-autofill:active{ box-shadow: 0 0 0 30px #e5e7eb inset !important; -webkit-box-shadow: 0 0 0 30px #e5e7eb inset !important; }
+
+/* map box bottom display */
+div.mapboxgl-ctrl-bottom-right { display: none !important }
+
+/* radio button color */
+input[ type='radio' ] {
+    accent-color: #111827;
+}
+
+/* shadcn styles */
 @layer base {
     :root {
         --background: 0 0% 100%;

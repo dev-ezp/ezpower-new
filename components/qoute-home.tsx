@@ -22,18 +22,18 @@ export default function QouteHome ( props: Props ) {
     const { toast } = useToast()
 
     return (
-        <div className='bg-gray-100 h-max py-20'>
-            <div className='mx-96'>
+        <div className='bg-gray-100'>
+            <div className='mx-96 py-20'>
 
                 <div className='grid grid-cols-2 gap-20'>
-                    <div className=''>
-                        <div className='flex flex-col space-y-2 py-5'>
+                    <div>
+                        <div className='flex flex-col space-y-2'>
                             <h5 className='text-sky-700 text-sm font-semibold uppercase'>get some professional advice from our engineers.</h5>
                             <h1 className='text-[#111827] text-4xl font-bold'>Energy Solutions that fits for my needs</h1>
                             <p className='text-[#111827] font-medium py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
                         </div>
                         <div className='bg-sky-700 h-5 w-5'></div>
-                        <div className='flex flex-col space-y-2 py-5'>
+                        <div className='flex flex-col space-y-2'>
                             <h1 className='text-[#111827] text-2xl font-bold'>get in touch.</h1>
                             <p className='text-[#111827] font-medium py-5'>We are open between 9am to 6pm, monday to friday. We also offer consultation everyday including weekends except holidays; Call us and we were happy to help you.</p>
                             <div className='grid grid-cols-2 gap-3'>
@@ -183,7 +183,7 @@ export default function QouteHome ( props: Props ) {
                                     defaultChecked={ true }
                                     className='bg-white border-gray-200 text-gray-950 text-sm border cursor-pointer outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                                 />
-                                <label htmlFor='all' className='text-gray-950 text-sm capitalize ml-1'>all</label>
+                                <label htmlFor='all' className='text-gray-950 text-sm capitalize ml-1'>both</label>
                             </div>
                             <div className='flex items-center w-max'>
                                 <input
@@ -195,19 +195,7 @@ export default function QouteHome ( props: Props ) {
                                     defaultChecked={ false }
                                     className='bg-white border-gray-200 text-gray-950 text-sm border cursor-pointer outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                                 />
-                                <label htmlFor='telephone' className='text-gray-950 text-sm capitalize ml-1'>telephone</label>
-                            </div>
-                            <div className='flex items-center w-max'>
-                                <input
-                                    onChange={ ( e: any ) => {} }
-                                    type='radio'
-                                    id='mobile'
-                                    name='prefered'
-                                    disabled={ disabled }
-                                    defaultChecked={ false }
-                                    className='bg-white border-gray-200 text-gray-950 text-sm border cursor-pointer outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
-                                />
-                                <label htmlFor='mobile' className='text-gray-950 text-sm capitalize ml-1'>mobile</label>
+                                <label htmlFor='telephone' className='text-gray-950 text-sm capitalize ml-1'>phone</label>
                             </div>
                             <div className='flex items-center w-max'>
                                 <input

@@ -8,10 +8,10 @@ type Props = {}
 export default function AboutUsHome ( props: Props ) {
 
     return (
-        <section className='bg-white h-[900px]'>
-            <div className='mx-96'>
+        <section className='bg-white'>
+            <div className='mx-96 py-20'>
 
-                <div className='flex items-center justify-center w-full py-10'>
+                <div className='flex items-center justify-center w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
                         <h5 className='text-sky-700 text-sm font-semibold uppercase'>about our company.</h5>
                         <h1 className='text-[#111827] text-4xl font-bold'>We develop renewable source of clean energy</h1>

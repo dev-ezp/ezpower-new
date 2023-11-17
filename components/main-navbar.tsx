@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button'
 import { ToastAction } from '@/components/ui/toast'
 import { useToast } from '@/components/ui/use-toast'
 
-import { Facebook , Twitter , MapPin , MailIcon , Clock , Phone , Smartphone } from 'lucide-react'
+import { MapPin , MailIcon , Clock , Phone , Smartphone } from 'lucide-react'
 
 type Props = {}
 
@@ -65,16 +65,38 @@ export default function MainNavbar ( props: Props ) {
                             FAQ
                         </Link>
                         <Link
-                            href='https://www.facebook.com'
+                            href='https://www.facebook.com/'
                             className='flex items-center justify-center text-gray-400 w-full h-full transition ease-in-out duration-300 hover:bg-gray-100'
                         >
-                            <Facebook className='h-4 w-4'/>
+                            <svg
+                                className='h-4 w-4'
+                                xmlns='http://www.w3.org/2000/svg'
+                                width='1em'
+                                height='1em'
+                                viewBox='0 0 14 14'
+                            >
+                                <path
+                                    fill='currentColor'
+                                    d='M0 12.923V1.077A1.077 1.077 0 0 1 1.077 0h11.846A1.077 1.077 0 0 1 14 1.077v11.846A1.077 1.077 0 0 1 12.923 14h-3.23V8.895h.764a.657.657 0 0 0 .657-.657V7.41a.655.655 0 0 0-.657-.657h-.722V5.74c0-.905.41-.905.819-.905h.527a.592.592 0 0 0 .464-.193a.625.625 0 0 0 .194-.464v-.796a.67.67 0 0 0-.647-.69H9.854a2.498 2.498 0 0 0-2.574 2.8v1.26h-.69a.657.657 0 0 0-.667.657v.83a.657.657 0 0 0 .668.656h.689V14H1.077A1.077 1.077 0 0 1 0 12.923Z'
+                                />
+                            </svg>
                         </Link>
                         <Link
-                            href='https://www.twitter.com'
+                            href='https://twitter.com/?lang=en'
                             className='flex items-center justify-center text-gray-400 w-full h-full transition ease-in-out duration-300 hover:bg-gray-100'
                         >
-                            <Twitter className='h-4 w-4'/>
+                            <svg
+                                className='h-4 w-4'
+                                xmlns='http://www.w3.org/2000/svg'
+                                width='1em'
+                                height='1em'
+                                viewBox='0 0 16 16'
+                            >
+                                <path
+                                    fill='currentColor'
+                                    d='M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z'
+                                />
+                            </svg>
                         </Link>
                     </div>
 

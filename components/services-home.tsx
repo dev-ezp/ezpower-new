@@ -15,10 +15,10 @@ export default function ServicesHome ( props: Props ) {
     }
 
     return (
-        <div className='bg-[#111827] h-[900px]'>
-            <div className='mx-96'>
+        <div className='bg-[#111827]'>
+            <div className='mx-96 py-20'>
 
-                <div className='flex items-center justify-between w-full py-10'>
+                <div className='flex items-center justify-between w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
                         <h5 className='text-white text-sm font-semibold uppercase'>our services.</h5>
                         <h1 className='text-white text-4xl font-bold'>We provide quality and professional service</h1>
