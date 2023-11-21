@@ -127,7 +127,7 @@ export default function MainNavbar ( props: Props ) {
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className='text-gray-400'>
+                                    <Link href='/services' className='text-gray-400'>
                                         Services
                                     </Link>
                                 </Button>
