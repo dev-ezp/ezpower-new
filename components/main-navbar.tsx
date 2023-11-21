@@ -62,7 +62,7 @@ export default function MainNavbar ( props: Props ) {
 
                     <div className='flex items-center w-48 h-full'>
                         <Link
-                            href='#faq'
+                            href='/#faq'
                             className='flex items-center justify-center text-gray-400 text-xs font-medium w-full h-full transition ease-in-out duration-300 hover:bg-gray-100'
                         >
                             FAQ

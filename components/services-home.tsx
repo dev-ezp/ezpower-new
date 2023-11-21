@@ -97,7 +97,7 @@ export default function ServicesHome ( props: Props ) {
                             />
                         </Link>
                         <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Survey and Testing</h5>
+                            <h5 className='text-[#111827] text-lg font-medium'>Site Survey</h5>
                             <div className='bg-sky-700 h-2 w-2 my-4'></div>
                             <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
                         </div>
@@ -129,7 +129,7 @@ export default function ServicesHome ( props: Props ) {
                             />
                         </Link>
                         <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Workforce</h5>
+                            <h5 className='text-[#111827] text-lg font-medium'>System Qoutation</h5>
                             <div className='bg-sky-700 h-2 w-2 my-4'></div>
                             <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
                         </div>
@@ -161,7 +161,7 @@ export default function ServicesHome ( props: Props ) {
                             />
                         </Link>
                         <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Customer Support</h5>
+                            <h5 className='text-[#111827] text-lg font-medium'>Testing</h5>
                             <div className='bg-sky-700 h-2 w-2 my-4'></div>
                             <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
                         </div>

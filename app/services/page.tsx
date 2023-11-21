@@ -1,3 +1,4 @@
+import BannerServices from '@/components/banner-services'
 import QouteHome from '@/components/qoute-home'
 import Footer from '@/components/footer'
 
@@ -7,6 +8,8 @@ export default function Page ( props: Props ) {
 
     return (
         <div className='w-full'>
+
+            <BannerServices />
 
             <QouteHome/>
 
