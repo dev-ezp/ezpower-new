@@ -7,7 +7,7 @@ import FAQHome from '@/components/faq-home'
 import QouteHome from '@/components/qoute-home'
 import Footer from '@/components/footer'
 
-type Props = {}
+type Props = { searchParams?: any }
 
 export default function Page ( props: Props ) {
 

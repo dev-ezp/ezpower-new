@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 import clipboard from 'clipboardy'
 
@@ -16,6 +17,8 @@ import { MapPin , MailIcon , Clock , Phone , Smartphone } from 'lucide-react'
 type Props = {}
 
 export default function MainNavbar ( props: Props ) {
+
+    const pathname = usePathname()
 
     const [ toggle , setToggle ] = useState <boolean> ( false )
     const { toast } = useToast()
@@ -120,35 +123,35 @@ export default function MainNavbar ( props: Props ) {
                         <ul className='flex items-center space-x-5'>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className='text-gray-400'>
+                                    <Link href='/' className={ pathname === '/' ? 'text-sky-700' : 'text-gray-400' }>
                                         Home
                                     </Link>
                                 </Button>
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/services' className='text-gray-400'>
+                                    <Link href='/services' className={ pathname === '/services' ? 'text-sky-700' : 'text-gray-400' }>
                                         Services
                                     </Link>
                                 </Button>
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className='text-gray-400'>
+                                    <Link href='/' className={ pathname === '/energy-solutions' ? 'text-sky-700' : 'text-gray-400' }>
                                         Energy Solutions
                                     </Link>
                                 </Button>
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className='text-gray-400'>
+                                    <Link href='/' className={ pathname === '/projects' ? 'text-sky-700' : 'text-gray-400' }>
                                         Projects
                                     </Link>
                                 </Button>
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className='text-gray-400'>
+                                    <Link href='/' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
                                         Carbon Platform
                                     </Link>
                                 </Button>
