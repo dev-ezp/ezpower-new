@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 
-import Link from 'next/link'
-
 import clipboard from 'clipboardy'
 
 import { ToastAction } from '@/components/ui/toast'
@@ -12,7 +10,7 @@ import { Phone , Smartphone , MailIcon } from 'lucide-react'
 
 type Props = {}
 
-export default function QouteHome ( props: Props ) {
+export default function Qoute ( props: Props ) {
 
     type Fields = { name: string , email: string , phone: string , address: string }
     const [ fields , setFields ] = useState <Fields> ( { name: '' , email: '' , phone: '' , address: '' } )

@@ -1,5 +1,6 @@
 import BannerServices from '@/components/banner-services'
-import ContentServices from '@/components/content-services'
+import BreadcrumbsServices from '@/components/breadcrumbs-services'
+import DetailsServices from '@/components/details-services'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
@@ -17,7 +18,9 @@ export default function Page ( props: Props ) {
 
             <BannerServices params={ params } searchParams={ searchParams } />
 
-            <ContentServices />
+            <BreadcrumbsServices params={ params } searchParams={ searchParams }/>
+
+            <DetailsServices params={ params } searchParams={ searchParams } />
 
             <Qoute/>
 

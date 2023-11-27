@@ -54,19 +54,25 @@ export default function Footer ( props: Props ) {
                                 href='/'
                                 className='text-white text-xs cursor-pointer hover:underline'
                             >
-                                System Quotation
-                            </Link>
-                            <Link
-                                href='/'
-                                className='text-white text-xs cursor-pointer hover:underline'
-                            >
                                 Testing
                             </Link>
                             <Link
                                 href='/'
                                 className='text-white text-xs cursor-pointer hover:underline'
                             >
+                                Thermal Sensing
+                            </Link>
+                            <Link
+                                href='/'
+                                className='text-white text-xs cursor-pointer hover:underline'
+                            >
                                 Workforce
+                            </Link>
+                            <Link
+                                href='/'
+                                className='text-white text-xs cursor-pointer hover:underline'
+                            >
+                                System Quotation
                             </Link>
                             <Link
                                 href='/'

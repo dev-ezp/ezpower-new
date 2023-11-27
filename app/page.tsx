@@ -4,7 +4,7 @@ import ServicesHome from '@/components/services-home'
 import WhyChooseUsHome from '@/components/why-choose-us-home'
 import ProjectsHome from '@/components/projects-home'
 import FAQHome from '@/components/faq-home'
-import QouteHome from '@/components/qoute-home'
+import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
 type Props = { searchParams?: any }
@@ -26,7 +26,7 @@ export default function Page ( props: Props ) {
 
             <FAQHome />
 
-            <QouteHome/>
+            <Qoute/>
 
             <Footer />
 
