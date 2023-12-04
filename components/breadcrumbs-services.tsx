@@ -13,7 +13,7 @@ export default function BreadcrumbsServices ( props: Props ) {
 
     return (
         <div className='bg-white'>
-            <div className='mx-96 py-10'>
+            <div className='mx-96 pt-10'>
                 
                 <div className='flex items-center h-full'>
                     <Link href='/' className='flex items-center justify-center bg-white border-gray-200 text-[#111827] text-sm font-medium uppercase rounded-l h-10 px-2 border-y-2 border-l-2 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
