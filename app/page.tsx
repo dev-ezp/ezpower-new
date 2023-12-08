@@ -1,9 +1,9 @@
-import BannerHome from '@/components/banner-home'
-import AboutUsHome from '@/components/about-us-home'
-import ServicesHome from '@/components/services-home'
-import WhyChooseUsHome from '@/components/why-choose-us-home'
-import ProjectsHome from '@/components/projects-home'
-import FAQHome from '@/components/faq-home'
+import HomeBanner from '@/components/home-banner'
+import HomeAboutUs from '@/components/home-about-us'
+import HomeServices from '@/components/services-home'
+import HomeWhyChooseUs from '@/components/home-why-choose-us'
+import HomeProjects from '@/components/home-projects'
+import HomeFAQ from '@/components/home-faq'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
@@ -14,17 +14,17 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
             
-            <BannerHome />
+            <HomeBanner/>
 
-            <AboutUsHome />
+            <HomeAboutUs />
 
-            <ServicesHome />
+            <HomeServices />
 
-            <WhyChooseUsHome />
+            <HomeWhyChooseUs />
 
-            <ProjectsHome />
+            <HomeProjects />
 
-            <FAQHome />
+            <HomeFAQ />
 
             <Qoute/>
 

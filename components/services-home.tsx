@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 type Props = {}
 
-export default function ServicesHome ( props: Props ) {
+export default function HomeServices ( props: Props ) {
 
     const source: { one: string , two: string , three: string , four: string } = {
         one: '/assets/1.png',

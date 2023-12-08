@@ -1,6 +1,6 @@
-import BannerServices from '@/components/banner-services'
-import BreadcrumbsServices from '@/components/breadcrumbs-services'
-import DetailsServices from '@/components/details-services'
+import ServicesBanner from '@/components/services-banner'
+import ServicesBreadcrumbs from '@/components/services-breadcrumbs'
+import ServicesDetails from '@/components/services-details'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
@@ -16,11 +16,11 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <BannerServices params={ params } searchParams={ searchParams } />
+            <ServicesBanner params={ params } searchParams={ searchParams } />
 
-            <BreadcrumbsServices params={ params } searchParams={ searchParams }/>
+            <ServicesBreadcrumbs params={ params } searchParams={ searchParams }/>
 
-            <DetailsServices params={ params } searchParams={ searchParams } />
+            <ServicesDetails params={ params } searchParams={ searchParams } />
 
             <Qoute/>
 

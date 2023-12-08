@@ -1,8 +1,8 @@
-import BannerServices from '@/components/banner-services'
-import ContentServices from '@/components/content-services'
+import ServicesBanner from '@/components/services-banner'
+import ServicesContent from '@/components/services-content'
+import ServicesBrands from '@/components/services-brands'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
-import BrandsServices from '@/components/brands-services'
 
 type Props = { 
     params?: any
@@ -16,11 +16,11 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <BannerServices params={ params } searchParams={ searchParams } />
+            <ServicesBanner params={ params } searchParams={ searchParams } />
 
-            <ContentServices />
+            <ServicesContent />
 
-            <BrandsServices />
+            <ServicesBrands />
 
             <Qoute/>
 
