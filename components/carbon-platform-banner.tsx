@@ -10,18 +10,18 @@ const switchImage = ( route?: string ): string => {
         default:
         return 'bg-[url("/assets/8.jpg")]'
         
-        case 'commercial-and-industrial':
+        case '1':
         return 'bg-[url("/assets/1.png")]'
 
-        case 'home-solutions':
+        case '2':
         return 'bg-[url("/assets/2.png")]'
 
-        case 'community-development':
+        case '3':
         return 'bg-[url("/assets/3.png")]'
     }
 }
 
-export default function EnergySolutionsBanner ( props: Props ) {
+export default function CarbonPlatformBanner ( props: Props ) {
 
     const { params , searchParams } = props
 
@@ -32,18 +32,18 @@ export default function EnergySolutionsBanner ( props: Props ) {
 
                 <div className='mx-96 py-20 flex flex-col space-y-5'>
                     {
-                            params.route === 'commercial-and-industrial'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>commercial and <span className='font-bold'>industrial</span></h1>
-                        :   params.route === 'home-solutions'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>home <span className='font-bold'>solutions</span></h1>
-                        :   params.route === 'community-development'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>community <span className='font-bold'>development</span></h1>
-                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> for the people</h1>   
+                            params.route === '1'
+                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>route <span className='font-bold'>1</span></h1>
+                        :   params.route === '2'
+                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>route <span className='font-bold'>2</span></h1>
+                        :   params.route === '3'
+                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>route <span className='font-bold'>3</span></h1>
+                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>carbon <span className='font-bold'>platform</span></h1>   
                     }
                     {
                         params.route === undefined || params.route === null
                             ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;Clean, safe and innovative&quot;
+                                    &quot;We generate clean energy as we generate sustainable livelyhood&quot;
                                 </h5>
                             :   <></>
                     }

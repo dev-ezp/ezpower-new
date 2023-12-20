@@ -144,14 +144,14 @@ export default function MainNavbar ( props: Props ) {
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className={ pathname === '/projects' ? 'text-sky-700' : 'text-gray-400' }>
+                                    <Link href='/projects' className={ pathname === '/projects' ? 'text-sky-700' : 'text-gray-400' }>
                                         Projects
                                     </Link>
                                 </Button>
                             </li>
                             <li>
                                 <Button asChild variant='ghost'>
-                                    <Link href='/' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
+                                    <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
                                         Carbon Platform
                                     </Link>
                                 </Button>
