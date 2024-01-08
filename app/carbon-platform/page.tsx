@@ -1,5 +1,5 @@
 import CarbonPlatformBanner from '@/components/carbon-platform-banner'
-import Qoute from '@/components/qoute'
+import CarbonPlatformContent from '@/components/carbon-platform-content'
 import Footer from '@/components/footer'
 
 type Props = { 
@@ -14,9 +14,9 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <CarbonPlatformBanner params={ params } searchParams={ searchParams } />
+            <CarbonPlatformBanner />
 
-            <Qoute/>
+            <CarbonPlatformContent />
 
             <Footer />
 
