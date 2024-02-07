@@ -1,6 +1,6 @@
 import HomeBanner from '@/components/home-banner'
 import HomeAboutUs from '@/components/home-about-us'
-import HomeServices from '@/components/services-home'
+import HomeServices from '@/components/home-services'
 import HomeWhyChooseUs from '@/components/home-why-choose-us'
 import HomeProjects from '@/components/home-projects'
 import HomeFAQ from '@/components/home-faq'

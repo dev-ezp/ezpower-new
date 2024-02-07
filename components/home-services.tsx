@@ -8,10 +8,10 @@ type Props = {}
 export default function HomeServices ( props: Props ) {
 
     const source: { one: string , two: string , three: string , four: string } = {
-        one: '/assets/1.png',
-        two: '/assets/2.png',
-        three: '/assets/3.png',
-        four: '/assets/4.png'
+        one: '/assets/content/1.png',
+        two: '/assets/content/2.png',
+        three: '/assets/content/3.png',
+        four: '/assets/content/4.png'
     }
 
     return (

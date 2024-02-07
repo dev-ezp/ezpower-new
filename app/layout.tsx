@@ -30,7 +30,7 @@ export default function RootLayout( { children , }: { children: React.ReactNode 
                 />
 
                 {/* for icon */}
-                <link rel='icon' href='/assets/favicon.ico' />
+                <link rel='icon' href='/assets/app/favicon.ico' />
 
                 <MainNavbar />
 

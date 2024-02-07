@@ -14,11 +14,11 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <ProjectsBanner params={ params } searchParams={ searchParams } />
+            {/* <ProjectsBanner params={ params } searchParams={ searchParams } /> */}
 
-            <Qoute/>
+            {/* <Qoute/> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

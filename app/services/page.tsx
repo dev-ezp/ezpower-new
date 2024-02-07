@@ -16,15 +16,15 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <ServicesBanner params={ params } searchParams={ searchParams } />
+            {/* <ServicesBanner params={ params } searchParams={ searchParams } /> */}
 
-            <ServicesContent />
+            {/* <ServicesContent /> */}
 
-            <ServicesBrands />
+            {/* <ServicesBrands /> */}
 
-            <Qoute/>
+            {/* <Qoute/> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

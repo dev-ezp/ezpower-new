@@ -14,11 +14,11 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <CarbonPlatformBanner />
+            {/* <CarbonPlatformBanner /> */}
 
-            <CarbonPlatformContent />
+            {/* <CarbonPlatformContent /> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

@@ -39,7 +39,7 @@ export default function HomeAboutUs ( props: Props ) {
                     <div className='relative h-full w-96'>
                         <Image
                             className='rounded-sm'
-                            src='/assets/6.png'
+                            src='/assets/content/6.png'
                             alt='img'
                             height={ 960 }
                             width={ 520 }

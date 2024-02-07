@@ -16,15 +16,15 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            <EnergySolutionsBanner params={ params } searchParams={ searchParams } />
+            {/* <EnergySolutionsBanner params={ params } searchParams={ searchParams } /> */}
 
-            <EnergySolutionsBreadcrumbs params={ params } searchParams={ searchParams } />
+            {/* <EnergySolutionsBreadcrumbs params={ params } searchParams={ searchParams } /> */}
 
-            <EnergySolutionsDetails params={ params } searchParams={ searchParams }/>
+            {/* <EnergySolutionsDetails params={ params } searchParams={ searchParams }/> */}
 
-            <Qoute/>
+            {/* <Qoute/> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )
