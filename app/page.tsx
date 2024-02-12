@@ -16,19 +16,19 @@ export default function Page ( props: Props ) {
             
             <HomeBanner/>
 
-            <HomeAboutUs />
+            {/* <HomeAboutUs /> */}
 
-            <HomeServices />
+            {/* <HomeServices /> */}
 
-            <HomeWhyChooseUs />
+            {/* <HomeWhyChooseUs /> */}
 
-            <HomeProjects />
+            {/* <HomeProjects /> */}
 
-            <HomeFAQ />
+            {/* <HomeFAQ /> */}
 
-            <Qoute/>
+            {/* <Qoute/> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )
