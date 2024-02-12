@@ -158,8 +158,8 @@ export default function MainNavbar ( props: Props ) {
 
             <nav className='sticky top-0 bg-white shadow-black/5 shadow-md drop-shadow-md w-full h-20'>
                 <div className='flex items-center justify-between h-full'>
-
-                    <div className='flex lg:hidden items-center justify-between w-full'>
+                    
+                    <div className='lg:hidden'>
                         <Sheet>
                             <SheetTrigger className='text-gray-500 rounded-full p-5 transition ease-in-out duration-300 hover:text-[#111827] hover:bg-gray-200'>
                                 <svg
@@ -238,252 +238,107 @@ export default function MainNavbar ( props: Props ) {
                                 </SheetHeader>
                             </SheetContent>
                         </Sheet>
-
-                        <Link href='/'>
-                            <Image
-                                className='hidden sm:block'
-                                src={ `/assets/app/ezp-logo-black.png` }
-                                alt='ezp-logo'
-                                priority={ true }
-                                height={ 150 }
-                                width={ 150 }
-                            />
-                            <Image
-                                className='block sm:hidden'
-                                src={ `/assets/app/ezpower-logo.png` }
-                                alt='ezp-logo'
-                                priority={ true }
-                                height={ 40 }
-                                width={ 40 }
-                            />
-                        </Link>
-
-                        <Sheet>
-                            <SheetTrigger className='text-gray-500 rounded-full p-5 transition ease-in-out duration-300 hover:text-[#111827] hover:bg-gray-200'>
-                                <svg
-                                    className='h-7 w-7'
-                                    xmlns='http://www.w3.org/2000/svg'
-                                    width='1em'
-                                    height='1em' 
-                                    viewBox='0 0 24 24'
-                                >
-                                    <path fill='currentColor' d='m9.55 12l7.35 7.35q.375.375.363.875t-.388.875q-.375.375-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675t-.15-.75q0-.375.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388q.375.375.375.875t-.375.875z' />
-                                </svg>
-                            </SheetTrigger>
-                            <SheetContent side='right'>
-                                <SheetHeader>
-                                    <SheetTitle></SheetTitle>
-                                    <SheetDescription className='flex items-center justify-center pt-5'>
-                                        <div className='grid grid-cols-3 gap-5 w-max'>
-                                            <div className='col-span-3 relative flex items-center justify-center bg-gray-50 text-[#111827] h-20 w-full rounded-xl'>
-                                                <div className='text-[#111827] font-medium'>
-                                                    {
-                                                            desc === 'phone'
-                                                                ?   '044-482-4405'
-                                                        :   desc === 'smartphone'
-                                                                ?   '0949-885-4308'
-                                                        :   'info@ezpower.tech'
-                                                    }
-                                                </div>
-                                                <div className='absolute bottom-2 right-3'>
-                                                    <button
-                                                        type='button'
-                                                        onClick={ ( e: any ) => {
-                                                            
-                                                            switch ( desc ) {
-
-                                                                default:
-                                                                    clipboard.write( 'info@ezpower.tech' )
-                                                                    toast ( {
-                                                                        title: 'Email',
-                                                                        description: 'Copied!',
-                                                                        action: (
-                                                                            <ToastAction altText='Close'>Close</ToastAction>
-                                                                        )
-                                                                    } )
-                                                                break
-
-                                                                case 'phone':
-                                                                    clipboard.write( '0444824405' )
-                                                                    toast ( {
-                                                                        title: 'Phone No.',
-                                                                        description: 'Copied!',
-                                                                        action: (
-                                                                            <ToastAction altText='Close'>Close</ToastAction>
-                                                                        )
-                                                                    } )
-                                                                break
-
-                                                                case 'smartphone':
-                                                                    clipboard.write( '09498854308' )
-                                                                    toast ( {
-                                                                        title: 'Mobile No.',
-                                                                        description: 'Copied!',
-                                                                        action: (
-                                                                            <ToastAction altText='Close'>Close</ToastAction>
-                                                                        )
-                                                                    } )
-                                                                break
-
-                                                            }
-
-                                                        } }
-                                                    >
-                                                        <svg
-                                                            className='h-4 w-4'
-                                                            xmlns='http://www.w3.org/2000/svg'
-                                                            width='1em'
-                                                            height='1em'
-                                                            viewBox='0 0 24 24'
-                                                        >
-                                                            <path fill='currentColor' d='M9 18q-.825 0-1.412-.587T7 16V4q0-.825.588-1.412T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.587 1.413T18 18zm-4 4q-.825 0-1.412-.587T3 20V7q0-.425.288-.712T4 6q.425 0 .713.288T5 7v13h10q.425 0 .713.288T16 21q0 .425-.288.713T15 22z' />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <button
-                                                type='button'
-                                                onClick={ ( e: any ) => setDesc( 'email' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
-                                            >
-                                                <MailIcon className='h-7 w-7'/>
-                                            </button>
-                                            <button
-                                                type='button'
-                                                onClick={ ( e: any ) => setDesc( 'phone' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
-                                            >
-                                                <Phone className='h-7 w-7'/>
-                                            </button>
-                                            <button
-                                                type='button'
-                                                onClick={ ( e: any ) => setDesc( 'smartphone' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
-                                            >
-                                                <Smartphone className='h-7 w-7'/>
-                                            </button>
-                                            <Link
-                                                href='https://www.google.com/maps/search/?api=1&query=14.8106425917393,120.96820430088181'
-                                                className='flex items-center justify-center bg-red-100 text-red-600 h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-red-200'
-                                            >
-                                                <MapPin className='h-7 w-7'/>
-                                            </Link>
-                                            <div className='col-span-2 flex items-center justify-center bg-gray-50 text-gray-400 h-20 w-full rounded-xl'>
-                                                <Clock className='h-7 w-7 mr-3'/>
-                                                <div className='grid'>
-                                                    <div className='text-[#111827] text-xs'>Monday to Friday</div>
-                                                    <div className='text-[#111827] text-xs'>9am to 6pm</div>
-                                                </div>
-                                            </div>
-                                            <Link
-                                                href='/'
-                                                className='col-span-3 flex items-center justify-center bg-[#111827] text-white font-medium h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-[#111716]'
-                                            >
-                                                Get a qoute
-                                            </Link>
-                                            <Link
-                                                href='/assets/vcard/contact-info.vcf'
-                                                className='col-span-3 flex items-center justify-center bg-sky-700 text-white font-medium h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-sky-800'
-                                            >
-                                                <svg
-                                                    className='h-6 w-6 mr-3'
-                                                    xmlns='http://www.w3.org/2000/svg'
-                                                    width='1em'
-                                                    height='1em'
-                                                    viewBox='0 0 16 16'
-                                                >
-                                                    <g fill='currentColor'>
-                                                        <path d='M5 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5' />
-                                                        <path d='M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z' />
-                                                    </g>
-                                                </svg>
-                                                <div>Download our vcard</div>
-                                            </Link>
-                                        </div>
-                                    </SheetDescription>
-                                </SheetHeader>
-                            </SheetContent>
-                        </Sheet>
                     </div>
+
+                    <Link href='/' className='lg:hidden'>
+                        <Image
+                            className='hidden sm:block'
+                            src={ `/assets/app/ezp-logo-black.png` }
+                            alt='ezp-logo'
+                            priority={ true }
+                            height={ 150 }
+                            width={ 150 }
+                        />
+                        <Image
+                            className='block sm:hidden'
+                            src={ `/assets/app/ezpower-logo.png` }
+                            alt='ezp-logo'
+                            priority={ true }
+                            height={ 40 }
+                            width={ 40 }
+                        />
+                    </Link>
                     
-                    <div className='flex items-center space-x-3 h-full'>
-                        <div className='bg-[#111827] hidden lg:flex items-center justify-center h-full w-48'>
-                            <Link href='/'>
-                                <Image
-                                    src={ `/assets/app/ezp-logo-white.png` }
-                                    alt='ezp-logo'
-                                    priority={ true }
-                                    height={ 150 }
-                                    width={ 150 }
-                                />
-                            </Link>         
+                    <div className='hidden lg:flex justify-between w-full h-full'>
+                        <div className='flex items-center space-x-3'>
+                            <div className='bg-[#111827] flex items-center justify-center h-full w-48'>
+                                <Link href='/'>
+                                    <Image
+                                        src={ `/assets/app/ezp-logo-white.png` }
+                                        alt='ezp-logo'
+                                        priority={ true }
+                                        height={ 150 }
+                                        width={ 150 }
+                                    />
+                                </Link>         
+                            </div>
+                            <ul className='flex items-center space-x-5'>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='/' className={ pathname === '/' ? 'text-sky-700' : 'text-gray-400' }>
+                                            Home
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='/services' className={ pathname === '/services' ? 'text-sky-700' : 'text-gray-400' }>
+                                            Services
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='/energy-solutions' className={ pathname === '/energy-solutions' ? 'text-sky-700' : 'text-gray-400' }>
+                                            Energy Solutions
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='/projects' className={ pathname === '/projects' ? 'text-sky-700' : 'text-gray-400' }>
+                                            Projects
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
+                                            Carbon Platform
+                                        </Link>
+                                    </Button>
+                                </li>
+                            </ul>
                         </div>
-                        <ul className='hidden lg:flex items-center space-x-5'>
-                            <li>
-                                <Button asChild variant='ghost'>
-                                    <Link href='/' className={ pathname === '/' ? 'text-sky-700' : 'text-gray-400' }>
-                                        Home
-                                    </Link>
-                                </Button>
-                            </li>
-                            <li>
-                                <Button asChild variant='ghost'>
-                                    <Link href='/services' className={ pathname === '/services' ? 'text-sky-700' : 'text-gray-400' }>
-                                        Services
-                                    </Link>
-                                </Button>
-                            </li>
-                            <li>
-                                <Button asChild variant='ghost'>
-                                    <Link href='/energy-solutions' className={ pathname === '/energy-solutions' ? 'text-sky-700' : 'text-gray-400' }>
-                                        Energy Solutions
-                                    </Link>
-                                </Button>
-                            </li>
-                            <li>
-                                <Button asChild variant='ghost'>
-                                    <Link href='/projects' className={ pathname === '/projects' ? 'text-sky-700' : 'text-gray-400' }>
-                                        Projects
-                                    </Link>
-                                </Button>
-                            </li>
-                            <li>
-                                <Button asChild variant='ghost'>
-                                    <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
-                                        Carbon Platform
-                                    </Link>
-                                </Button>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div className='hidden xl:flex items-center h-full'>
-                        <Link
-                            href='/assets/vcard/contact-info.vcf'
-                            className='flex items-center justify-center bg-sky-700 text-white h-full w-20 px-1 transition ease-in-out duration-300 hover:bg-sky-600'
-                        >
-                            <svg
-                                className='h-6 w-6'
-                                xmlns='http://www.w3.org/2000/svg'
-                                width='1em'
-                                height='1em'
-                                viewBox='0 0 16 16'
+                        <div className='hidden xl:flex items-center'>
+                            <Link
+                                href='/assets/vcard/contact-info.vcf'
+                                className='flex items-center justify-center bg-sky-700 text-white h-full w-20 px-1 transition ease-in-out duration-300 hover:bg-sky-600'
                             >
-                                <g fill='currentColor'>
-                                    <path d='M5 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5' />
-                                    <path d='M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z' />
-                                </g>
-                            </svg>
-                        </Link>
+                                <svg
+                                    className='h-6 w-6'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='1em'
+                                    height='1em'
+                                    viewBox='0 0 16 16'
+                                >
+                                    <g fill='currentColor'>
+                                        <path d='M5 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5' />
+                                        <path d='M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z' />
+                                    </g>
+                                </svg>
+                            </Link>
 
-                        <div className='flex items-center justify-center bg-[#111827] h-full w-48'>
-                            <Link href='/' className='text-white font-medium'>
-                                Get a qoute
-                            </Link>         
+                            <div className='flex items-center justify-center bg-[#111827] h-full w-48'>
+                                <Link href='/' className='text-white font-medium'>
+                                    Get a qoute
+                                </Link>         
+                            </div>
                         </div>
                     </div>
                     
-                    <div className='hidden lg:block xl:hidden'>
+                    <div className='xl:hidden'>
                         <Sheet>
                             <SheetTrigger className='text-gray-500 rounded-full p-5 transition ease-in-out duration-300 hover:text-[#111827] hover:bg-gray-200'>
                                 <svg
@@ -500,8 +355,8 @@ export default function MainNavbar ( props: Props ) {
                                 <SheetHeader>
                                     <SheetTitle></SheetTitle>
                                     <SheetDescription className='flex items-center justify-center pt-5'>
-                                        <div className='grid grid-cols-3 gap-5 w-max'>
-                                            <div className='col-span-3 relative flex items-center justify-center bg-gray-50 text-[#111827] h-20 w-full rounded-xl'>
+                                        <div className='grid grid-cols-3 gap-3 sm:gap-5 w-max'>
+                                            <div className='col-span-3 relative flex items-center justify-center bg-gray-50 text-[#111827] h-16 sm:h-20 w-full rounded-xl'>
                                                 <div className='text-[#111827] text-xs font-medium'>
                                                     {
                                                             desc === 'phone'
@@ -570,32 +425,32 @@ export default function MainNavbar ( props: Props ) {
                                             <button
                                                 type='button'
                                                 onClick={ ( e: any ) => setDesc( 'email' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
+                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-16 sm:h-20 w-16 sm:w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
                                             >
                                                 <MailIcon className='h-7 w-7'/>
                                             </button>
                                             <button
                                                 type='button'
                                                 onClick={ ( e: any ) => setDesc( 'phone' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
+                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-16 sm:h-20 w-16 sm:w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
                                             >
                                                 <Phone className='h-7 w-7'/>
                                             </button>
                                             <button
                                                 type='button'
                                                 onClick={ ( e: any ) => setDesc( 'smartphone' ) }
-                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
+                                                className='flex items-center justify-center bg-gray-100 text-[#111827] h-16 sm:h-20 w-16 sm:w-20 rounded-xl transition ease-in-out duration-300 hover:bg-[#111827] hover:text-white'
                                             >
                                                 <Smartphone className='h-7 w-7'/>
                                             </button>
                                             <Link
                                                 href='https://www.google.com/maps/search/?api=1&query=14.8106425917393,120.96820430088181'
-                                                className='flex items-center justify-center bg-red-100 text-red-600 h-20 w-20 rounded-xl transition ease-in-out duration-300 hover:bg-red-200'
+                                                className='flex items-center justify-center bg-red-100 text-red-600 h-16 sm:h-20 w-16 sm:w-20 rounded-xl transition ease-in-out duration-300 hover:bg-red-200'
                                             >
                                                 <MapPin className='h-7 w-7'/>
                                             </Link>
-                                            <div className='col-span-2 flex items-center justify-center bg-gray-50 text-gray-400 h-20 w-full rounded-xl'>
-                                                <Clock className='h-7 w-7 mr-3'/>
+                                            <div className='col-span-2 flex items-center justify-center bg-gray-50 text-gray-400 h-16 sm:h-20 w-full rounded-xl'>
+                                                <Clock className='h-7 w-7 mr-1 sm:mr-3'/>
                                                 <div className='grid'>
                                                     <div className='text-[#111827] text-xs'>Monday to Friday</div>
                                                     <div className='text-[#111827] text-xs'>9am to 6pm</div>
@@ -603,13 +458,13 @@ export default function MainNavbar ( props: Props ) {
                                             </div>
                                             <Link
                                                 href='/'
-                                                className='col-span-3 flex items-center justify-center bg-[#111827] text-white font-medium h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-[#111716]'
+                                                className='col-span-3 flex items-center justify-center bg-[#111827] text-white font-medium h-16 sm:h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-[#111716]'
                                             >
                                                 Get a qoute
                                             </Link>
                                             <Link
                                                 href='/assets/vcard/contact-info.vcf'
-                                                className='col-span-3 flex items-center justify-center bg-sky-700 text-white font-medium h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-sky-800'
+                                                className='col-span-3 flex items-center justify-center bg-sky-700 text-white font-medium h-16 sm:h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-sky-800'
                                             >
                                                 <svg
                                                     className='h-6 w-6 mr-3'
