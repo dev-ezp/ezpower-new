@@ -7,12 +7,28 @@ type Props = {}
 
 export default function HomeServices ( props: Props ) {
 
-    const source: { one: string , two: string , three: string , four: string } = {
-        one: '/assets/content/1.png',
-        two: '/assets/content/2.png',
-        three: '/assets/content/3.png',
-        four: '/assets/content/4.png'
-    }
+    const imgSrc: Array <{ title: string , src: string , content: string }> = [
+        {
+            src: '/assets/content/home/hs-01.png',
+            title: 'Planning and Design',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!'
+        },
+        {
+            src: '/assets/content/home/hs-02.png',
+            title: 'Site Survey',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!'
+        },
+        {
+            src: '/assets/content/home/hs-03.png',
+            title: 'Testing',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!'
+        },
+        {
+            src: '/assets/content/home/hs-04.png',
+            title: 'Thermal Sensing',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!'
+        }
+    ]
 
     return (
         <div className='bg-[#111827]'>
@@ -53,142 +69,45 @@ export default function HomeServices ( props: Props ) {
                 </div>
 
                 <div className='grid grid-cols-4 gap-8'>
-                    <div className='relative bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full h-[480px]'>
-                        <div className='h-max overflow-hidden'>
-                            <Link href={ source.one } className='cursor-pointer'>
-                                <Image
-                                    className='rounded-t-sm transition ease-in-out duration-300 hover:scale-105'
-                                    src={ source.one }
-                                    alt='img'
-                                    height={ 960 }
-                                    width={ 520 }
-                                    priority={ true }
-                                />
-                            </Link>
-                        </div>
-                        <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Planning and Design</h5>
-                            <div className='bg-sky-700 h-2 w-2 my-4'></div>
-                            <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
-                        </div>
-                        <Link href='/services/planning-and-design' className='absolute left-4 bottom-4 flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                            learn more
-                            <svg
-                                className='h-4 w-4 ml-2'
-                                xmlns='http://www.w3.org/2000/svg'
-                                width='1em'
-                                height='1em'
-                                viewBox='0 0 24 24'
-                            >
-                                <path
-                                    fill='currentColor'
-                                    d='m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6L12 16Zm0 6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z'
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                    <div className='relative bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full h-[480px]'>
-                        <div className='h-max overflow-hidden'>
-                            <Link href={ source.two } className='cursor-pointer'>
-                                <Image
-                                    className='rounded-t-sm transition ease-in-out duration-300 hover:scale-105'
-                                    src={ source.two }
-                                    alt='img'
-                                    height={ 960 }
-                                    width={ 520 }
-                                    priority={ true }
-                                />
-                            </Link>
-                        </div>
-                        <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Site Survey</h5>
-                            <div className='bg-sky-700 h-2 w-2 my-4'></div>
-                            <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
-                        </div>
-                        <Link href='/services/site-survey' className='absolute left-4 bottom-4 flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                            learn more
-                            <svg
-                                className='h-4 w-4 ml-2'
-                                xmlns='http://www.w3.org/2000/svg'
-                                width='1em'
-                                height='1em'
-                                viewBox='0 0 24 24'
-                            >
-                                <path
-                                    fill='currentColor'
-                                    d='m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6L12 16Zm0 6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z'
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                    <div className='relative bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full h-[480px]'>
-                        <div className='h-max overflow-hidden'>                            
-                            <Link href={ source.three } className='cursor-pointer'>
-                                <Image
-                                    className='rounded-t-sm transition ease-in-out duration-300 hover:scale-105'
-                                    src={ source.three }
-                                    alt='img'
-                                    height={ 960 }
-                                    width={ 520 }
-                                    priority={ true }
-                                />
-                            </Link>
-                        </div>
-                        <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Testing</h5>
-                            <div className='bg-sky-700 h-2 w-2 my-4'></div>
-                            <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
-                        </div>
-                        <Link href='/services/testing' className='absolute left-4 bottom-4 flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                            learn more
-                            <svg
-                                className='h-4 w-4 ml-2'
-                                xmlns='http://www.w3.org/2000/svg'
-                                width='1em'
-                                height='1em'
-                                viewBox='0 0 24 24'
-                            >
-                                <path
-                                    fill='currentColor'
-                                    d='m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6L12 16Zm0 6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z'
-                                />
-                            </svg>
-                        </Link>
-                    </div>
-                    <div className='relative bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full h-[480px]'>
-                        <div className='h-max overflow-hidden'>
-                            <Link href={ source.four } className='cursor-pointer'>
-                                <Image
-                                    className='rounded-t-sm transition ease-in-out duration-300 hover:scale-105'
-                                    src={ source.four }
-                                    alt='img'
-                                    height={ 960 }
-                                    width={ 520 }
-                                    priority={ true }
-                                />
-                            </Link>
-                        </div>
-                        <div className='p-4'>
-                            <h5 className='text-[#111827] text-lg font-medium'>Thermal Sensing</h5>
-                            <div className='bg-sky-700 h-2 w-2 my-4'></div>
-                            <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque, consequuntur distinctio eligendi molestiae velit magni? Deserunt reiciendis necessitatibus sit odit, praesentium fugit qui provident nihil placeat iusto sint nulla!</p>
-                        </div>
-                        <Link href='/services/thermal-sensing' className='absolute left-4 bottom-4 flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                            learn more
-                            <svg
-                                className='h-4 w-4 ml-2'
-                                xmlns='http://www.w3.org/2000/svg'
-                                width='1em'
-                                height='1em'
-                                viewBox='0 0 24 24'
-                            >
-                                <path
-                                    fill='currentColor'
-                                    d='m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6L12 16Zm0 6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z'
-                                />
-                            </svg>
-                        </Link>
-                    </div>
+                    {
+                        imgSrc.map( ( arr: { title: string , src: string , content: string } , ind: number ) => (
+                            <div key={ ind } className='relative bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full h-[580px]'>
+                                <div className='h-max overflow-hidden'>
+                                    <Link href={ arr.src } className='cursor-pointer'>
+                                        <Image
+                                            className='rounded-t-sm transition ease-in-out duration-300 hover:scale-105'
+                                            src={ arr.src }
+                                            alt='img'
+                                            height={ 960 }
+                                            width={ 520 }
+                                            priority={ true }
+                                        />
+                                    </Link>
+                                </div>
+                                <div className='p-4'>
+                                    <h5 className='text-[#111827] text-lg font-medium'>{ arr.title }</h5>
+                                    <div className='bg-sky-700 h-2 w-2 my-4'></div>
+                                    <p className='text-gray-600 text-sm font-medium mb-4 h-44 overflow-y-auto'>{ arr.content }</p>
+                                </div>
+                                <Link href='/services/planning-and-design' className='absolute left-4 bottom-4 flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
+                                    learn more
+                                    <svg
+                                        className='h-4 w-4 ml-2'
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        width='1em'
+                                        height='1em'
+                                        viewBox='0 0 24 24'
+                                    >
+                                        <path
+                                            fill='currentColor'
+                                            d='m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6L12 16Zm0 6q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z'
+                                        />
+                                    </svg>
+                                </Link>
+                            </div>
+                        ) )
+                    }
+
                 </div>
 
             </div>

@@ -6,6 +6,7 @@ import HomeProjects from '@/components/home-projects'
 import HomeFAQ from '@/components/home-faq'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
+import HomeStats from '@/components/home-stats'
 
 type Props = { searchParams?: any }
 
@@ -14,11 +15,13 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
             
-            <HomeBanner/>
+            <HomeBanner />
 
-            {/* <HomeAboutUs /> */}
+            <HomeStats />
 
-            {/* <HomeServices /> */}
+            <HomeAboutUs />
+
+            <HomeServices />
 
             {/* <HomeWhyChooseUs /> */}
 

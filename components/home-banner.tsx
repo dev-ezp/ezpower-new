@@ -18,7 +18,7 @@ export default function HomeBanner ( props: Props ) {
     ]
 
     return (
-        <div className='relative h-96 sm:h-[480px] lg:h-[720px] overflow-hidden'>
+        <div className='relative h-[480px] lg:h-[720px] overflow-hidden'>
             <Slider
                 dots={ false }
                 infinite={ true }
@@ -55,7 +55,7 @@ export default function HomeBanner ( props: Props ) {
                             href='/'
                             className='bg-white border-white text-[#111827] text-sm lg:text-base border-2 font-medium uppercase cursor-pointer rounded-sm py-1 lg:py-4 px-3 lg:px-8 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'
                         >
-                            about us
+                            our company
                         </Link>
                     </div>
                 </div>
