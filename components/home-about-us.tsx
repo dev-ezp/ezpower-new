@@ -9,7 +9,7 @@ export default function HomeAboutUs ( props: Props ) {
 
     return (
         <section className='bg-white'>
-            <div className='mx-5 md:mx-40 lg:mx-60'>
+            <div className='mx-5 md:mx-40 lg:mx-96'>
 
                 <div className='flex justify-center py-10 sm:py-20'>
                     <div className='grid gap-2 w-[720px]'>
