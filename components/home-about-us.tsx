@@ -13,8 +13,8 @@ export default function HomeAboutUs ( props: Props ) {
 
                 <div className='flex justify-center py-10 sm:py-20'>
                     <div className='grid gap-2 w-[720px]'>
-                        <h5 className='text-sky-700 text-sm font-semibold uppercase'>about our company.</h5>
-                        <h1 className='text-[#111827] text-3xl lg:text-4xl font-bold'>We develop renewable source of clean energy</h1>
+                        <h5 className='text-sky-700 text-sm uppercase'>about our company.</h5>
+                        <h1 className='text-[#111827] text-4xl font-bold'>We develop renewable source of clean energy</h1>
                     </div>
                 </div>
 

@@ -82,7 +82,7 @@ export default function HomeServices ( props: Props ) {
 
                     <br /><br />
 
-                    <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-10'>
+                    <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-10'>
                         {
                             imgSrc.map( ( arr: { title: string , src: string , content: string } , ind: number ) => (
                                 <div key={ ind } className='bg-white shadow-white/20 shadow-lg drop-shadow-lg rounded-sm w-full'>
