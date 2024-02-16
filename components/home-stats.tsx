@@ -1,8 +1,14 @@
 'use client'
 
+import { useEffect , useState } from 'react'
+import CountUp from 'react-countup'
+
 type Props = {}
 
 export default function HomeStats ( props: Props ) {
+
+    const [ height , setHeight ] = useState <number> ( 0 )
+    useEffect( () => window.addEventListener( 'scroll' , () => setHeight( window.scrollY ) ) , [ height ] )
 
     return (
         <div className='bg-[#111827]'>
@@ -16,7 +22,17 @@ export default function HomeStats ( props: Props ) {
                                 <Cube className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>installed capacity</h5>
                             </div>
-                            <p className='text-5xl font-bold'>85</p>
+                            <p className='text-5xl font-bold'>
+                                {
+                                    height >= 50
+                                        ?   <CountUp
+                                                end={ 85 }
+                                                duration={ 1 }
+                                                decimals={ 1 }
+                                            />
+                                        :   <>0</>
+                                }
+                            </p>
                             <span className='font-bold'>plus</span>
                         </div>
 
@@ -25,7 +41,17 @@ export default function HomeStats ( props: Props ) {
                                 <Bolt className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>power generation</h5>
                             </div>
-                            <p className='text-5xl font-bold'>100</p>
+                            <p className='text-5xl font-bold'>
+                                {
+                                    height >= 50
+                                        ?   <CountUp
+                                                end={ 100 }
+                                                duration={ 1 }
+                                                decimals={ 1 }
+                                            />
+                                        :   <>0</>
+                                }
+                            </p>
                             <span className='font-bold'>MWh</span>
                         </div>
 
@@ -34,7 +60,17 @@ export default function HomeStats ( props: Props ) {
                                 <Check className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>projects accomplished</h5>
                             </div>
-                            <p className='text-5xl font-bold'>20</p>
+                            <p className='text-5xl font-bold'>
+                                {
+                                    height >= 50
+                                        ?   <CountUp
+                                                end={ 20 }
+                                                duration={ 1 }
+                                                decimals={ 1 }
+                                            />
+                                        :   <>0</>
+                                }
+                            </p>
                             <span className='font-bold'>and counting</span>
                         </div>
 
@@ -43,7 +79,17 @@ export default function HomeStats ( props: Props ) {
                                 <Tree className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>carbon footprint</h5>
                             </div>
-                            <p className='text-5xl font-bold'>16.5</p>
+                            <p className='text-5xl font-bold'>
+                                {
+                                    height >= 50
+                                        ?   <CountUp
+                                                end={ 16.5 }
+                                                duration={ 1 }
+                                                decimals={ 1 }
+                                            />
+                                        :   <>0</>
+                                }
+                            </p>
                             <span className='font-bold'>ton</span>
                         </div>
 
