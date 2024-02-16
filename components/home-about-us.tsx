@@ -9,23 +9,25 @@ export default function HomeAboutUs ( props: Props ) {
 
     return (
         <section className='bg-white'>
-            <div className='mx-5 md:mx-40 lg:mx-96'>
+            <div className='mx-5 py-10 sm:py-20'>
 
-                <div className='flex justify-center py-10 sm:py-20'>
+                <div className='flex justify-center'>
                     <div className='grid gap-2 w-[720px]'>
                         <h5 className='text-sky-700 text-sm uppercase'>about our company.</h5>
                         <h1 className='text-[#111827] text-4xl font-bold'>We develop renewable source of clean energy</h1>
                     </div>
                 </div>
 
-                <div className='flex justify-center pb-10 sm:pb-20'>
+                <br />
 
-                    <div className='flex flex-col xl:flex-row items-center space-x-0 xl:space-x-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10'>
 
-                        <div className='relative'>
-                            
-                            <div className='h-[320px] sm:h-[400px] xl:h-[480px] w-[320px] sm:w-[400px] xl:w-[480px]'>
+                    <div className='flex justify-center lg:justify-end items-center'>
+
+                        <div className='relative h-max w-max'>
+                            <div className='h-[320px] w-[320px] sm:w-[480px]'>
                                 <Image
+                                    className='rounded-lg'
                                     src='/assets/content/home/ha-01.png'
                                     alt='img'
                                     style={ {
@@ -36,8 +38,7 @@ export default function HomeAboutUs ( props: Props ) {
                                     fill
                                 />
                             </div>
-
-                            <div className='absolute inset-0 bg-black/50 rounded-sm h-[320px] sm:h-[400px] xl:h-[480px] w-[320px] sm:w-[400px] xl:w-[480px]'>
+                            <div className='absolute inset-0 bg-black/50 rounded-lg h-[320px] w-[320px] sm:w-[480px]'>
                                 <button className='flex items-center bg-white border-white text-[#111827] text-sm border-2 font-medium uppercase cursor-pointer rounded-sm m-5 p-5 w-max transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
                                     <div className='relative'>
                                         <svg
@@ -70,10 +71,13 @@ export default function HomeAboutUs ( props: Props ) {
                             </div>
                         </div>
 
-                        <div className='block w-full sm:w-[400px] xl:w-[480px]'>
+                    </div>
 
-                            <div className='hidden xl:block bg-sky-700 h-5 w-5'></div>
-                            <br />
+                    <div className='flex justify-center lg:justify-start items-center'>
+
+                        <div className='block w-full lg:w-[480px]'>
+
+                            <div className='hidden lg:block bg-sky-700 h-5 w-5 mb-5'></div>
                             <div className='grid gap-5'>
                                 <p className='text-gray-950 font-medium'>
                                     Established on October of 2018, EZ Power by Edge-Systems Engineering Services had a humble beginnings and modest resources but also was coming from solid grounds with its founder Engr. Edzel Galguerra, who had progressive 15 years career in design and development of electronics and power systems fro global markets.
@@ -98,7 +102,6 @@ export default function HomeAboutUs ( props: Props ) {
                                 </svg>
                                 our goals
                             </Link>
-
                         </div>
 
                     </div>
