@@ -21,20 +21,26 @@ export default function Qoute ( props: Props ) {
 
     return (
         <div className='bg-gray-100'>
-            <div className='mx-96 py-20'>
+            <div
+                className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }
+            >
 
-                <div className='grid grid-cols-2 gap-20'>
-                    <div>
+                <div className='grid grid-cols-1 xl:grid-cols-2 gap-10'>
+                
+                    <div className='block'>
                         <div className='flex flex-col space-y-2'>
-                            <h5 className='text-sky-700 text-sm font-semibold uppercase'>get some professional advice from our engineers.</h5>
+                            <h5 className='text-sky-700 text-sm uppercase'>get some professional advice from our engineers.</h5>
                             <h1 className='text-[#111827] text-4xl font-bold'>Energy Solutions that fits for my needs</h1>
-                            <p className='text-[#111827] font-medium py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
+                            <p className='text-[#111827] py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
                         </div>
-                        <div className='bg-sky-700 h-5 w-5'></div>
+                        <div className='bg-sky-700 h-5 w-5 my-5'></div>
                         <div className='flex flex-col space-y-2'>
                             <h1 className='text-[#111827] text-2xl font-bold'>get in touch.</h1>
-                            <p className='text-[#111827] font-medium py-5'>We are open between 9am to 6pm, monday to friday. We also offer consultation everyday including weekends except holidays; Call us and we were happy to help you.</p>
-                            <div className='grid grid-cols-2 gap-3'>
+                            <p className='text-[#111827] py-5'>We are open between 9am to 6pm, monday to friday. We also offer consultation everyday including weekends except holidays; Call us and we were happy to help you.</p>
+                            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                                 <button
                                     onClick={ () => {
                                         clipboard.write( '0444824405' )
@@ -86,15 +92,16 @@ export default function Qoute ( props: Props ) {
                             </div>
                         </div>
                     </div>
+
                     <form
                         onSubmit={ ( e: any ) => {
                             e.preventDefault()
                         } }
-                        className='flex flex-col space-y-3 bg-white shadow-black/10 shadow-lg drop-shadow-lg rounded p-10'
+                        className='flex flex-col space-y-3 bg-white shadow-black/10 shadow-lg drop-shadow-lg rounded p-5 sm:p-10'
                         typeof='submit'
                     >
                         <h1 className='text-sky-700 text-2xl font-medium capitalize'>request a qoute</h1>
-                        <div className='grid grid-cols-2 gap-3'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                             <input
                                 onChange={ ( e: any ) => setFields( { ... fields , name: String( e.target.value ).trim() } ) }
                                 placeholder='Name'
@@ -125,7 +132,7 @@ export default function Qoute ( props: Props ) {
                             />
                         </div>
                         <h1 className='text-sky-700 text-base font-medium capitalize'>System data</h1>
-                        <div className='grid grid-cols-2 gap-3'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                             <input
                                 onChange={ ( e: any ) => {} }
                                 placeholder='System Installer?'
@@ -242,6 +249,7 @@ export default function Qoute ( props: Props ) {
                             </div>
                         </button>
                     </form>
+                
                 </div>
 
             </div>

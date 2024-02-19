@@ -8,24 +8,28 @@ export default function HomeWhyChooseUs ( props: Props ) {
 
     return (
         <div className='bg-white'>
-            <div className='mx-96 py-20'>
+            <div
+                className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }
+            >
 
-                <div className='flex items-center justify-start w-full pb-10'>
-                    <div className='flex flex-col space-y-2 w-[720px]'>
-                        <h5 className='text-sky-700 text-sm font-semibold uppercase'>why choose us?</h5>
-                        <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution</h1>
-                        <p className='text-[#111827] font-medium py-5'>EZ Power offer the lowest price in this industry, but we make sure that what you pay for us is not that equal on what you may receive, why? Simple because we can give you not just the best but the most excellent service, quality and after market care you truly deserve. We plan success not just for our company success but also for our clients in achieving their own energy solutions.</p>
-                    </div>
+                <div className='grid gap-2 w-full xl:w-2/3'>
+                    <h5 className='text-sky-700 text-sm uppercase'>why choose us?</h5>
+                    <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution</h1>
+                    <p className='text-[#111827] py-5'>EZ Power offer the lowest price in this industry, but we make sure that what you pay for us is not that equal on what you may receive, why? Simple because we can give you not just the best but the most excellent service, quality and after market care you truly deserve. We plan success not just for our company success but also for our clients in achieving their own energy solutions.</p>
                 </div>
 
-                <div className='grid grid-cols-4 gap-8'>
-                    <div className='col-span-2 bg-white rounded-sm w-full h-60'>
-                        <div className='flex flex-col justify-center h-full p-3 space-y-2'>
-                            <h5 className='text-sky-700 text-sm font-semibold uppercase'>we are experts in this field.</h5>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+
+                    <div className='col-span-1 md:col-span-2 bg-white rounded-sm w-full h-60'>
+                        <div className='flex flex-col justify-center h-full space-y-2'>
+                            <h5 className='text-sky-700 text-sm uppercase'>we are experts in this field.</h5>
                             <h1 className='text-[#111827] text-4xl font-bold'>Our competitive advantage</h1>
                             <br />
-                            <Link href='/energy-solutions' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-4 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                                Learn more about our energy solution
+                            <Link href='/energy-solutions' className='flex items-center justify-center sm:justify-start bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-4 w-full sm:w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
+                                about our energy solution
                                 <svg
                                     className='h-5 w-5 ml-2'
                                     xmlns='http://www.w3.org/2000/svg'
@@ -41,6 +45,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </Link>
                         </div>
                     </div>
+
                     <div className='bg-gray-200 rounded-sm cursor-pointer w-full h-60 transition ease-in-out duration-300 hover:bg-[#111827] group'>
                         <div className='grid gap-3 p-5'>
                             <svg
@@ -195,8 +200,9 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </p>
                         </div>
                     </div>
-                </div>
 
+                </div>
+            
             </div>
         </div>
     )

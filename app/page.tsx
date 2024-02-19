@@ -23,13 +23,13 @@ export default function Page ( props: Props ) {
 
             <HomeServices />
 
-            {/* <HomeWhyChooseUs /> */}
+            <HomeWhyChooseUs />
 
-            {/* <HomeProjects /> */}
+            <HomeProjects />
 
-            {/* <HomeFAQ /> */}
+            <HomeFAQ />
 
-            {/* <Qoute/> */}
+            <Qoute/>
 
             {/* <Footer /> */}
 

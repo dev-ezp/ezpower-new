@@ -57,7 +57,7 @@ export default function HomeServices ( props: Props ) {
                 <div className='my-10'></div>
 
                 <div className='grid gap-5'>
-                    <p className='text-white font-medium'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
+                    <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
                     <div className='flex items-center w-full md:w-max'>
                         <Link
                             href='/'

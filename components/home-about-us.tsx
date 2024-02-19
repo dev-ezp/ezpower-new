@@ -75,10 +75,10 @@ export default function HomeAboutUs ( props: Props ) {
                     <div className='block'>
                         <div className='bg-sky-700 h-5 w-5 mb-5'></div>
                         <div className='grid gap-5'>
-                            <p className='text-gray-950 font-medium'>
+                            <p className='text-gray-950'>
                                 Established on October of 2018, EZ Power by Edge-Systems Engineering Services had a humble beginnings and modest resources but also was coming from solid grounds with its founder Engr. Edzel Galguerra, who had progressive 15 years career in design and development of electronics and power systems fro global markets.
                             </p>
-                            <p className='text-gray-600 font-medium'>
+                            <p className='text-gray-600'>
                                 We are motivated by the belief that the next big impact to the economy will be defined by Energy, Environment and Efficiency on which the company was also founded for.
                             </p>
                         </div>

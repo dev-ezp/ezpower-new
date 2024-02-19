@@ -13,17 +13,24 @@ export default function HomeFAQ ( props: Props ) {
 
     return (
         <div id='faq' className='bg-white'>
-            <div className='mx-96 py-20'>
-                
-                <div className='flex items-center justify-center w-full pb-10'>
-                    <div className='flex flex-col space-y-2 w-[720px]'>
+            <div
+                className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }
+            >
+
+                <div className='flex justify-center'>
+                    <div className='grid gap-2 w-full xl:w-2/3'>
                         <h5 className='text-sky-700 text-sm text-center font-semibold uppercase'>what our clients usually ask.</h5>
                         <h1 className='text-[#111827] text-4xl text-center font-bold'>Frequently Ask Questions</h1>
                     </div>
                 </div>
 
-                <div className='flex items-center justify-center w-full'>
-                    <Accordion type='single' collapsible className='w-3/4'>
+                <br />
+
+                <div className='flex items-center justify-center'>
+                    <Accordion type='single' collapsible className='w-full xl:w-2/3'>
                         <AccordionItem value='item-1'>
                             <AccordionTrigger>Lorem ipsum dolor sit amet?</AccordionTrigger>
                             <AccordionContent>
