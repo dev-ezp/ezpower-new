@@ -23,7 +23,7 @@ export default function HomeAboutUs ( props: Props ) {
                     </div>
                 </div>
 
-                <div className='my-10'></div>
+                <div className='my-10'></div> 
 
                 <div className='flex items-center flex-col xl:flex-row space-x-0 xl:space-x-10 space-y-5 xl:space-y-0'>                    
                     <div className='relative h-max w-max'>
