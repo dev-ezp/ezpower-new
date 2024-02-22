@@ -189,7 +189,12 @@ export default function MainNavbar ( props: Props ) {
                                                     </Link>
                                                 </AccordionTrigger>
                                                 <AccordionContent>
-
+                                                    <Link href='#home-about-us' className='flex justify-start w-full py-1'>&gt; About Us</Link>
+                                                    <Link href='#services' className='flex justify-start w-full py-1'>&gt; Services</Link>
+                                                    <Link href='#why-choose-us' className='flex justify-start w-full py-1'>&gt; Why Choose Us</Link>
+                                                    <Link href='#projects' className='flex justify-start w-full py-1'>&gt; Projects</Link>
+                                                    <Link href='#faq' className='flex justify-start w-full py-1'>&gt; FAQ</Link>
+                                                    <Link href='#qoute' className='flex justify-start w-full py-1'>&gt; Qoute</Link>
                                                 </AccordionContent>
                                             </AccordionItem>
                                             <AccordionItem value='item-2' className='border-none'>

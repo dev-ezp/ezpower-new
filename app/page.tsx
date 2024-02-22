@@ -31,7 +31,7 @@ export default function Page ( props: Props ) {
 
             <Qoute/>
 
-            {/* <Footer /> */}
+            <Footer />
 
         </div>
     )

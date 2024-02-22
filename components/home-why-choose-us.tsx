@@ -7,7 +7,7 @@ type Props = {}
 export default function HomeWhyChooseUs ( props: Props ) {
 
     return (
-        <div className='bg-white'>
+        <div id='why-choose-us' className='bg-white'>
             <div
                 className={ `
                     w-auto mx-5 py-10

@@ -41,7 +41,7 @@ export default function HomeServices ( props: Props ) {
     ]
 
     return (
-        <section className='bg-[#111827]'>
+        <section id='services' className='bg-[#111827]'>
             <div
                 className={ `
                     w-auto mx-5 py-10

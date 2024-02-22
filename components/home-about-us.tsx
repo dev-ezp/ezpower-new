@@ -8,7 +8,7 @@ type Props = {}
 export default function HomeAboutUs ( props: Props ) {
 
     return (
-        <section className='bg-white'>
+        <section id='home-about-us' className='bg-white'>
             <div
                 className={ `
                     w-auto mx-5 py-10

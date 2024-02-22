@@ -20,7 +20,7 @@ export default function Qoute ( props: Props ) {
     const { toast } = useToast()
 
     return (
-        <div className='bg-gray-100'>
+        <div id='qoute' className='bg-gray-100'>
             <div
                 className={ `
                     w-auto mx-5 py-10

@@ -13,9 +13,14 @@ export default function Footer ( props: Props ) {
 
     return (
         <footer className='bg-[#111827]'>
-            <div className='mx-96 pt-20'>
+            <div
+                className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }
+            >
 
-                <div className='grid grid-cols-4 gap-20'>
+                <div className='grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-10 xl:gap-20'>
                     <div className='flex flex-col'>
                         <h5 className='text-white text-2xl font-bold'>legal</h5>
                         <div className='bg-white h-2 w-2 my-5'></div>
@@ -152,7 +157,7 @@ export default function Footer ( props: Props ) {
                     </div>
                 </div>
 
-                <div className='flex items-center justify-between py-10'>
+                <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-5 sm:space-x-0 py-10'>
 
                     <div className='flex items-center space-x-2 text-white'>
                         <svg
