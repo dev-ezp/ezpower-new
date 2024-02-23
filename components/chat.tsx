@@ -1,7 +1,7 @@
 'use client'
 
 import { useState , useEffect } from 'react'
-import { FacebookProvider , MessageUs } from 'react-facebook'
+import { FacebookProvider , SendToMessenger } from 'react-facebook'
 
 type Props = {}
 
@@ -12,7 +12,7 @@ export default function Chat ( props: Props ) {
 
     return (
         <FacebookProvider appId='1102743007119581'>
-            <MessageUs messengerAppId='254352434418146' pageId='61556786006837' />
+            <SendToMessenger messengerAppId='254352434418146' pageId='61556786006837' />
         </FacebookProvider>    
     )
 
