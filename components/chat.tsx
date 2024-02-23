@@ -12,7 +12,7 @@ export default function Chat ( props: Props ) {
 
     return (
         <FacebookProvider appId='1102743007119581' chatSupport>
-            <CustomChat pageId='61556786006837' />
+            <CustomChat pageId='61556786006837' minimized={ false } />
         </FacebookProvider>    
     )
 
