@@ -107,7 +107,7 @@ export default function Footer ( props: Props ) {
                             </div>
                             <div className='relative flex items-center justify-center bg-white rounded-[0.3rem] h-[180px] w-full'>
                                 <p className='absolute text-[#111827] text-xs'>loading...</p>
-                                <Map
+                                {/* <Map
                                     initialViewState={ {
                                         latitude: 14.8106425917393,
                                         longitude: 120.96820430088181,
@@ -151,7 +151,7 @@ export default function Footer ( props: Props ) {
                                             </svg>
                                         </Link>
                                     </div>
-                                </Map>
+                                </Map> */}
                             </div>
                         </div>
                     </div>
