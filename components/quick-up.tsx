@@ -3,18 +3,18 @@
 import { useState , useEffect } from 'react'
 import Link from 'next/link'
 
-type Props = { goto: string }
+type Props = {}
 
 export default function QuickUp ( props: Props ) {
-
-    const { goto } = props
 
     const [ height , setHeight ] = useState <number> ( 0 )
     useEffect( () => window.addEventListener( 'scroll' , () => setHeight( window.scrollY ) ) , [ height ] )
 
+    // Todo: move this to a better place.
+
     return (
-        <div className={ `fixed left-[50%] bottom-4 right-[50%] w-max h-max transition-all ease-in-out duration-300 ${ height >= 720 ? 'bottom-10' : '-bottom-20' }` }>
-            <Link href={ goto } scroll={ true } className='flex text-sky-700 outline-none cursor-pointer transition ease-in-out duration-300 hover:scale-110 group'>                
+        <div className={ `hidden md:block fixed top-[50%] bottom-[50%] w-max h-max transition-all ease-in-out duration-300 ${ height >= 720 ? 'right-10' : '-right-20' }` }>
+            <Link href='#top' scroll={ true } className='flex bg-sky-700 text-white rounded-lg p-3 outline-none cursor-pointer transition ease-in-out duration-300 hover:scale-110 group'>                
                 <div className='relative'>
                     <svg
                         className='h-7 w-7 group-hover:animate-ping'

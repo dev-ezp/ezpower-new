@@ -41,9 +41,9 @@ export default function RootLayout( { children , }: { children: React.ReactNode 
 
                 <Toaster />
 
-                <QuickUp goto='#top' />
+                <QuickUp />
 
-                <Chat />
+                {/* <Chat /> */}
 
             </body>
         </html>
