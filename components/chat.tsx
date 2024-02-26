@@ -14,7 +14,7 @@ export default function Chat ( props: Props ) {
         <FacebookProvider appId='1102743007119581' chatSupport>
             <CustomChat
                 pageId='254352434418146'
-                // minimized={ false } // Todo: check what will happen if you remove this.
+                minimized={ false }
             />
         </FacebookProvider>    
     )
