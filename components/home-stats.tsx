@@ -26,7 +26,7 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 1.128 }
+                                                end={ 1.054 }
                                                 duration={ 1 }
                                                 decimals={ 3 }
                                             />
@@ -45,7 +45,7 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 776.8 }
+                                                end={ 725.6 }
                                                 duration={ 1 }
                                                 decimals={ 1 }
                                             />
@@ -64,7 +64,7 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 72 }
+                                                end={ 100 }
                                                 duration={ 1 }
                                                 decimals={ 0 }
                                             />
@@ -83,14 +83,14 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 553.2 }
+                                                end={ 516.8 }
                                                 duration={ 1 }
                                                 decimals={ 1 }
                                             />
                                         :   <>0</>
                                 }
                             </p>
-                            <span className='font-bold'>tons</span>
+                            <span className='font-bold'>tCO2</span>
                         </div>
 
                     </div>

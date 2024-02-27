@@ -20,6 +20,8 @@ export default function ProjectsDeployedDevices ( props: Props ) {
 
     const locations: Array<{ lat: number , lng: number }> = src
 
+    // console.log( locations.length )
+
     return (
         <div className='relative flex items-center h-screen'>
             <div className='h-full w-full'>
