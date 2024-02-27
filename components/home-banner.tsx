@@ -52,7 +52,7 @@ export default function HomeBanner ( props: Props ) {
                     <h1 className='text-white font-thin text-4xl lg:text-6xl text-center uppercase'>leading the way to <span className='font-bold'>sustainable</span> and <span className='font-bold'>inclusive</span> energy solution</h1>
                     <div className='flex items-center justify-center'>
                         <Link
-                            href='/'
+                            href='/about-us'
                             className='bg-white border-white text-[#111827] text-sm lg:text-base border-2 font-medium uppercase cursor-pointer rounded-sm py-1 lg:py-4 px-3 lg:px-8 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'
                         >
                             our company

@@ -118,7 +118,7 @@ export default function MainNavbar ( props: Props ) {
                             FAQ
                         </Link>
                         <Link
-                            href='https://www.facebook.com/'
+                            href='https://www.facebook.com/profile.php?id=61556786006837'
                             className='flex items-center justify-center text-gray-400 w-full h-full transition ease-in-out duration-300 hover:bg-gray-100'
                         >
                             <svg
@@ -135,7 +135,7 @@ export default function MainNavbar ( props: Props ) {
                             </svg>
                         </Link>
                         <Link
-                            href='https://twitter.com/?lang=en'
+                            href='/'
                             className='flex items-center justify-center text-gray-400 w-full h-full transition ease-in-out duration-300 hover:bg-gray-100'
                         >
                             <svg

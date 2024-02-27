@@ -83,7 +83,7 @@ export default function HomeAboutUs ( props: Props ) {
                             </p>
                         </div>
                         <br />
-                        <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm p-5 h-max w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
+                        <Link href='/about-us#goals' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm p-5 h-max w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
                             <svg
                                 className='h-5 w-5 mr-2'
                                 xmlns='http://www.w3.org/2000/svg'

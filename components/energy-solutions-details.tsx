@@ -29,7 +29,7 @@ export default function EnergySolutionsDetails ( props: Props ) {
                     </p>
                 </div>
 
-                <div className='grid grid-cols-2 gap-10 py-10'>
+                {/* <div className='grid grid-cols-2 gap-10 py-10'>
 
                     <Slider
                         dots={ false }
@@ -137,7 +137,9 @@ export default function EnergySolutionsDetails ( props: Props ) {
                         </div>
                     </Slider>
 
-                </div>
+                </div> */}
+
+                <br /> <br /> <br />
 
                 <div className='block w-full'>
                     <div className='flex flex-col space-y-2'>
@@ -148,9 +150,6 @@ export default function EnergySolutionsDetails ( props: Props ) {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae delectus saepe incidunt, error aspernatur, dolore cupiditate architecto porro explicabo ex, ut dolor atque recusandae repellendus. Praesentium expedita accusamus earum, est, ipsam eveniet voluptate quod repudiandae sapiente iure odio voluptatibus eaque illum illo magni dolorem, optio iusto suscipit cumque voluptas!
                     </p>
                 </div>
-
-                <br />
-                <div className='text-center text-black text-xs font-thin italic'>add more documented content here as an example related to this topic</div>
 
             </div>
         </div>

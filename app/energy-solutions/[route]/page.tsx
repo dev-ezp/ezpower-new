@@ -20,11 +20,11 @@ export default function Page ( props: Props ) {
 
             <EnergySolutionsBreadcrumbs params={ params } searchParams={ searchParams } />
 
-            {/* <EnergySolutionsDetails params={ params } searchParams={ searchParams }/> */}
+            <EnergySolutionsDetails params={ params } searchParams={ searchParams }/>
 
-            {/* <Qoute/> */}
+            <Qoute/>
 
-            {/* <Footer /> */}
+            <Footer />
 
         </div>
     )
