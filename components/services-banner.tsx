@@ -19,10 +19,10 @@ const switchImage = ( route?: string ): string => {
         case 'testing':
         return 'bg-[url("/assets/content/services/sb-03.png")]'
 
-        case 'thermal-sensing':
+        case 'analysis':
         return 'bg-[url("/assets/content/services/sb-04.png")]'
 
-        case 'workforce':
+        case 'skilled-workforce':
         return 'bg-[url("/assets/content/services/sb-05.png")]'
 
         case 'system-quotation':
@@ -53,10 +53,10 @@ export default function ServicesBanner ( props: Props ) {
                                 ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>site <span className='font-bold'>survey</span></h1>
                         :   params.route === 'testing'
                                 ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>testing</span></h1>
-                        :   params.route === 'thermal-sensing'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>thermal <span className='font-bold'>sensing</span></h1>
-                        :   params.route === 'workforce'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>workforce</span></h1>
+                        :   params.route === 'analysis'
+                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>analysis</span></h1>
+                        :   params.route === 'skilled-workforce'
+                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>skilled <span className='font-bold'>workforce</span></h1>
                         :   params.route === 'system-quotation'
                                 ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>system <span className='font-bold'>quotation</span></h1>
                         :   params.route === 'consultancy'

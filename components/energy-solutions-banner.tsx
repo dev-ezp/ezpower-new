@@ -38,7 +38,7 @@ export default function EnergySolutionsBanner ( props: Props ) {
                                 ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>home <span className='font-bold'>solutions</span></h1>
                         :   params.route === 'community-development'
                                 ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>community <span className='font-bold'>development</span></h1>
-                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> for the people</h1>   
+                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> to everyone</h1>   
                     }
                     {
                         params.route === undefined || params.route === null

@@ -33,7 +33,7 @@ export default function Qoute ( props: Props ) {
                     <div className='block'>
                         <div className='flex flex-col space-y-2'>
                             <h5 className='text-sky-700 text-sm uppercase'>get some professional advice from our engineers.</h5>
-                            <h1 className='text-[#111827] text-4xl font-bold'>Energy Solutions that fits for my needs</h1>
+                            <h1 className='text-[#111827] text-4xl font-bold'>Energy Solution that fits to my needs</h1>
                             <p className='text-[#111827] py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
                         </div>
                         <div className='bg-sky-700 h-5 w-5 my-5'></div>

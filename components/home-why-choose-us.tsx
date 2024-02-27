@@ -17,8 +17,8 @@ export default function HomeWhyChooseUs ( props: Props ) {
 
                 <div className='grid gap-2 w-full xl:w-2/3'>
                     <h5 className='text-sky-700 text-sm uppercase'>why choose us?</h5>
-                    <h1 className='text-[#111827] text-4xl font-bold'>Providing Clean, Safe and Innovative approach in terms of Energy Solution</h1>
-                    <p className='text-[#111827] py-5'>EZ Power offer the lowest price in this industry, but we make sure that what you pay for us is not that equal on what you may receive, why? Simple because we can give you not just the best but the most excellent service, quality and after market care you truly deserve. We plan success not just for our company success but also for our clients in achieving their own energy solutions.</p>
+                    <h1 className='text-[#111827] text-4xl font-bold'>Providing Equitable and High Quality Clean Energy Solutions</h1>
+                    <p className='text-[#111827] py-5'>We believe that investing on clean energy should not be extraordinarily difficult, but as gratifying as living a sustainable lifestyle. Therefore, we are committed to provide equitable and high-quality clean energy solutions that can be affordable to everyone: households, businesses, communities, government and non-government organizations.</p>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
@@ -62,7 +62,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Data Driven</h5>
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                We don&apos;t offer kits or ready-made solutions. Our system designs are derived from data provided by the clients or from our database of similar use cases treated to specific energy needs of the client. Energy Survey is conducted in the absence of suitable data. Once system is built, data is not only monitored but also continuously being analyzed for improvement of our systems and services.
                             </p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Technology Agnostic</h5>
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                Our expertise in Power Electronics allows us to work with any distributed energy systems produced by solar, wind, hydro, waste-to-energy and their integrations. We don&apos;t limit ourselves to specific brands as long as the underlying technologies truly are responsive to the energy needs and preferences of our clients.
                             </p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Cost Effective</h5>
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                Transition to clean, renewable and distributed energy sources cannot be viable without real financial benefits. Our systems are designed to be worthwhile investments. Comprehensive financial analysis along with system performance report is included in our studies and proposals by default. We provide reasonably accurate and transparent quotations to clients that are founded on thorough studies.
                             </p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Research & Development</h5>         
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                Our methods are founded on collaborative research with local universities whom we are actively engaged. Through our Energy Intelligence platform, we augment limited data from customers with Machine Learning Algorithms to create predictions of possible energy generation and consumption. In practice, we normally get less than 10% mean error with our design simulations.
                             </p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Added Value Creation</h5>         
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                AMP &lpar;Affiliate Marketing Program&rpar; is our initiative to let our previous clients expedite their returns through credits from referrals. ACCP (Aggregated Carbon Credits Program) is a system that we are developing that converts the environmental contributions of their systems into tradable digital assets through Blockchain. It will be available on 2024.
                             </p>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Open Sourced</h5>         
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum esse ratione sequi dolorum, est officia nostrum doloribus?
+                                We employ free and Open-sourced software tools in our design and business processes. This also allows us to keep overhead cost we charge to our clients much lesser. We also contribute to the development of Open-sourced software to keep it updated and at par with expensive commercial counterparts.
                             </p>
                         </div>
                     </div>

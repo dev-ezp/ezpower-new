@@ -48,8 +48,8 @@ export default function HomeBanner ( props: Props ) {
             </Slider>
             <div className='absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center bg-black/50'>
                 <div className='grid gap-3 lg:gap-5 mx-5 w-[900px]'>
-                    <h5 className='text-white font-normal text-base lg:text-lg text-center uppercase'>providing clean and safe energy for everyone.</h5>
-                    <h1 className='text-white font-thin text-4xl lg:text-6xl text-center uppercase'>leading the way to <span className='font-bold'>sustainable</span> and <span className='font-bold'>inclusive</span> energy solution</h1>
+                    <h5 className='text-white font-normal text-base lg:text-lg text-center uppercase'>providing clean energy to everyone.</h5>
+                    <h1 className='text-white font-thin text-4xl lg:text-6xl text-center uppercase'>leading the way to <span className='font-bold'>sustainable</span> and <span className='font-bold'>inclusive</span> energy solutions</h1>
                     <div className='flex items-center justify-center'>
                         <Link
                             href='/about-us'

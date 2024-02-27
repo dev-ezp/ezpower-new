@@ -25,12 +25,12 @@ export default function ServicesContent ( props: Props ) {
         },
         {
             img: '/assets/content/services/sb-04.png',
-            service_name: 'thermal sensing',
+            service_name: 'analysis',
             content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati distinctio blanditiis optio, a ullam perspiciatis veritatis consequatur dolorum voluptates qui id magnam. Dolorum incidunt similique quod porro itaque veritatis ut?',
         },
         {
             img: '/assets/content/services/sb-05.png',
-            service_name: 'workforce',
+            service_name: 'skilled workforce',
             content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati distinctio blanditiis optio, a ullam perspiciatis veritatis consequatur dolorum voluptates qui id magnam. Dolorum incidunt similique quod porro itaque veritatis ut?',
         },
         {

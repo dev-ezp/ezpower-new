@@ -25,12 +25,12 @@ export default function HomeServices ( props: Props ) {
         },
         {
             img: '/assets/content/home/hs-04.png',
-            service_name: 'thermal sensing',
+            service_name: 'analysis',
             content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate.'
         },
         {
             img: '/assets/content/home/hs-05.png',
-            service_name: 'workforce',
+            service_name: 'skilled workforce',
             content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate.'
         },
         {
