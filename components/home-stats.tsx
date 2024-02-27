@@ -26,14 +26,14 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 85 }
+                                                end={ 1.128 }
                                                 duration={ 1 }
-                                                decimals={ 1 }
+                                                decimals={ 3 }
                                             />
                                         :   <>0</>
                                 }
                             </p>
-                            <span className='font-bold'>plus</span>
+                            <span className='font-bold'>MWp</span>
                         </div>
 
                         <div className='grid gap-1 text-white w-40 p-1'>
@@ -45,7 +45,7 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 100 }
+                                                end={ 776.8 }
                                                 duration={ 1 }
                                                 decimals={ 1 }
                                             />
@@ -64,9 +64,9 @@ export default function HomeStats ( props: Props ) {
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 20 }
+                                                end={ 72 }
                                                 duration={ 1 }
-                                                decimals={ 1 }
+                                                decimals={ 0 }
                                             />
                                         :   <>0</>
                                 }
@@ -77,20 +77,20 @@ export default function HomeStats ( props: Props ) {
                         <div className='grid gap-1 text-white w-40 p-1'>
                             <div className='flex items-center space-x-2'>
                                 <Tree className='h-10 w-10' />
-                                <h5 className='text-sm font-semibold uppercase'>carbon footprint</h5>
+                                <h5 className='text-sm font-semibold uppercase'>carbon credits</h5>
                             </div>
                             <p className='text-5xl font-bold'>
                                 {
                                     height >= 50
                                         ?   <CountUp
-                                                end={ 16.5 }
+                                                end={ 553.2 }
                                                 duration={ 1 }
                                                 decimals={ 1 }
                                             />
                                         :   <>0</>
                                 }
                             </p>
-                            <span className='font-bold'>ton</span>
+                            <span className='font-bold'>tons</span>
                         </div>
 
                     </div>
