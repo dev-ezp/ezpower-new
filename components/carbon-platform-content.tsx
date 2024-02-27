@@ -7,13 +7,6 @@ type Props = {}
 
 export default function CarbonPlatformContent ( props: Props ) {
 
-    const source: { one: string , two: string , three: string , four: string } = {
-        one: '/assets/ca-02.jpg',
-        two: '/assets/ca-03.jpg',
-        three: '/assets/ca-04.jpg',
-        four: '/assets/ca-05.jpg',
-    }
-
     return (
         <div className='bg-white'>
             <div className='mx-96 py-20'>
@@ -30,9 +23,9 @@ export default function CarbonPlatformContent ( props: Props ) {
                 <div className='grid grid-cols-2'>
 
                     <div className='flex items-center'>
-                        <Link href={ source.one } className='cursor-pointer'>
+                        <Link href='/assets/content/carbon-platform/ca-02.png' className='cursor-pointer'>
                             <Image
-                                src={ source.one }
+                                src='/assets/content/carbon-platform/ca-02.png'
                                 alt='img'
                                 height={ 1080 }
                                 width={ 1080 }
@@ -60,9 +53,9 @@ export default function CarbonPlatformContent ( props: Props ) {
                         </div>
                     </div>
                     <div className='flex items-center'>
-                        <Link href={ source.two } className='cursor-pointer'>
+                        <Link href='/assets/content/carbon-platform/ca-03.png' className='cursor-pointer'>
                             <Image
-                                src={ source.two }
+                                src='/assets/content/carbon-platform/ca-03.png'
                                 alt='img'
                                 height={ 1080 }
                                 width={ 1080 }
@@ -72,9 +65,9 @@ export default function CarbonPlatformContent ( props: Props ) {
                     </div>
 
                     <div className='flex items-center'>
-                        <Link href={ source.three } className='cursor-pointer'>
+                        <Link href='/assets/content/carbon-platform/ca-04.png' className='cursor-pointer'>
                             <Image
-                                src={ source.three }
+                                src='/assets/content/carbon-platform/ca-04.png'
                                 alt='img'
                                 height={ 1080 }
                                 width={ 1080 }
@@ -93,16 +86,16 @@ export default function CarbonPlatformContent ( props: Props ) {
                     </div>
 
                     <div className='col-span-2 relative'>
-                        <Link href={ source.four } className='cursor-pointer'>
+                        <Link href='/assets/content/carbon-platform/ca-05.png' className='cursor-pointer'>
                             <Image
-                                src={ source.four }
+                                src='/assets/content/carbon-platform/ca-05.png'
                                 alt='img'
                                 height={ 1080 }
                                 width={ 1920 }
                                 priority={ true }
                             />
                         </Link>
-                        <div className='absolute left-0 top-0 right-0 bottom-0 bg-black/80'>
+                        <div className='absolute left-0 top-0 right-0 bottom-0 bg-black/50'>
                             <div className='flex items-center h-full px-10'>
                                 <div className='flex flex-col'>
                                     <h5 className='text-white text-sm font-semibold uppercase pb-2'>the loop continues as we develop</h5>
