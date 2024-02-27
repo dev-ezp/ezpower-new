@@ -1,5 +1,6 @@
 import ProjectsBanner from '@/components/projects-banner'
 import ProjectsContent from '@/components/projects-content'
+import ProjectsDeployedDevices from '@/components/projects-deployed-devices'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
@@ -15,13 +16,15 @@ export default function Page ( props: Props ) {
     return (
         <div className='w-full'>
 
-            {/* <ProjectsBanner params={ params } searchParams={ searchParams } /> */}
+            <ProjectsBanner params={ params } searchParams={ searchParams } />
 
-            {/* <ProjectsContent /> */}
+            <ProjectsContent />
 
-            {/* <Qoute/> */}
+            <ProjectsDeployedDevices />
 
-            {/* <Footer /> */}
+            <Qoute/>
+
+            <Footer />
 
         </div>
     )

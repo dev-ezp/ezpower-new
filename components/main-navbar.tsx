@@ -336,7 +336,7 @@ export default function MainNavbar ( props: Props ) {
                             </Link>
 
                             <div className='flex items-center justify-center bg-[#111827] h-full w-48'>
-                                <Link href='/' className='text-white font-medium'>
+                                <Link href={ `${ pathname }#qoute` } className='text-white font-medium'>
                                     Get a qoute
                                 </Link>         
                             </div>
@@ -462,7 +462,7 @@ export default function MainNavbar ( props: Props ) {
                                                 </div>
                                             </div>
                                             <Link
-                                                href='/'
+                                                href={ `${ pathname }#qoute` }
                                                 className='col-span-3 flex items-center justify-center bg-[#111827] text-white font-medium h-16 sm:h-20 w-full rounded-xl transition ease-in-out duration-300 hover:bg-[#111716]'
                                             >
                                                 Get a qoute

@@ -19,7 +19,7 @@ export default function ServicesDetails ( props: Props ) {
                 
                 <div className='grid grid-cols-2 gap-10'>
 
-                    <Slider
+                    {/* <Slider
                         dots={ false }
                         infinite={ true }
                         autoplay={ true }
@@ -70,7 +70,7 @@ export default function ServicesDetails ( props: Props ) {
                                 width={ 1920 }
                             />
                         </div>
-                    </Slider>
+                    </Slider> */}
 
                     <div className='flex items-center'>
                         <div className='block w-full'>
@@ -101,7 +101,7 @@ export default function ServicesDetails ( props: Props ) {
                         </div>
                     </div>
 
-                    <Slider
+                    {/* <Slider
                         dots={ false }
                         infinite={ true }
                         autoplay={ true }
@@ -152,12 +152,9 @@ export default function ServicesDetails ( props: Props ) {
                                 width={ 1920 }
                             />
                         </div>
-                    </Slider>
+                    </Slider> */}
 
                 </div>
-
-                <br />
-                <div className='text-center text-black text-xs font-thin italic'>add more documented content here related to this topic. some from of examples etc</div>
 
             </div>
         </div>

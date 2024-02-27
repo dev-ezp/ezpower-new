@@ -8,16 +8,16 @@ type Props = {
 const switchImage = ( route?: string ): string => {
     switch ( route ) {
         default:
-        return 'bg-[url("/assets/8.jpg")]'
+        return 'bg-[url("/assets/content/energy-solutions/eb-00.png")]'
         
         case 'commercial-and-industrial':
-        return 'bg-[url("/assets/1.png")]'
+        return 'bg-[url("/assets/content/energy-solutions/eb-01.png")]'
 
         case 'home-solutions':
-        return 'bg-[url("/assets/2.png")]'
+        return 'bg-[url("/assets/content/energy-solutions/eb-02.png")]'
 
         case 'community-development':
-        return 'bg-[url("/assets/3.png")]'
+        return 'bg-[url("/assets/content/energy-solutions/eb-03.png")]'
     }
 }
 
@@ -26,7 +26,7 @@ export default function EnergySolutionsBanner ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[500px] pb-12` }>
+        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[720px] pb-12` }>
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 

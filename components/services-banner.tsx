@@ -8,31 +8,31 @@ type Props = {
 const switchImage = ( route?: string ): string => {
     switch ( route ) {
         default:
-        return 'bg-[url("/assets/7.jpg")]'
+        return 'bg-[url("/assets/content/services/sb-00.png")]'
         
         case 'planning-and-design':
-        return 'bg-[url("/assets/1.png")]'
+        return 'bg-[url("/assets/content/services/sb-01.png")]'
 
         case 'site-survey':
-        return 'bg-[url("/assets/2.png")]'
+        return 'bg-[url("/assets/content/services/sb-02.png")]'
 
         case 'testing':
-        return 'bg-[url("/assets/3.png")]'
+        return 'bg-[url("/assets/content/services/sb-03.png")]'
 
         case 'thermal-sensing':
-        return 'bg-[url("/assets/4.png")]'
+        return 'bg-[url("/assets/content/services/sb-04.png")]'
 
         case 'workforce':
-        return 'bg-[url("/assets/5.png")]'
+        return 'bg-[url("/assets/content/services/sb-05.png")]'
 
         case 'system-quotation':
-        return 'bg-[url("/assets/1.png")]'
+        return 'bg-[url("/assets/content/services/sb-06.png")]'
 
         case 'consultancy':
-        return 'bg-[url("/assets/2.png")]'
+        return 'bg-[url("/assets/content/services/sb-07.png")]'
 
         case 'customer-support':
-        return 'bg-[url("/assets/3.png")]'
+        return 'bg-[url("/assets/content/services/sb-08.png")]'
     }
 }
 
@@ -41,7 +41,7 @@ export default function ServicesBanner ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[500px] pb-12` }>
+        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[720px] pb-12` }>
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 

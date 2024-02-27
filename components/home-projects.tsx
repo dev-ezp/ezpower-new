@@ -9,12 +9,28 @@ type Props = {}
 
 export default function HomeProjects ( props: Props ) {
 
-    const source: { one: string , two: string , three: string , four: string } = {
-        one: '/assets/content/home/hp-01.png',
-        two: '/assets/content/home/hp-01.png',
-        three: '/assets/content/home/hp-01.png',
-        four: '/assets/content/home/hp-01.png'
-    }
+    const source: Array<{ img: string , project_title: string , location: string }> = [
+        {
+            img: '/assets/content/projects/pb-01.png',
+            project_title: 'Project Title',
+            location: 'location',
+        },
+        {
+            img: '/assets/content/projects/pb-02.png',
+            project_title: 'Project Title',
+            location: 'location',
+        },
+        {
+            img: '/assets/content/projects/pb-03.png',
+            project_title: 'Project Title',
+            location: 'location',
+        },
+        {
+            img: '/assets/content/projects/pb-04.png',
+            project_title: 'Project Title',
+            location: 'location',
+        }
+    ]
 
     return (
         <section id='projects' className='bg-[#111827]'>
@@ -33,7 +49,7 @@ export default function HomeProjects ( props: Props ) {
 
                     <div className='flex items-center justify-start xl:justify-center w-full lg:w-1/3'>
                         <Link
-                            href='/'
+                            href='/projects'
                             className='flex items-center justify-center bg-white border-white text-[#111827] border-2 font-medium uppercase cursor-pointer rounded-sm py-4 px-8 h-max w-full sm:w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 hover:text-white'
                         >
                             see all projects
@@ -88,138 +104,43 @@ export default function HomeProjects ( props: Props ) {
                             }
                         ] }
                     >
-                        <div className='px-5'>
-                            <div className='relative bg-white rounded-sm w-full h-max overflow-hidden'>
-                                <Link href={ source.one } className='cursor-pointer'>
-                                    <Image
-                                        className='rounded-t-sm'
-                                        src={ source.one }
-                                        alt='img'
-                                        height={ 960 }
-                                        width={ 520 }
-                                        priority={ true }
-                                    />
-                                </Link>
-                                <div className='flex items-center justify-between p-4'>
-                                    <div className='grid gap-1 w-full'>
-                                        <h5 className='text-[#111827] text-base font-medium w-11/12 truncate'>Project 1</h5>
-                                        <p className='text-gray-600 text-xs font-medium w-11/12 truncate'>location</p>
-                                    </div>
-                                    <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-full p-1 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                                        <svg
-                                            xmlns='http://www.w3.org/2000/svg'
-                                            width='1em'
-                                            height='1em'
-                                            viewBox='0 0 24 24'
-                                        >
-                                            <path
-                                                fill='currentColor'
-                                                d='M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z'
+                        {
+                            source.map( ( arr: { img: string , project_title: string , location: string } , ind: number ) => (
+                                <div key={ ind } className='px-5'>
+                                    <div className='relative bg-white rounded-sm w-full h-max overflow-hidden'>
+                                        <Link href={ arr.img } className='cursor-pointer'>
+                                            <Image
+                                                className='rounded-t-sm'
+                                                src={ arr.img }
+                                                alt='img'
+                                                height={ 960 }
+                                                width={ 520 }
+                                                priority={ true }
                                             />
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='px-5'>
-                            <div className='relative bg-white rounded-sm w-full h-max overflow-hidden'>
-                                <Link href={ source.two } className='cursor-pointer'>
-                                    <Image
-                                        className='rounded-t-sm'
-                                        src={ source.two }
-                                        alt='img'
-                                        height={ 960 }
-                                        width={ 520 }
-                                        priority={ true }
-                                    />
-                                </Link>
-                                <div className='flex items-center justify-between p-4'>
-                                    <div className='grid gap-1 w-full'>
-                                        <h5 className='text-[#111827] text-base font-medium w-11/12 truncate'>Project 2</h5>
-                                        <p className='text-gray-600 text-xs font-medium w-11/12 truncate'>location</p>
+                                        </Link>
+                                        <div className='flex items-center justify-between p-4'>
+                                            <div className='grid gap-1 w-full'>
+                                                <h5 className='text-[#111827] text-base font-medium w-11/12 truncate'>{ arr.project_title }</h5>
+                                                <p className='text-gray-600 text-xs font-medium w-11/12 truncate'>{ arr.location }</p>
+                                            </div>
+                                            <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-full p-1 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
+                                                <svg
+                                                    xmlns='http://www.w3.org/2000/svg'
+                                                    width='1em'
+                                                    height='1em'
+                                                    viewBox='0 0 24 24'
+                                                >
+                                                    <path
+                                                        fill='currentColor'
+                                                        d='M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z'
+                                                    />
+                                                </svg>
+                                            </Link>
+                                        </div>
                                     </div>
-                                    <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-full p-1 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                                        <svg
-                                            xmlns='http://www.w3.org/2000/svg'
-                                            width='1em'
-                                            height='1em'
-                                            viewBox='0 0 24 24'
-                                        >
-                                            <path
-                                                fill='currentColor'
-                                                d='M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z'
-                                            />
-                                        </svg>
-                                    </Link>
                                 </div>
-                            </div>
-                        </div>
-                        <div className='px-5'>
-                            <div className='relative bg-white rounded-sm w-full h-max overflow-hidden'>
-                                <Link href={ source.three } className='cursor-pointer'>
-                                    <Image
-                                        className='rounded-t-sm'
-                                        src={ source.three }
-                                        alt='img'
-                                        height={ 960 }
-                                        width={ 520 }
-                                        priority={ true }
-                                    />
-                                </Link>
-                                <div className='flex items-center justify-between p-4'>
-                                    <div className='grid gap-1 w-full'>
-                                        <h5 className='text-[#111827] text-base font-medium w-11/12 truncate'>Project 3</h5>
-                                        <p className='text-gray-600 text-xs font-medium w-11/12 truncate'>location</p>
-                                    </div>
-                                    <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-full p-1 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                                        <svg
-                                            xmlns='http://www.w3.org/2000/svg'
-                                            width='1em'
-                                            height='1em'
-                                            viewBox='0 0 24 24'
-                                        >
-                                            <path
-                                                fill='currentColor'
-                                                d='M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z'
-                                            />
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='px-5'>
-                            <div className='relative bg-white rounded-sm w-full h-max overflow-hidden'>
-                                <Link href={ source.four } className='cursor-pointer'>
-                                    <Image
-                                        className='rounded-t-sm'
-                                        src={ source.four }
-                                        alt='img'
-                                        height={ 960 }
-                                        width={ 520 }
-                                        priority={ true }
-                                    />
-                                </Link>
-                                <div className='flex items-center justify-between p-4'>
-                                    <div className='grid gap-1 w-full'>
-                                        <h5 className='text-[#111827] text-base font-medium w-11/12 truncate'>Project 4</h5>
-                                        <p className='text-gray-600 text-xs font-medium w-11/12 truncate'>location</p>
-                                    </div>
-                                    <Link href='/' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-full p-1 w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
-                                        <svg
-                                            xmlns='http://www.w3.org/2000/svg'
-                                            width='1em'
-                                            height='1em'
-                                            viewBox='0 0 24 24'
-                                        >
-                                            <path
-                                                fill='currentColor'
-                                                d='M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z'
-                                            />
-                                        </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
+                            ) )
+                        }
                     </Slider>
                 </div>
 

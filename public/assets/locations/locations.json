@@ -1,0 +1,386 @@
+[
+    {
+        "lat": 15.160997,
+        "lng": 120.615422,
+        "source": "isolarcloud",
+        "name": "ONG_ACE1"
+    },
+    {
+        "lat": 15.160735,
+        "lng": 120.615422,
+        "source": "isolarcloud",
+        "name": "ONG_ACE2"
+    },
+    {
+        "lat": 14.62397128,
+        "lng": 121.0438187,
+        "source": "isolarcloud",
+        "name": "ONG_UPAI"
+    },
+    {
+        "lat": 15.806785,
+        "lng": 120.280086,
+        "source": "fusion solar",
+        "name": "ONG_SMB-MANGATAREM"
+    },
+    {
+        "lat": 15.170006,
+        "lng": 121.049769,
+        "source": "fusion solar",
+        "name": "ONG_SMB-SIBUL"
+    },
+    {
+        "lat": 15.17472,
+        "lng": 121.026328,
+        "source": "fusion solar",
+        "name": "ONG_SMB-CALUMPANG"
+    },
+    {
+        "lat": 15.035636,
+        "lng": 120.504414,
+        "source": "sunways",
+        "name": "ONG-ZAKHAROFF"
+    },
+    {
+        "lat": 15.133391,
+        "lng": 120.960106,
+        "source": "sunways",
+        "name": "ONG-SMBWATER-GREY"
+    },
+    {
+        "lat": 15.48302807,
+        "lng": 120.5896854,
+        "source": "sunways",
+        "name": "ONG-DEPED-TARLAC1"
+    },
+    {
+        "lat": 15.06521117,
+        "lng": 120.6560874,
+        "source": "sunways",
+        "name": "ONG-PRC-PAMPANGA"
+    },
+    {
+        "lat": 15.05995164,
+        "lng": 120.6447264,
+        "source": "sunny portal",
+        "name": "ONG_PCCDR-PH2"
+    },
+    {
+        "lat": 15.05995164,
+        "lng": 120.6447264,
+        "source": "sunny portal",
+        "name": "ONG_PCCDR-PH1"
+    },
+    {
+        "lat": 14.64364584,
+        "lng": 121.0492901,
+        "source": "sunny portal",
+        "name": "ONG_PCCQC"
+    },
+    {
+        "lat": 13.45843935,
+        "lng": 121.831815,
+        "source": "lux power",
+        "name": "HYB_PORAS"
+    },
+    {
+        "lat": 13.27537634,
+        "lng": 121.8903273,
+        "source": "lux power",
+        "name": "HYB_SWINOY"
+    },
+    {
+        "lat": 13.40018609,
+        "lng": 121.8263118,
+        "source": "solarman",
+        "name": "HYB-AMOINGON"
+    },
+    {
+        "lat": 13.44680692,
+        "lng": 121.8389083,
+        "source": "solarman",
+        "name": "HYB_AMIEL"
+    },
+    {
+        "lat": 15.13009523,
+        "lng": 120.593081,
+        "source": "solarman",
+        "name": "HYB_ANSON"
+    },
+    {
+        "lat": 14.44708751,
+        "lng": 121.0018393,
+        "source": "solarman",
+        "name": "HYB_BARNFATHER1"
+    },
+    {
+        "lat": 14.44708751,
+        "lng": 121.0018393,
+        "source": "solarman",
+        "name": "HYB_BARNFATHER2"
+    },
+    {
+        "lat": 14.47950559,
+        "lng": 121.0089699,
+        "source": "solarman",
+        "name": "HYB_BERNS"
+    },
+    {
+        "lat": 13.2869458,
+        "lng": 121.8766417,
+        "source": "solarman",
+        "name": "HYB_BUBBA"
+    },
+    {
+        "lat": 14.591934,
+        "lng": 121.0742504,
+        "source": "solarman",
+        "name": "HYB_CHUA-VV6"
+    },
+    {
+        "lat": 13.85473677,
+        "lng": 121.3081139,
+        "source": "solarman",
+        "name": "HYB_DSL"
+    },
+    {
+        "lat": 14.81074241,
+        "lng": 120.9681921,
+        "source": "solarman",
+        "name": "HYB_HQ1"
+    },
+    {
+        "lat": 13.44316455,
+        "lng": 121.8372087,
+        "source": "solarman",
+        "name": "HYB_ISOC"
+    },
+    {
+        "lat": 14.4872146,
+        "lng": 121.0218524,
+        "source": "solarman",
+        "name": "HYB_JYAP"
+    },
+    {
+        "lat": 14.62093059,
+        "lng": 121.0385944,
+        "source": "solarman",
+        "name": "HYB_NEWMLA"
+    },
+    {
+        "lat": 14.69857904,
+        "lng": 120.9964417,
+        "source": "solarman",
+        "name": "HYB_PEARL"
+    },
+    {
+        "lat": 14.36042544,
+        "lng": 121.0272941,
+        "source": "solarman",
+        "name": "HYB_SONY"
+    },
+    {
+        "lat": 15.46969524,
+        "lng": 120.535225,
+        "source": "solarman",
+        "name": "HYB_TABAMO"
+    },
+    {
+        "lat": 14.64032021,
+        "lng": 121.0291667,
+        "source": "solarman",
+        "name": "HYB_TIMES"
+    },
+    {
+        "lat": 14.4873452,
+        "lng": 121.021725,
+        "source": "solarman",
+        "name": "HYB_TUNISIA1"
+    },
+    {
+        "lat": 14.4873452,
+        "lng": 121.021725,
+        "source": "solarman",
+        "name": "HYB_TUNISIA2"
+    },
+    {
+        "lat": 13.37068329,
+        "lng": 121.8272556,
+        "source": "solarman",
+        "name": "HYB_WILHELM"
+    },
+    {
+        "lat": 15.17956109,
+        "lng": 120.5928583,
+        "source": "solarman",
+        "name": "ONG_DAU-AGRI"
+    },
+    {
+        "lat": 14.84061534,
+        "lng": 121.0444944,
+        "source": "solarman",
+        "name": "ONG_HERMIE"
+    },
+    {
+        "lat": 15.08651183,
+        "lng": 120.7034976,
+        "source": "solarman",
+        "name": "ONG_JOEL"
+    },
+    {
+        "lat": 14.542084,
+        "lng": 121.0802171,
+        "source": "solarman",
+        "name": "ONG_LIGID-TIPAS"
+    },
+    {
+        "lat": 14.58030849,
+        "lng": 121.0441728,
+        "source": "solarman",
+        "name": "ONG_MAUWAY"
+    },
+    {
+        "lat": 15.08078133,
+        "lng": 120.642575,
+        "source": "solarman",
+        "name": "ONG_NASAH"
+    },
+    {
+        "lat": 14.69139231,
+        "lng": 120.9475772,
+        "source": "solarman",
+        "name": "ONG_NAVARETTE"
+    },
+    {
+        "lat": 14.61771532,
+        "lng": 121.0184444,
+        "source": "solarman",
+        "name": "ONG_NURICH-COM"
+    },
+    {
+        "lat": 14.61771532,
+        "lng": 121.0184444,
+        "source": "solarman",
+        "name": "ONG_NURICH-RES"
+    },
+    {
+        "lat": 14.487226,
+        "lng": 121.021844,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 13.4468288672634,
+        "lng": 121.83890854199885,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.479507,
+        "lng": 121.008982,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.487338415895117,
+        "lng": 121.02164463557175,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.487356269737784,
+        "lng": 121.02172543520656,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.810754147848712,
+        "lng": 120.96820515646175,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.447109293928818,
+        "lng": 121.0018513226729,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.447151352834055,
+        "lng": 121.00183783018116,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 13.370685,
+        "lng": 121.827257,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.62093231268227,
+        "lng": 121.03859656490384,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 13.854748333333335,
+        "lng": 121.30811666666665,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.360428333333335,
+        "lng": 121.027295,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.640333333333333,
+        "lng": 121.02916666666667,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 15.130106260882172,
+        "lng": 120.59309350306975,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 13.400188435229708,
+        "lng": 121.82633485655134,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 15.469705876397882,
+        "lng": 120.53522687809846,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 13.443176561964151,
+        "lng": 121.83722191513272,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 15.160735,
+        "lng": 120.615422,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 15.160997,
+        "lng": 120.615422,
+        "source": "DOST",
+        "name": ""
+    },
+    {
+        "lat": 14.62397128452985,
+        "lng": 121.04381874135939,
+        "source": "DOST",
+        "name": ""
+    }
+]
