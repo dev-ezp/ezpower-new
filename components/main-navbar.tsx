@@ -39,6 +39,12 @@ export default function MainNavbar ( props: Props ) {
 
     const [ desc , setDesc ] = useState <string> ( 'email' )
 
+    if ( pathname === '/connect' ) {
+
+        return ( <></> )
+
+    }
+
     return (
         <>
             <nav id='top' className='bg-white border-gray-100 border-b w-full h-10'>
