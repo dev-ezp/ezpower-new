@@ -47,9 +47,10 @@ export default function CarbonPlatformContent ( props: Props ) {
                         <div className='flex flex-col'>
                             <h5 className='text-sky-700 text-sm font-semibold uppercase pb-2'>what is carbon credit?</h5>
                             <h1 className='text-[#111827] text-4xl font-bold pb-10'>Processing resources can generate carbon footprint</h1>
-                            <p className='text-[#111827] font-medium'>Carbon credit refers to the amount of carbon represents by one ton of carbon dioxide that has been removed from the atmosphere. Every time an organization uses a resource that relies on burning fossil fuels, this process will create carbon emmissions also known as a carbon footprint and when these harmful substance enters the atmosphere it can significatly accelerate climate change. If an organization had 1,000 ton of carbon they needed to offset, they would purchase 1,000 carbon credits.</p>
+                            <p className='text-[#111827] font-medium'>
+                                Carbon credit refers to the amount of carbon equal to one ton of carbon dioxide that has been removed from the atmosphere with the use of clean energy. Every time an organization uses a resource that relies on burning fossil fuels, this process will create carbon emmissions also known as a carbon footprint and when this harmful substance enters the atmosphere it can significatly accelerate climate change. If an organization had 1,000 tons of carbon they needed to offset, they would purchase 1,000 carbon credits.</p>
                             <div className='my-3'></div>
-                            <p className='text-[#111827] font-medium'>Purchasing carbon credits can be done by financing projects that reduce or absorb carbon emmissions, these will improve not just the life in the community but also the sustainability of energy resource itself.</p>
+                            <p className='text-[#111827] font-medium'>Purchasing carbon credits can be done by financing projects that reduce or absorb carbon emmissions, this will improve not just the life in the community but also the sustainability of energy resource itself.</p>
                         </div>
                     </div>
                     <div className='flex items-center'>

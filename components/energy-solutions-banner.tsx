@@ -43,7 +43,7 @@ export default function EnergySolutionsBanner ( props: Props ) {
                     {
                         params.route === undefined || params.route === null
                             ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;Clean, safe and innovative&quot;
+                                    &quot;Conforming to your energy needs, preferences and expectations&quot;
                                 </h5>
                             :   <></>
                     }
