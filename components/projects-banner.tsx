@@ -58,7 +58,7 @@ export default function ProjectsBanner ( props: Props ) {
                     {
                         params.route === undefined || params.route === null
                             ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;We are building the community&quot;
+                                    &quot;Lasting benefits when you generate electricity for your own energy needs&quot;
                                 </h5>
                             :   <></>
                     }
