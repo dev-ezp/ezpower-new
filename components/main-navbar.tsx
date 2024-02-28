@@ -230,7 +230,7 @@ export default function MainNavbar ( props: Props ) {
                                             <AccordionItem value='item-5' className='border-none'>
                                                 <AccordionTrigger>
                                                     <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        Carbon Platform
+                                                        Carbon Credits
                                                     </Link>
                                                 </AccordionTrigger>
                                                 <AccordionContent>
@@ -309,7 +309,7 @@ export default function MainNavbar ( props: Props ) {
                                 <li>
                                     <Button asChild variant='ghost'>
                                         <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
-                                            Carbon Platform
+                                            Carbon Credits
                                         </Link>
                                     </Button>
                                 </li>
