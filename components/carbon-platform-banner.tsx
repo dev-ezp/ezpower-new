@@ -11,7 +11,7 @@ export default function CarbonPlatformBanner ( props: Props ) {
 
                 <div className='mx-96 py-20 flex flex-col space-y-5'>
                     <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>carbon <span className='font-bold'>platform</span></h1>   
-                    <h5 className='text-white font-semibold italic'>&quot;Were creating sustainable livelyhood as we generate clean energy&quot;</h5>
+                    <h5 className='text-white font-semibold italic'>&quot;We&apos;re creating sustainable livelihood as we generate clean energy&quot;</h5>
                     <div className='bg-white h-5 w-5'></div>
                 </div>
 

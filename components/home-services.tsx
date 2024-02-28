@@ -51,7 +51,7 @@ export default function HomeServices ( props: Props ) {
 
                 <div className='grid gap-2'>
                     <h5 className='text-white text-sm uppercase'>our services.</h5>
-                    <h1 className='text-white text-4xl font-bold'>We provide quality and professional service</h1>
+                    <h1 className='text-white text-4xl font-bold'>Cost Effective and Responsive</h1>
                 </div>
 
                 <div className='my-10'></div>
@@ -109,7 +109,7 @@ export default function HomeServices ( props: Props ) {
                                     </div>
                                 </div>
                                 <div className='grid gap-3 p-5'>
-                                    <p className='text-gray-600 flex items-center text-sm h-20 overflow-y-auto'>{ arr.content }</p>
+                                    {/* <p className='text-gray-600 flex items-center text-sm h-20 overflow-y-auto'>{ arr.content }</p> */}
                                     <div className='bg-gray-200 rounded-full w-full h-0.5'></div>
                                     <div className='flex justify-center'>                                         
                                         <Link href={ `/services/${ arr.service_name.replace( /\s/g , '-' ) }` } className='flex items-center text-[#111827] text-sm font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-gray-200 hover:border-gray-200 group'>

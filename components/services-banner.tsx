@@ -68,7 +68,7 @@ export default function ServicesBanner ( props: Props ) {
                     {
                         params.route === undefined || params.route === null
                             ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;We provide quality and professional services&quot;
+                                    &quot;Cost Effective and Responsive&quot;
                                 </h5>
                             :   <></>
                     }

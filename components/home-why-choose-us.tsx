@@ -25,7 +25,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
 
                     <div className='col-span-1 md:col-span-2 bg-white rounded-sm w-full h-60'>
                         <div className='flex flex-col justify-center h-full space-y-2'>
-                            <h5 className='text-sky-700 text-sm uppercase'>we are experts in this field.</h5>
+                            <h5 className='text-sky-700 text-sm uppercase'>we differentiate ourselves from the rest</h5>
                             <h1 className='text-[#111827] text-4xl font-bold'>Our competitive advantage</h1>
                             <br />
                             <Link href='/energy-solutions' className='flex items-center justify-center sm:justify-start bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm px-5 py-4 w-full sm:w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
@@ -176,7 +176,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                             </svg>
                             <h5 className='text-[#111827] font-medium group-hover:text-white'>Added Value Creation</h5>         
                             <p className='text-gray-600 text-sm font-medium overflow-y-auto h-28 group-hover:text-white'>
-                                AMP &lpar;Affiliate Marketing Program&rpar; is our initiative to let our previous clients expedite their returns through credits from referrals. ACCP (Aggregated Carbon Credits Program) is a system that we are developing that converts the environmental contributions of their systems into tradable digital assets through Blockchain. It will be available on 2024.
+                                AMP &#40;Affiliate Marketing Program&#41; is our initiative to let our previous clients expedite their returns through credits from referrals. ACCP (Aggregated Carbon Credits Program) is a system that we are developing that converts the environmental contributions of their systems into tradable digital assets through Blockchain. It will be available on 2024.
                             </p>
                         </div>
                     </div>

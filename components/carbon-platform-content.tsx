@@ -13,7 +13,7 @@ export default function CarbonPlatformContent ( props: Props ) {
 
                 <div className='flex justify-center'>
                     <div className='grid gap-2 w-[720px]'>
-                        <h5 className='text-sky-700 text-sm font-semibold uppercase text-center'>clean energy and livelyhood</h5>
+                        <h5 className='text-sky-700 text-sm font-semibold uppercase text-center'>clean energy and livelihood</h5>
                         <h1 className='text-[#111827] text-4xl font-bold text-center'>Reducing carbon footprint through projects that generates carbon credits</h1>
                     </div>
                 </div>

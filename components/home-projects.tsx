@@ -43,7 +43,7 @@ export default function HomeProjects ( props: Props ) {
                 <div className='flex flex-col xl:flex-row justify-center'>                    
                     <div className='grid gap-2 w-full xl:w-2/3'>
                         <h5 className='text-white text-sm uppercase'>our projects.</h5>
-                        <h1 className='text-white text-4xl font-bold'>We provide energy solutions across luzon and other parts of the philippines</h1>
+                        <h1 className='text-white text-4xl font-bold'>Providing lasting benefits to households, businesses, communities, government and non-government organizations.</h1>
                         <p className='text-white py-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
                     </div>
 
