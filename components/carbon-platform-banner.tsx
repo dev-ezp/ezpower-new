@@ -9,10 +9,17 @@ export default function CarbonPlatformBanner ( props: Props ) {
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
-                <div className='mx-96 py-20 flex flex-col space-y-5'>
-                    <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>carbon credits <span className='font-bold'>platform</span></h1>   
-                    <h5 className='text-white font-semibold italic'>&quot;Creating cycle of sustainability as we generate clean energy&quot;</h5>
-                    <div className='bg-white h-5 w-5'></div>
+                <div className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }>
+
+                    <div className='flex flex-col space-y-5'>
+                        <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>carbon credits <span className='font-bold'>platform</span></h1>   
+                        <h5 className='text-white font-semibold italic'>&quot;Creating cycle of sustainability as we generate clean energy&quot;</h5>
+                        <div className='bg-white h-5 w-5'></div>
+                    </div>
+
                 </div>
 
             </div>

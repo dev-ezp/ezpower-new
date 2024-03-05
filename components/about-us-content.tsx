@@ -8,8 +8,11 @@ type Props = {}
 export default function AboutUsContent ( props: Props ) {
 
     return (
-        <div id='goals' className='bg-white'>
-            <div className='mx-96 py-20'>
+        <section id='goals' className='bg-white'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
 
                 <div className='flex start'>
                     <div className='grid gap-5 w-full'>
@@ -51,9 +54,11 @@ export default function AboutUsContent ( props: Props ) {
 
                 <br /> <br />
 
-                <blockquote className='bg-sky-600 text-white text-lg p-5 rounded-lg'>
-                    <q>through increased self-consumption and reduced dependence on grid electricity, we can provide solutions to energy and imminent energy crisis that are truly inclusive and sustainable.</q>
-                </blockquote>
+                <div className='bg-red-100 rounded-md p-10'>
+                    <blockquote className='border-red-400 border-l-4 text-lg p-5'>
+                        <q>through increased self-consumption and reduced dependence on grid electricity, we can provide solutions to energy and imminent energy crisis that are truly inclusive and sustainable.</q>
+                    </blockquote>
+                </div>
 
                 <br /> <br /> <br /> <br /> <br />
 
@@ -62,7 +67,7 @@ export default function AboutUsContent ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

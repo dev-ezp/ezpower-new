@@ -11,7 +11,7 @@ export default function HomeStats ( props: Props ) {
     useEffect( () => window.addEventListener( 'scroll' , () => setHeight( window.scrollY ) ) , [ height ] )
 
     return (
-        <div className='bg-[#111827]'>
+        <section className='bg-[#111827]'>
             <div className='mx-5 md:mx-40 lg:mx-60 py-5 sm:py-10'>
 
                 <div className='flex justify-center'>
@@ -97,7 +97,7 @@ export default function HomeStats ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

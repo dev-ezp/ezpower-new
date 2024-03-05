@@ -45,34 +45,41 @@ export default function ServicesBanner ( props: Props ) {
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
-                <div className='mx-96 py-20 flex flex-col space-y-5'>
-                    {
-                            params.route === 'planning-and-design'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>planning and <span className='font-bold'>design</span></h1>
-                        :   params.route === 'site-survey'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>site <span className='font-bold'>survey</span></h1>
-                        :   params.route === 'testing'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>testing</span></h1>
-                        :   params.route === 'analysis'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>analysis</span></h1>
-                        :   params.route === 'skilled-workforce'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>skilled <span className='font-bold'>workforce</span></h1>
-                        :   params.route === 'system-quotation'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>system <span className='font-bold'>quotation</span></h1>
-                        :   params.route === 'consultancy'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>consultancy</span></h1>
-                        :   params.route === 'customer-support'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>customer <span className='font-bold'>support</span></h1>
-                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>our <span className='font-bold'>services</span></h1>   
-                    }
-                    {
-                        params.route === undefined || params.route === null
-                            ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;Cost Effective and Responsive&quot;
-                                </h5>
-                            :   <></>
-                    }
-                    <div className='bg-white h-5 w-5'></div>
+                <div className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }>
+
+                    <div className='flex flex-col space-y-5'>
+                        {
+                                params.route === 'planning-and-design'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>planning and <span className='font-bold'>design</span></h1>
+                            :   params.route === 'site-survey'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>site <span className='font-bold'>survey</span></h1>
+                            :   params.route === 'testing'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>testing</span></h1>
+                            :   params.route === 'analysis'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>analysis</span></h1>
+                            :   params.route === 'skilled-workforce'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>skilled <span className='font-bold'>workforce</span></h1>
+                            :   params.route === 'system-quotation'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>system <span className='font-bold'>quotation</span></h1>
+                            :   params.route === 'consultancy'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'><span className='font-bold'>consultancy</span></h1>
+                            :   params.route === 'customer-support'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>customer <span className='font-bold'>support</span></h1>
+                            :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>our <span className='font-bold'>services</span></h1>   
+                        }
+                        {
+                            params.route === undefined || params.route === null
+                                ?   <h5 className='text-white font-semibold italic'>
+                                        &quot;Cost Effective and Responsive&quot;
+                                    </h5>
+                                :   <></>
+                        }
+                        <div className='bg-white h-5 w-5'></div>
+                    </div>
+                    
                 </div>
 
             </div>

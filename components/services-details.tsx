@@ -14,9 +14,12 @@ export default function ServicesDetails ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className='bg-white'>
-            <div className='mx-96 pt-10 pb-20'>
-                
+        <section className='bg-white'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
+
                 <div className='grid grid-cols-2 gap-10'>
 
                     {/* <Slider
@@ -157,7 +160,7 @@ export default function ServicesDetails ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

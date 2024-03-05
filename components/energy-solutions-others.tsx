@@ -10,8 +10,11 @@ type Props = {}
 export default function EnergySolutionsOthers ( props: Props ) {
 
     return (
-        <div className='bg-[#111827]'>
-            <div className='mx-96 py-20'>
+        <section className='bg-[#111827]'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
 
                 <div className='flex items-center justify-between space-x-20'>
                     <div className='flex flex-col space-y-2'>
@@ -29,7 +32,7 @@ export default function EnergySolutionsOthers ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

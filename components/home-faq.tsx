@@ -12,7 +12,7 @@ type Props = {}
 export default function HomeFAQ ( props: Props ) {
 
     return (
-        <div id='faq' className='bg-white'>
+        <section id='faq' className='bg-white'>
             <div
                 className={ `
                     w-auto mx-5 py-10
@@ -65,7 +65,7 @@ export default function HomeFAQ ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

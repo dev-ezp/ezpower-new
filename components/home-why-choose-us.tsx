@@ -7,7 +7,7 @@ type Props = {}
 export default function HomeWhyChooseUs ( props: Props ) {
 
     return (
-        <div id='why-choose-us' className='bg-white'>
+        <section id='why-choose-us' className='bg-white'>
             <div
                 className={ `
                     w-auto mx-5 py-10
@@ -204,7 +204,7 @@ export default function HomeWhyChooseUs ( props: Props ) {
                 </div>
             
             </div>
-        </div>
+        </section>
     )
 
 }

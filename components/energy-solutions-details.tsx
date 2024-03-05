@@ -14,9 +14,12 @@ export default function EnergySolutionsDetails ( props: Props ) {
     const { params , searchParams } = props
     
     return (
-        <div className='bg-white'>
-            <div className='mx-96 pt-10 pb-20'>
-
+        <section className='bg-white'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
+                    
                 <div className='block w-full'>
                     <div className='flex flex-col space-y-2'>
                         <h1 className='text-[#111827] text-4xl font-bold'>Overview</h1>
@@ -152,7 +155,7 @@ export default function EnergySolutionsDetails ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

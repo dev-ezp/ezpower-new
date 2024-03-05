@@ -51,8 +51,11 @@ export default function ServicesContent ( props: Props ) {
     ]
 
     return (
-        <div className='bg-white'>
-            <div className='mx-96 py-20'>
+        <section className='bg-white'>
+            <div className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+            ` }>
 
                 <div className='grid grid-cols-3 gap-10'>
 
@@ -120,7 +123,7 @@ export default function ServicesContent ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

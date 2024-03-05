@@ -41,8 +41,11 @@ export default function ProjectsContent ( props: Props ) {
     ]
 
     return (
-        <div className='bg-white'>
-            <div className='mx-96 py-20'>
+        <section className='bg-white'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
 
                 <div className='flex flex-col space-y-2 w-[720px]'>
                     <h5 className='text-sky-700 text-sm font-semibold uppercase'>subtitle here</h5>
@@ -107,7 +110,7 @@ export default function ProjectsContent ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

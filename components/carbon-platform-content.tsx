@@ -8,9 +8,12 @@ type Props = {}
 export default function CarbonPlatformContent ( props: Props ) {
 
     return (
-        <div className='bg-white'>
-            <div className='mx-96 py-20'>
-
+        <section className='bg-white'>
+            <div className={ `
+                w-auto mx-5 py-10
+                md:w-2/3 md:mx-auto md:py-20
+            ` }>
+                
                 <div className='flex justify-center'>
                     <div className='grid gap-2 w-[720px]'>
                         <h5 className='text-sky-700 text-sm font-semibold uppercase text-center'>Clean Energy + Sustainability</h5>
@@ -127,7 +130,7 @@ export default function CarbonPlatformContent ( props: Props ) {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 
 }

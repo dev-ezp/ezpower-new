@@ -30,24 +30,31 @@ export default function EnergySolutionsBanner ( props: Props ) {
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
-                <div className='mx-96 py-20 flex flex-col space-y-5'>
-                    {
-                            params.route === 'commercial-and-industrial'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>commercial and <span className='font-bold'>industrial</span></h1>
-                        :   params.route === 'home-solutions'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>home <span className='font-bold'>solutions</span></h1>
-                        :   params.route === 'community-development'
-                                ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>community <span className='font-bold'>development</span></h1>
-                        :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> to everyone</h1>   
-                    }
-                    {
-                        params.route === undefined || params.route === null
-                            ?   <h5 className='text-white font-semibold italic'>
-                                    &quot;Conforming to your energy needs, preferences and expectations&quot;
-                                </h5>
-                            :   <></>
-                    }
-                    <div className='bg-white h-5 w-5'></div>
+                <div className={ `
+                    w-auto mx-5 py-10
+                    md:w-2/3 md:mx-auto md:py-20
+                ` }>
+
+                    <div className='flex flex-col space-y-5'>
+                        {
+                                params.route === 'commercial-and-industrial'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>commercial and <span className='font-bold'>industrial</span></h1>
+                            :   params.route === 'home-solutions'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>home <span className='font-bold'>solutions</span></h1>
+                            :   params.route === 'community-development'
+                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>community <span className='font-bold'>development</span></h1>
+                            :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> to everyone</h1>   
+                        }
+                        {
+                            params.route === undefined || params.route === null
+                                ?   <h5 className='text-white font-semibold italic'>
+                                        &quot;Conforming to your energy needs, preferences and expectations&quot;
+                                    </h5>
+                                :   <></>
+                        }
+                        <div className='bg-white h-5 w-5'></div>
+                    </div>
+
                 </div>
 
             </div>
