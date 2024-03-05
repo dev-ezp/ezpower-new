@@ -11,7 +11,7 @@ export default function ConnectRedirect ( props: Props ) {
 
     useEffect ( () => {
         router.push( '/assets/vcard/contact-info.vcf' )
-        setTimeout( () => router.push( '/' ) , 1000 )
+        setTimeout( () => router.push( '/' ) , 3000 )
     } , [ router ] )
 
     return ( <></> )
