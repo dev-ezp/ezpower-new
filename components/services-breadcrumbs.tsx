@@ -18,8 +18,8 @@ export default function ServicesBreadcrumbs ( props: Props ) {
                 md:w-2/3 md:mx-auto
             ` }>
 
-                <div className='flex items-center h-full'>
-                    <Link href='/' className='flex items-center justify-center bg-white border-gray-200 text-[#111827] text-sm font-medium uppercase rounded-l h-10 px-2 border-y-2 border-l-2 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
+                <div className='flex justify-center md:justify-start items-center h-full'>
+                    <Link href='/' className='flex items-center justify-center bg-white border-gray-200 text-[#111827] text-xs md:text-sm font-medium uppercase rounded-l h-10 px-2 border-y-2 border-l-2 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
                         <svg
                             className='h-6 w-6'
                             xmlns='http://www.w3.org/2000/svg'
@@ -29,7 +29,7 @@ export default function ServicesBreadcrumbs ( props: Props ) {
                             <path fill='currentColor' d='M4 21V9l8-6l8 6v12h-6v-7h-4v7H4Z' />
                         </svg>
                     </Link>
-                    <Link href='/services' className='flex items-center justify-center bg-white border-gray-200 text-[#111827] text-sm font-medium uppercase h-10 px-4 border-y-2 border-l-2 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
+                    <Link href='/services' className='flex items-center justify-center bg-white border-gray-200 text-[#111827] text-xs md:text-sm font-medium uppercase h-10 px-4 border-y-2 border-l-2 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
                         <svg
                             className='h-6 w-6 mr-1'
                             xmlns='http://www.w3.org/2000/svg'
@@ -40,7 +40,7 @@ export default function ServicesBreadcrumbs ( props: Props ) {
                         </svg>
                         services
                     </Link>
-                    <div className='flex items-center justify-center bg-white border-gray-200 text-gray-400 text-sm font-medium uppercase h-10 px-4 rounded-r border-2'>
+                    <div className='flex items-center justify-center bg-white border-gray-200 text-gray-400 text-xs md:text-sm font-medium uppercase h-10 px-4 rounded-r border-2'>
                         { params.route }
                     </div>
                 </div>

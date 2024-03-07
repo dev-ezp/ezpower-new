@@ -20,7 +20,7 @@ export default function ServicesDetails ( props: Props ) {
                 md:w-2/3 md:mx-auto md:py-20
             ` }>
 
-                <div className='grid grid-cols-2 gap-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
 
                     {/* <Slider
                         dots={ false }

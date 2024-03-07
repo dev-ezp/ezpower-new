@@ -77,8 +77,8 @@ export default function ProjectsDeployedDevices ( props: Props ) {
                             <ArrowRight className='h-5 md:h-7 w-5 md:w-7' />
                         </button>
                         <div className={ `absolute w-max flex flex-col items-start space-y-2 xl:hidden pt-3` }>
-                            <h5 className='text-white text-sm uppercase'>plants and devices across luzon.</h5>
-                            <h1 className='text-white text-4xl font-bold'>Our deployed systems.</h1>
+                            <h5 className='text-white text-xs md:text-sm uppercase'>plants and devices across luzon.</h5>
+                            <h1 className='text-white text-3xl md:text-4xl font-bold'>Our deployed systems.</h1>
                         </div>
                     </div>
                 </div>

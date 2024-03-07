@@ -16,7 +16,7 @@ export default function EnergySolutionsOthers ( props: Props ) {
                 md:w-2/3 md:mx-auto md:py-20
             ` }>
 
-                <div className='flex items-center justify-between space-x-20'>
+                <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-20'>
                     <div className='flex flex-col space-y-2'>
                         <h5 className='text-white text-sm font-semibold uppercase'>clean energy everywhere</h5>
                         <h1 className='text-white text-4xl font-bold'>We harness Clean Energy</h1>

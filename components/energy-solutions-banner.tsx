@@ -26,7 +26,7 @@ export default function EnergySolutionsBanner ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[720px] pb-12` }>
+        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[480px] lg:h-[720px] pb-12` }>
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
@@ -38,12 +38,12 @@ export default function EnergySolutionsBanner ( props: Props ) {
                     <div className='flex flex-col space-y-5'>
                         {
                                 params.route === 'commercial-and-industrial'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>commercial and <span className='font-bold'>industrial</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>commercial and <span className='font-bold'>industrial</span></h1>
                             :   params.route === 'home-solutions'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>home <span className='font-bold'>solutions</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>home <span className='font-bold'>solutions</span></h1>
                             :   params.route === 'community-development'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>community <span className='font-bold'>development</span></h1>
-                            :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>providing <span className='font-bold'>energy solutions</span> to everyone</h1>   
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>community <span className='font-bold'>development</span></h1>
+                            :   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>providing <span className='font-bold'>energy solutions</span> to everyone</h1>   
                         }
                         {
                             params.route === undefined || params.route === null

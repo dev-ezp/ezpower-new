@@ -35,7 +35,7 @@ export default function ProjectsBanner ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[720px] pb-12` }>
+        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[480px] lg:h-[720px] pb-12` }>
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
@@ -47,18 +47,18 @@ export default function ProjectsBanner ( props: Props ) {
                     <div className='flex flex-col space-y-5'>
                         {
                                 params.route === '0'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>1</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>1</span></h1>
                             :   params.route === '1'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>2</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>2</span></h1>
                             :   params.route === '2'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>3</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>3</span></h1>
                             :   params.route === '3'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>4</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>4</span></h1>
                             :   params.route === '4'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>5</span></h1>
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>5</span></h1>
                             :   params.route === '5'
-                                    ?   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>Project <span className='font-bold'>6</span></h1>
-                            :   <h1 className='text-white font-thin text-6xl w-[880px] uppercase'>our <span className='font-bold'>projects</span></h1>   
+                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>Project <span className='font-bold'>6</span></h1>
+                            :   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>our <span className='font-bold'>projects</span></h1>   
                         }
                         {
                             params.route === undefined || params.route === null

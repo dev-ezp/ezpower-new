@@ -16,7 +16,7 @@ export default function Chat ( props: Props ) {
                 pageId='254352434418146'
                 minimized={ false }
             />
-        </FacebookProvider>    
+        </FacebookProvider>
     )
 
 }

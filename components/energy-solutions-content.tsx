@@ -32,13 +32,13 @@ export default function EnergySolutionsContent ( props: Props ) {
                 md:w-2/3 md:mx-auto md:py-20
             ` }>
 
-                <div className='flex flex-col space-y-2 w-[720px]'>
+                <div className='flex flex-col space-y-2 w-full lg:w-[720px]'>
                     <h5 className='text-sky-700 text-sm font-semibold uppercase'>subtitle here</h5>
                     <h1 className='text-[#111827] text-4xl font-bold'>Title Here</h1>
                     <p className='text-[#111827] font-medium pt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio in quod nobis ab molestias molestiae modi expedita, placeat, cum fuga reprehenderit totam, quaerat aliquid aut ex repellendus aliquam! Eveniet, nihil.</p>
                 </div>
 
-                <div className='grid grid-cols-3 gap-10 py-20'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 py-20'>
                     {
                         source.map( ( arr: { img: string , solution: string , content: string } , ind: number ) => (
                             <div key={ ind } className='relative bg-white w-full h-[480px] shadow-black/20 shadow-2xl rounded-sm transition ease-in-out duration-300 group hover:bg-[#111827]'>
