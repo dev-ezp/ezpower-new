@@ -11,12 +11,13 @@ export default function Chat ( props: Props ) {
     useEffect( () => window.addEventListener( 'scroll' , () => setHeight( window.scrollY ) ) , [ height ] )
 
     return (
-        <FacebookProvider appId='1102743007119581' chatSupport>
-            <CustomChat
-                pageId='254352434418146'
-                minimized={ false }
-            />
-        </FacebookProvider>
+        <></>
+        // <FacebookProvider appId='1102743007119581' chatSupport>
+        //     <CustomChat
+        //         pageId='254352434418146'
+        //         minimized={ false }
+        //     />
+        // </FacebookProvider>
     )
 
 }

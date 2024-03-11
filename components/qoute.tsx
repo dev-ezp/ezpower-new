@@ -2,22 +2,84 @@
 
 import { useState } from 'react'
 
+import axios from 'axios'
 import clipboard from 'clipboardy'
+
+import Cipher from '@/classes/cipher'
+import GenerateSerial from '@/classes/generate-serial'
 
 import { ToastAction } from '@/components/ui/toast'
 import { useToast } from '@/components/ui/use-toast'
 import { Phone , Smartphone , MailIcon } from 'lucide-react'
 
 type Props = {}
+type Fields = {
+    name: string,
+    email: string,
+    phone: string,
+    address: string,
+    fieldA: string,
+    fieldB: string,
+    fieldC: string,
+    fieldD: string,
+    prefered: string,
+}
 
 export default function Qoute ( props: Props ) {
 
-    type Fields = { name: string , email: string , phone: string , address: string }
-    const [ fields , setFields ] = useState <Fields> ( { name: '' , email: '' , phone: '' , address: '' } )
-    
-    const [ disabled , setDisabled ] = useState <boolean> ( false )
-    
     const { toast } = useToast()
+    const [ disabled , setDisabled ] = useState <boolean> ( false )
+    const [ loading , setLoading ] = useState <boolean> ( false )
+    
+    const [ fields , setFields ] = useState <Fields> ( {
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        fieldA: '',
+        fieldB: '',
+        fieldC: '',
+        fieldD: '',
+        prefered: 'all',
+    } )
+
+    const submitRequest = async ( e: any ) => {
+
+        e.preventDefault()
+        setDisabled( true )
+        setLoading( true )
+
+        const generateSerial = new GenerateSerial()
+        const cipher = new Cipher()
+
+        const serial: string = String( cipher.hash( String( generateSerial.keyCode() ) ) ) 
+
+        await axios ( {
+            method: 'post',
+            url: `${ process.env.NEXT_PUBLIC_ACCESS_DOMAIN }/api/mail-us?serial=${ serial }`,
+            data: { ... fields },
+            headers: { 'X-Access-Authentication': serial }
+        } )
+        .then ( res => {
+
+            setTimeout ( () => {
+                console.log( res )
+                setDisabled( false )
+                setLoading( false )
+            } , 1000 )
+
+        } )
+        .catch ( err => {
+
+            setTimeout ( () => {
+                console.error( err.message )
+                setDisabled( false )
+                setLoading( false )
+            } , 1000 )
+
+        } )
+
+    }
 
     return (
         <div id='qoute' className='bg-gray-100'>
@@ -94,9 +156,7 @@ export default function Qoute ( props: Props ) {
                     </div>
 
                     <form
-                        onSubmit={ ( e: any ) => {
-                            e.preventDefault()
-                        } }
+                        onSubmit={ submitRequest }
                         className='flex flex-col space-y-3 bg-white shadow-black/10 shadow-lg drop-shadow-lg rounded p-5 sm:p-10'
                         typeof='submit'
                     >
@@ -119,7 +179,7 @@ export default function Qoute ( props: Props ) {
                             <input
                                 onChange={ ( e: any ) => setFields( { ... fields , phone: String( e.target.value ).trim() } ) }
                                 placeholder='Phone'
-                                type='text'
+                                type='number'
                                 disabled={ disabled }
                                 className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                             />
@@ -134,43 +194,31 @@ export default function Qoute ( props: Props ) {
                         <h1 className='text-sky-700 text-base font-medium capitalize'>System data</h1>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                             <input
-                                onChange={ ( e: any ) => {} }
-                                placeholder='System Installer?'
+                                onChange={ ( e: any ) => setFields( { ... fields , fieldA: String( e.target.value ).trim() } ) }
+                                // placeholder='System Installer?'
+                                placeholder='Field A'
                                 type='text'
                                 disabled={ disabled }
                                 className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                             />
                             <input
-                                onChange={ ( e: any ) => {} }
-                                placeholder='Monthly Electric Usage'
+                                onChange={ ( e: any ) => setFields( { ... fields , fieldB: String( e.target.value ).trim() } ) }
+                                // placeholder='Monthly Electric Usage'
+                                placeholder='Field B'
                                 type='text'
                                 disabled={ disabled }
                                 className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                             />
                             <input
-                                onChange={ ( e: any ) => {} }
-                                placeholder='?'
+                                onChange={ ( e: any ) => setFields( { ... fields , fieldC: String( e.target.value ).trim() } ) }
+                                placeholder='Field C'
                                 type='text'
                                 disabled={ disabled }
                                 className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
                             />
                             <input
-                                onChange={ ( e: any ) =>  {} }
-                                placeholder='?'
-                                type='text'
-                                disabled={ disabled }
-                                className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
-                            />
-                            <input
-                                onChange={ ( e: any ) => {} }
-                                placeholder='?'
-                                type='text'
-                                disabled={ disabled }
-                                className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
-                            />
-                            <input
-                                onChange={ ( e: any ) =>  {} }
-                                placeholder='?'
+                                onChange={ ( e: any ) => setFields( { ... fields , fieldD: String( e.target.value ).trim() } ) }
+                                placeholder='Field D'
                                 type='text'
                                 disabled={ disabled }
                                 className='bg-white border-gray-200 text-gray-950 text-sm border cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-sky-700 focus:border-sky-700'
@@ -180,7 +228,7 @@ export default function Qoute ( props: Props ) {
                         <div className='flex items-center space-x-3'>
                             <div className='flex items-center w-max'>
                                 <input
-                                    onChange={ ( e: any ) => {} }
+                                    onChange={ ( e: any ) => setFields( { ... fields , prefered: 'all' } ) }
                                     type='radio'
                                     id='all'
                                     name='prefered'
@@ -192,7 +240,7 @@ export default function Qoute ( props: Props ) {
                             </div>
                             <div className='flex items-center w-max'>
                                 <input
-                                    onChange={ ( e: any ) => {} }
+                                    onChange={ ( e: any ) => setFields( { ... fields , prefered: 'phone' } ) }
                                     type='radio'
                                     id='telephone'
                                     name='prefered'
@@ -204,7 +252,7 @@ export default function Qoute ( props: Props ) {
                             </div>
                             <div className='flex items-center w-max'>
                                 <input
-                                    onChange={ ( e: any ) => {} }
+                                    onChange={ ( e: any ) => setFields( { ... fields , prefered: 'email' } ) }
                                     type='radio'
                                     id='email'
                                     name='prefered'
