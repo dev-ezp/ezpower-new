@@ -29,7 +29,7 @@ input::-webkit-outer-spin-button , input::-webkit-inner-spin-button { -webkit-ap
 input[ type = number ] { -moz-appearance: textfield; }
 
 /* remove input autofill background */
-input:-webkit-autofill , input:-webkit-autofill:hover , input:-webkit-autofill:focus , input:-webkit-autofill:active{ box-shadow: 0 0 0 30px #e5e7eb inset !important; -webkit-box-shadow: 0 0 0 30px #e5e7eb inset !important; }
+input:-webkit-autofill , input:-webkit-autofill:hover , input:-webkit-autofill:focus , input:-webkit-autofill:active{ box-shadow: 0 0 0 30px white inset !important; -webkit-box-shadow: 0 0 0 30px white inset !important; }
 
 /* map box bottom display */
 div.mapboxgl-ctrl-bottom-right { display: none !important }

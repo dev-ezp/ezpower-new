@@ -341,11 +341,9 @@ export default function MainNavbar ( props: Props ) {
                                 </svg>
                             </Link>
 
-                            <div className='flex items-center justify-center bg-[#111827] h-full w-48'>
-                                <Link href={ `${ pathname }#qoute` } className='text-white font-medium'>
-                                    Get a qoute
-                                </Link>         
-                            </div>
+                            <Link href={ `${ pathname }#qoute` } className='flex items-center justify-center bg-[#111827] text-white font-medium h-full w-48 '>
+                                Get a qoute
+                            </Link>
                         </div>
                     </div>
                     

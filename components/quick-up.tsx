@@ -18,32 +18,32 @@ export default function QuickUp ( props: Props ) {
                 <div className='relative'>
                     <svg
                         className='h-7 w-7 group-hover:animate-ping'
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 24 24"
+                        width='1em'
+                        height='1em'
+                        viewBox='0 0 24 24'
                     >
                         <path
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="m6 15l6-6l6 6"
+                            fill='none'
+                            stroke='currentColor'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='m6 15l6-6l6 6'
                         />
                     </svg>
                     <svg
                         className='absolute top-0 h-7 w-7'
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 24 24"
+                        width='1em'
+                        height='1em'
+                        viewBox='0 0 24 24'
                     >
                         <path
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="m6 15l6-6l6 6"
+                            fill='none'
+                            stroke='currentColor'
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='m6 15l6-6l6 6'
                         />
                     </svg>
                 </div>

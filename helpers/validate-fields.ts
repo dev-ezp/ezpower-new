@@ -10,7 +10,7 @@ interface Obj {
     fieldC: string | undefined | null | void,
     fieldD: string | undefined | null | void
 }
-interface Ret { pass: boolean , msg: string , border: string }
+interface Ret { pass: boolean , msg: string , code: number }
 
 class ValidateFields {
 
@@ -44,28 +44,28 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* name field is empty.',
+                code: 2
             }
 
         } else {
 
-            const sanitized_name = validator.isAlpha( String( this.name ) , 'en-US' , { ignore: '.' } )
+            const sanitized_name = validator.isAlpha( String( this.name ) , 'en-US' , { ignore: ' .' } )
 
             if ( sanitized_name ) {
 
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'cannot contain special characters.',
-                border: 'border-red-600'
+                msg: '* your name cannot contain numbers and special characters.',
+                code: 0
             }
 
         }
@@ -78,8 +78,8 @@ class ValidateFields {
             
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* email is empty.',
+                code: 2
             }
         
         } else {
@@ -91,15 +91,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             } 
 
             return {
                 pass: false,
-                msg: 'invalid email.',
-                border: 'border-red-600'
+                msg: '* invalid email.',
+                code: 0
             }
 
         }
@@ -112,8 +112,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* phone no. is empty.',
+                code: 2
             }
 
         } else {
@@ -122,20 +122,20 @@ class ValidateFields {
             // list of philippine valid phone and phone networks.
             const check_network_code = /^0895|0896|0897|0898|0991|0992|0993|0994|0908|0918|0919|0920|0921|0928|0929|0939|0946|0947|0949|0951|0961|0998|0999|0907|0909|0910|0912|0930|0938|0946|0948|0950|0922|0923|0924|0925|0931|0932|0933|0934|0940|0941|0942|0943|0973|0974|0817|09173|09175|09176|09178|09253|09255|09256|09257|09258|0905|0906|0915|0916|0917|0926|0927|0935|0936|0937|0945|0953|0954|0955|0956|0965|0966|0967|0975|0976|0977|0978|0979|0995|0996|0997/gm.test( String( this.phone ) )
 
-            if ( sanitized_phone && check_network_code ) {
+            if ( sanitized_phone && check_network_code && this.phone.length === 11 ) {
 
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             } 
 
             return {
                 pass: false,
-                msg: 'invalid phone no.',
-                border: 'border-red-600'
+                msg: '* invalid phone no.',
+                code: 0
             }
 
         }
@@ -148,8 +148,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* address is empty.',
+                code: 2
             }
 
         } else {
@@ -161,15 +161,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'allowed special characters ,.-#',
-                border: 'border-red-600'
+                msg: '* your address cannot contain special characters except ,.-#',
+                code: 0
             }
 
         }
@@ -182,8 +182,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* field a empty.',
+                code: 2
             }
 
         } else {
@@ -195,15 +195,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'invalid',
-                border: 'border-red-600'
+                msg: '* field a cannot contain special characters except ,.-#',
+                code: 0
             }
 
         }
@@ -216,8 +216,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* field b empty.',
+                code: 2
             }
 
         } else {
@@ -229,15 +229,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'invalid',
-                border: 'border-red-600'
+                msg: '* field b cannot contain special characters except ,.-#',
+                code: 0
             }
 
         }
@@ -250,8 +250,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* field c empty.',
+                code: 2
             }
 
         } else {
@@ -263,15 +263,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'invalid',
-                border: 'border-red-600'
+                msg: '* field c cannot contain special characters except ,.-#',
+                code: 0
             }
 
         }
@@ -284,8 +284,8 @@ class ValidateFields {
 
             return {
                 pass: false,
-                msg: 'empty.',
-                border: 'border-gray-600'
+                msg: '* field d empty.',
+                code: 2
             }
 
         } else {
@@ -297,15 +297,15 @@ class ValidateFields {
                 return {
                     pass: true,
                     msg: '',
-                    border: 'border-green-600'
+                    code: 1
                 }
 
             }
 
             return {
                 pass: false,
-                msg: 'invalid',
-                border: 'border-red-600'
+                msg: '* field d cannot contain special characters except ,.-#',
+                code: 0
             }
 
         }
