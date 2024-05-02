@@ -1,3 +1,10 @@
+/*
+please change the "pathname" and "anchor tag" for "system-builder" if you done with the code.
+
+main-nav (desktop)
+main-nav (mobile)
+*/
+
 'use client'
 
 import { useState } from 'react'
@@ -243,6 +250,16 @@ export default function MainNavbar ( props: Props ) {
 
                                                 </AccordionContent>
                                             </AccordionItem>
+                                            <AccordionItem value='item-5' className='border-none'>
+                                                <AccordionTrigger>
+                                                    <Link href='#!' className={ pathname === '#!' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
+                                                        System Builder
+                                                    </Link>
+                                                </AccordionTrigger>
+                                                <AccordionContent>
+
+                                                </AccordionContent>
+                                            </AccordionItem>
                                         </Accordion>
 
                                     </SheetDescription>
@@ -316,6 +333,13 @@ export default function MainNavbar ( props: Props ) {
                                     <Button asChild variant='ghost'>
                                         <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700' : 'text-gray-400' }>
                                             Carbon Credits
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button asChild variant='ghost'>
+                                        <Link href='#!' className={ pathname === '#!' ? 'text-sky-700' : 'text-gray-400' }>
+                                            System Builder
                                         </Link>
                                     </Button>
                                 </li>
