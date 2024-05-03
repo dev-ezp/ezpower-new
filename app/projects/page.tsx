@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
+
 import ProjectsBanner from '@/components/projects-banner'
 import ProjectsContent from '@/components/projects-content'
 import ProjectsDeployedDevices from '@/components/projects-deployed-devices'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
+
+export const metadata: Metadata = {
+    title: 'ezpower | projects',
+    description: ''
+}
 
 type Props = {
     params?: any

@@ -7,7 +7,7 @@ import QuickUp from '@/components/quick-up'
 import Chat from '@/components/chat'
 
 export const metadata: Metadata = {
-    title: 'welcome to ezpower',
+    title: 'ezpower | home',
     description: 'leading the way to sustainable and inclusive energy solutions.'
 }
 

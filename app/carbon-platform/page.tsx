@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
+
 import CarbonPlatformBanner from '@/components/carbon-platform-banner'
 import CarbonPlatformContent from '@/components/carbon-platform-content'
 import Footer from '@/components/footer'
+
+export const metadata: Metadata = {
+    title: 'ezpower | carbon platform',
+    description: ''
+}
 
 type Props = { 
     params?: any

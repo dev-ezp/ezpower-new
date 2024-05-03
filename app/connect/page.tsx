@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import ConnectRedirect from '@/components/connect-redirect'
 
 export const metadata: Metadata = {
-    title: 'ezpower connect',
+    title: 'ezpower - connect',
     description: ''
 }
 

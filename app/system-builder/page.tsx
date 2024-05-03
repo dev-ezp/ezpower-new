@@ -1,28 +1,25 @@
 import type { Metadata } from 'next'
 
-import AboutUsBanner from '@/components/about-us-banner'
-import AboutUsContent from '@/components/about-us-content'
+import SystemBuilderContent from '@/components/system-builder-content'
+import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-    title: 'ezpower | about us',
+    title: 'ezpower | system builder',
     description: ''
 }
 
-type Props = { 
-    params?: any
-    searchParams?: any
-}
+type Props = {}
 
 export default function Page ( props: Props ) {
 
     return (
         <div className='w-full'>
 
-            <AboutUsBanner />
-
-            <AboutUsContent />
-
+            <SystemBuilderContent />
+            
+            <Qoute/>
+            
             <Footer />
 
         </div>

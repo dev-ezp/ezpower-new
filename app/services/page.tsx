@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
+
 import ServicesBanner from '@/components/services-banner'
 import ServicesContent from '@/components/services-content'
 import ServicesBrands from '@/components/services-brands'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
+
+export const metadata: Metadata = {
+    title: 'ezpower | services',
+    description: ''
+}
 
 type Props = { 
     params?: any
