@@ -184,74 +184,73 @@ export default function MainNavbar ( props: Props ) {
                             </SheetTrigger>
                             <SheetContent side='left'>
                                 <SheetHeader>
-                                    <SheetTitle></SheetTitle>
+                                    <SheetTitle>
+                                        <div className='flex items-center justify-center space-x-1'>
+                                            <div className='relative h-7 w-7'>
+                                                <Image
+                                                    src={ `/assets/app/ezpower-logo.png` }
+                                                    alt='ezp-logo'
+                                                    fill={ true }
+                                                    priority={ true }
+                                                />
+                                            </div>
+                                            <div className='text-gray-950 font-bold'>EZPOWER</div>
+                                        </div>
+                                    </SheetTitle>
                                     <SheetDescription className='pt-5'>
 
                                         <Accordion type='single' collapsible className='w-full'>
-                                            <AccordionItem value='item-1' className='border-none'>
+                                            <AccordionItem value='item-1' className='border-none text-left'>
                                                 <AccordionTrigger>
                                                     <Link href='/' className={ pathname === '/' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
                                                         Home
                                                     </Link>
                                                 </AccordionTrigger>
-                                                <AccordionContent>
-                                                    <Link href='#home-about-us' className='flex justify-start w-full py-1'>&gt; About Us</Link>
-                                                    <Link href='#services' className='flex justify-start w-full py-1'>&gt; Services</Link>
-                                                    <Link href='#why-choose-us' className='flex justify-start w-full py-1'>&gt; Why Choose Us</Link>
-                                                    <Link href='#projects' className='flex justify-start w-full py-1'>&gt; Projects</Link>
-                                                    <Link href='#faq' className='flex justify-start w-full py-1'>&gt; FAQ</Link>
-                                                    <Link href='#qoute' className='flex justify-start w-full py-1'>&gt; Qoute</Link>
+                                                <AccordionContent className='text-gray-500'>
+                                                    <Link href='#home-about-us' className='flex justify-start w-full py-1'>
+                                                        - About Us
+                                                    </Link>
+                                                    <Link href='#services' className='flex justify-start w-full py-1'>
+                                                        - Services
+                                                    </Link>
+                                                    <Link href='#why-choose-us' className='flex justify-start w-full py-1'>
+                                                        - Why Choose Us
+                                                    </Link>
+                                                    <Link href='#projects' className='flex justify-start w-full py-1'>
+                                                        - Projects
+                                                    </Link>
+                                                    <Link href='#faq' className='flex justify-start w-full py-1'>
+                                                        - FAQ
+                                                    </Link>
+                                                    <Link href='#qoute' className='flex justify-start w-full py-1'>
+                                                        - Qoute
+                                                    </Link>
                                                 </AccordionContent>
                                             </AccordionItem>
-                                            <AccordionItem value='item-2' className='border-none'>
-                                                <AccordionTrigger>
-                                                    <Link href='/services' className={ pathname === '/services' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        Services
-                                                    </Link>
-                                                </AccordionTrigger>
-                                                <AccordionContent>
-
-                                                </AccordionContent>
+                                            <AccordionItem value='item-2' className='border-none text-left py-4'>
+                                                <Link href='/services' className={ pathname === '/services' ? 'text-sky-700 font-semibold underline' : 'text-gray-400' }>
+                                                    Services
+                                                </Link>
                                             </AccordionItem>
-                                            <AccordionItem value='item-3' className='border-none'>
-                                                <AccordionTrigger>
-                                                    <Link href='/energy-solutions' className={ pathname === '/energy-solutions' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        Energy Solutions
-                                                    </Link>
-                                                </AccordionTrigger>
-                                                <AccordionContent>
-
-                                                </AccordionContent>
+                                            <AccordionItem value='item-3' className='border-none text-left py-4'>
+                                                <Link href='/energy-solutions' className={ pathname === '/energy-solutions' ? 'text-sky-700 font-semibold underline' : 'text-gray-400' }>
+                                                    Energy Solutions
+                                                </Link>
                                             </AccordionItem>
-                                            <AccordionItem value='item-4' className='border-none'>
-                                                <AccordionTrigger>
-                                                    <Link href='/projects' className={ pathname === '/projects' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        Projects
-                                                    </Link>
-                                                </AccordionTrigger>
-                                                <AccordionContent>
-
-                                                </AccordionContent>
+                                            <AccordionItem value='item-4' className='border-none text-left py-4'>
+                                                <Link href='/projects' className={ pathname === '/projects' ? 'text-sky-700 font-semibold underline' : 'text-gray-400' }>
+                                                    Projects
+                                                </Link>
                                             </AccordionItem>
-                                            <AccordionItem value='item-5' className='border-none'>
-                                                <AccordionTrigger>
-                                                    <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        Carbon Credits
-                                                    </Link>
-                                                </AccordionTrigger>
-                                                <AccordionContent>
-
-                                                </AccordionContent>
+                                            <AccordionItem value='item-5' className='border-none text-left py-4'>
+                                                <Link href='/carbon-platform' className={ pathname === '/carbon-platform' ? 'text-sky-700 font-semibold underline' : 'text-gray-400' }>
+                                                    Carbon Credits
+                                                </Link>
                                             </AccordionItem>
-                                            <AccordionItem value='item-6' className='border-none'>
-                                                <AccordionTrigger>
-                                                    <Link href='/system-builder' className={ pathname === '/system-builder' ? 'text-sky-700 font-semibold' : 'text-gray-400' }>
-                                                        System Builder
-                                                    </Link>
-                                                </AccordionTrigger>
-                                                <AccordionContent>
-
-                                                </AccordionContent>
+                                            <AccordionItem value='item-6' className='border-none text-left py-4'>
+                                                <Link href='/system-builder' className={ pathname === '/system-builder' ? 'text-sky-700 font-semibold underline' : 'text-gray-400' }>
+                                                    System Builder
+                                                </Link>
                                             </AccordionItem>
                                         </Accordion>
 
