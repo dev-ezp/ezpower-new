@@ -14,48 +14,82 @@ export default function SystemBuilderForm2 ( props: Props ) {
         setTimeout( () => setClasses( { display: 'block' , opacity: 'opacity-100' , translate: 'translate-x-0' } ) , 300 )
     } , [] )
 
+    const [ disabled , setDisabled ] = useState <boolean> ( false )
+    const [ loading , setLoading ] = useState <boolean> ( false)
+
     return (
         <form
             onSubmit={ ( e: any ) => {
                 e.preventDefault()
             } }
-            className={ `transition-all ease-in-out duration-300 ${ classes.display } ${ classes.opacity } ${ classes.translate }` }
+            className={ `w-full transition-all ease-in-out duration-300 ${ classes.display } ${ classes.opacity } ${ classes.translate }` }
+            typeof='submit'
         >
-            <h1 className='text-gray-950 text-lg font-medium capitalize'>you contact info</h1>
+            <h1 className='text-sky-700 text-2xl font-medium capitalize'>contact info</h1>
             <br />
-            <div className='grid gap-2'>
-                <label htmlFor='' className='text-sky-700 text-sm font-medium uppercase'>full name</label>
-                <input
-                    className='bg-gray-100 border-gray-100 border-2 rounded p-3 outline-none cursor-default transition ease-in-out duration-300 hover:border-gray-300 focus:border-gray-300'
-                    placeholder='Juan Dela Cruz'
-                    type='text'
-                />
+            <div className='grid gap-3'>
+                <div className='grid'>
+                    <label htmlFor='full_name' className='text-sky-700 text-sm font-medium uppercase mb-2'>full name</label>
+                    <input
+                        className='bg-gray-100 border-gray-100 text-sm border-2 cursor-auto outline-none rounded p-4 mb-1 transition ease-in-out duration-300 hover:border-gray-400 focus:border-gray-400 disabled:opacity-50 disabled:hover:border-gray-100 disabled:focus:border-gray-100'
+                        placeholder='Name'
+                        id='full_name'
+                        type='text'
+                        disabled={ disabled }
+                    />
+                    <div className='text-red-500 text-xs italic'>warning label</div>
+                </div>
+
+                <div className='grid'>
+                    <label htmlFor='home_address' className='text-sky-700 text-sm font-medium uppercase mb-2'>address</label>
+                    <input
+                        className='bg-gray-100 border-gray-100 text-sm border-2 cursor-auto outline-none rounded p-4 mb-1 transition ease-in-out duration-300 hover:border-gray-400 focus:border-gray-400 disabled:opacity-50 disabled:hover:border-gray-100 disabled:focus:border-gray-100'
+                        placeholder='Address'
+                        id='home_address'
+                        type='text'
+                        disabled={ disabled }
+                    />
+                    <div className='text-red-500 text-xs italic'>warning label</div>
+                </div>
+
+                <div className='grid grid-cols-2 gap-5'>
+                    <div className='grid'>
+                        <label htmlFor='email_address' className='text-sky-700 text-sm font-medium uppercase mb-2'>email</label>
+                        <input
+                            className='bg-gray-100 border-gray-100 text-sm border-2 cursor-auto outline-none rounded p-4 mb-1 transition ease-in-out duration-300 hover:border-gray-400 focus:border-gray-400 disabled:opacity-50 disabled:hover:border-gray-100 disabled:focus:border-gray-100'
+                            placeholder='Email'
+                            id='email_address'
+                            type='email'
+                            disabled={ disabled }
+                        />
+                        <div className='text-red-500 text-xs italic'>warning label</div>
+                    </div>
+
+                    <div className='grid'>
+                        <label htmlFor='mobile_no' className='text-sky-700 text-sm font-medium uppercase mb-2'>contact no.</label>
+                        <input
+                            className='bg-gray-100 border-gray-100 text-sm border-2 cursor-auto outline-none rounded p-4 mb-1 transition ease-in-out duration-300 hover:border-gray-400 focus:border-gray-400 disabled:opacity-50 disabled:hover:border-gray-100 disabled:focus:border-gray-100'
+                            placeholder='Phone'
+                            id='mobile_no'
+                            type='text'
+                            disabled={ disabled }
+                        />
+                        <div className='text-red-500 text-xs italic'>warning label</div>
+                    </div>
+                </div>
+
             </div>
+
             <br />
-            <div className='grid gap-2'>
-                <label htmlFor='' className='text-sky-700 text-sm font-medium uppercase'>contact no.</label>
-                <input
-                    className='bg-gray-100 border-gray-100 border-2 rounded p-3 outline-none cursor-default transition ease-in-out duration-300 hover:border-gray-300 focus:border-gray-300'
-                    placeholder='09XX XXX XXXX'
-                    type='text'
-                />
-            </div>
-            <br />
-            <div className='grid gap-2'>
-                <label htmlFor='' className='text-sky-700 text-sm font-medium uppercase'>email</label>
-                <input
-                    className='bg-gray-100 border-gray-100 border-2 rounded p-3 outline-none cursor-default transition ease-in-out duration-300 hover:border-gray-300 focus:border-gray-300'
-                    placeholder='you@email.com'
-                    type='email'
-                />
-            </div>
-            <br />
+
             <button
-                className='bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm p-3 transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'
+                className='bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-auto rounded-sm w-full p-4 transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 disabled:opacity-50 disabled:hover:bg-[#111827] disabled:hover:border-[#111827] disabled:focus:bg-[#111827] disabled:focus:border-[#111827]'
                 type='submit'
+                disabled={ disabled }
             >
                 submit and see results
             </button>
+
         </form>
     )
 

@@ -29,24 +29,16 @@ export default function SystemBuilderContent ( props: Props ) {
                 </div>
             </div>
 
-            <div className='relative bg-white h-[720px] w-[40%] p-20'>
+            <div className='bg-white h-[720px] w-[40%] overflow-hidden'>
 
-                {
-                        steps === 1
-                            ?   <SystemBuilderForm1 />
-                    :   steps === 2
-                            ?   <SystemBuilderForm2 />
-                    :   <></>
-                }
-                
-                <div className='absolute bottom-20 flex items-center space-x-4'>
+                <div className='relative flex items-center h-full p-20'>
                     <button
                         onClick={ () => setSteps( steps - 1 ) }
-                        className='cursor-pointer rounded p-1 transition ease-in-out duration-300 hover:bg-gray-100 disabled:opacity-75 disabled:hover:bg-white'
+                        className='absolute left-4 text-sky-700 outline-none cursor-auto p-1 transition ease-in-out duration-300 hover:scale-125 focus:scale-125 disabled:opacity-75 disabled:text-gray-300 disabled:hover:scale-100 disabled:focus:scale-100'
                         disabled={ steps === 1 ? true : false }
                     >
                         <svg
-                            className='text-sky-700 h-10 w-10'
+                            className='h-10 w-10'
                             xmlns='http://www.w3.org/2000/svg'
                             width='1em'
                             height='1em'
@@ -58,13 +50,20 @@ export default function SystemBuilderContent ( props: Props ) {
                             />
                         </svg>
                     </button>
+                    {
+                            steps === 1
+                                ?   <SystemBuilderForm1 />
+                        :   steps === 2
+                                ?   <SystemBuilderForm2 />
+                        :   <></>
+                    }
                     <button
                         onClick={ () => setSteps( steps + 1 ) }
-                        className='cursor-pointer rounded p-1 transition ease-in-out duration-300 hover:bg-gray-100 disabled:opacity-75 disabled:hover:bg-white'
+                        className='absolute right-4 text-sky-700 outline-none cursor-auto p-1 transition ease-in-out duration-300 hover:scale-125 focus:scale-125 disabled:opacity-75 disabled:text-gray-300 disabled:hover:scale-100 disabled:focus:scale-100'
                         disabled={ steps === 2 ? true : false }
                     >
                         <svg
-                            className='text-sky-700 h-10 w-10'
+                            className='h-10 w-10'
                             xmlns="http://www.w3.org/2000/svg"
                             width="1em"
                             height="1em"
