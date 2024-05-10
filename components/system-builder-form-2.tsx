@@ -52,7 +52,7 @@ export default function SystemBuilderForm2 ( props: Props ) {
                     <div className='text-red-500 text-xs italic'>warning label</div>
                 </div>
 
-                <div className='grid grid-cols-2 gap-5'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
                     <div className='grid'>
                         <label htmlFor='email_address' className='text-sky-700 text-sm font-medium uppercase mb-2'>email</label>
                         <input
