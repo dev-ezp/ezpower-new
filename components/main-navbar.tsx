@@ -268,22 +268,22 @@ export default function MainNavbar ( props: Props ) {
                                                     Home
                                                 </Link>
                                                 <div className='grid gap-1 mt-5'>                                                     
-                                                    <Link href='#home-about-us' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#home-about-us' className='flex justify-start w-full py-1'>
                                                         - About Us
                                                     </Link>
-                                                    <Link href='#services' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#services' className='flex justify-start w-full py-1'>
                                                         - Services
                                                     </Link>
-                                                    <Link href='#why-choose-us' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#why-choose-us' className='flex justify-start w-full py-1'>
                                                         - Why Choose Us
                                                     </Link>
-                                                    <Link href='#projects' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#projects' className='flex justify-start w-full py-1'>
                                                         - Projects
                                                     </Link>
-                                                    <Link href='#faq' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#faq' className='flex justify-start w-full py-1'>
                                                         - FAQ
                                                     </Link>
-                                                    <Link href='#qoute' className='flex justify-start w-full py-1'>
+                                                    <Link href='/#qoute' className='flex justify-start w-full py-1'>
                                                         - Qoute
                                                     </Link>
                                                 </div>

@@ -22,7 +22,7 @@ export default function HomeStats ( props: Props ) {
                                 <Cube className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>installed capacity</h5>
                             </div>
-                            <p className='text-5xl font-bold'>
+                            <p className='text-3xl md:text-5xl font-bold'>
                                 {
                                     height >= 50
                                         ?   <CountUp
@@ -41,7 +41,7 @@ export default function HomeStats ( props: Props ) {
                                 <Bolt className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>power generation</h5>
                             </div>
-                            <p className='text-5xl font-bold'>
+                            <p className='text-3xl md:text-5xl font-bold'>
                                 {
                                     height >= 50
                                         ?   <CountUp
@@ -60,7 +60,7 @@ export default function HomeStats ( props: Props ) {
                                 <Check className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>projects accomplished</h5>
                             </div>
-                            <p className='text-5xl font-bold'>
+                            <p className='text-3xl md:text-5xl font-bold'>
                                 {
                                     height >= 50
                                         ?   <CountUp
@@ -79,7 +79,7 @@ export default function HomeStats ( props: Props ) {
                                 <Tree className='h-10 w-10' />
                                 <h5 className='text-sm font-semibold uppercase'>carbon credits</h5>
                             </div>
-                            <p className='text-5xl font-bold'>
+                            <p className='text-3xl md:text-5xl font-bold'>
                                 {
                                     height >= 50
                                         ?   <CountUp

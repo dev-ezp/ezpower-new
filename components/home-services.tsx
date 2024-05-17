@@ -50,25 +50,25 @@ export default function HomeServices ( props: Props ) {
             >
 
                 <div className='grid gap-2'>
-                    <h5 className='text-white text-sm uppercase'>our services.</h5>
-                    <h1 className='text-white text-4xl font-bold'>Cost Effective and Responsive</h1>
+                    <h5 className='text-white text-sm sm:text-base uppercase'>our services.</h5>
+                    <h1 className='text-white text-2xl sm:text-4xl font-bold'>Cost Effective and Responsive</h1>
                 </div>
 
                 <div className='my-10'></div>
 
                 <div className='grid gap-5'>
-                    <p className='text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
+                    <p className='text-white text-sm sm:text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere mollitia voluptatem quae, ipsum voluptate. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
                     <div className='flex items-center w-full md:w-max'>
                         <Link
                             href='#qoute'
-                            className='flex items-center justify-center bg-white border-white text-[#111827] border-2 font-medium uppercase cursor-pointer rounded-sm py-4 w-40 transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 hover:text-white'
+                            className='flex items-center justify-center bg-white border-white text-sm sm:text-base text-[#111827] border-2 font-medium uppercase cursor-pointer rounded-sm py-3 sm:py-4 px-5 transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 hover:text-white'
                         >
                             get a qoute
                         </Link>
                         <div className='mx-2'></div>
                         <Link
                             href='/services'
-                            className='flex items-center justify-center bg-transparent border-transparent text-white border-2 font-medium uppercase cursor-pointer rounded-sm py-4 w-40 transition ease-in-out duration-300 hover:border-white'
+                            className='flex items-center justify-center bg-transparent border-transparent text-sm sm:text-base text-white border-2 font-medium uppercase cursor-pointer rounded-sm py-3 sm:py-4 px-5 transition ease-in-out duration-300 hover:border-white'
                         >
                             explore
                             <svg
@@ -105,14 +105,14 @@ export default function HomeServices ( props: Props ) {
                                         />
                                     </Link>
                                     <div className='absolute left-0 right-0 bottom-0 bg-black/50 p-5'>
-                                        <h5 className='text-white font-semibold capitalize'>{ arr.service_name }</h5>
+                                        <h5 className='text-white text-sm sm:text-base font-semibold capitalize'>{ arr.service_name }</h5>
                                     </div>
                                 </div>
                                 <div className='grid gap-3 p-5'>
                                     {/* <p className='text-gray-600 flex items-center text-sm h-20 overflow-y-auto'>{ arr.content }</p> */}
                                     <div className='bg-gray-200 rounded-full w-full h-0.5'></div>
                                     <div className='flex justify-center'>                                         
-                                        <Link href={ `/services/${ arr.service_name.replace( /\s/g , '-' ) }` } className='flex items-center text-[#111827] text-sm font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-gray-200 hover:border-gray-200 group'>
+                                        <Link href={ `/services/${ arr.service_name.replace( /\s/g , '-' ) }` } className='flex items-center text-[#111827] text-xs sm:text-sm font-medium uppercase cursor-pointer rounded-sm px-5 py-2 w-max transition ease-in-out duration-300 hover:bg-gray-200 hover:border-gray-200 group'>
                                             learn more
                                             <div className='relative'>                                                 
                                                 <svg

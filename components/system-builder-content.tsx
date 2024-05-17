@@ -13,7 +13,7 @@ export default function SystemBuilderContent ( props: Props ) {
     return (
         <div className='grid xl:flex items-center'>
 
-            <div className='relative z-10 bg-[url("/assets/content/system-builder/sa-01.png")] bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[600px] lg:h-[720px] w-full xl:w-[60%] pb-12'>
+            <div className='relative z-10 bg-[url("/assets/content/system-builder/sa-01.png")] bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[580px] lg:h-[720px] w-full xl:w-[60%] pb-12'>
                 <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
                     <div className={ `
@@ -21,8 +21,8 @@ export default function SystemBuilderContent ( props: Props ) {
                         md:w-2/3 md:mx-auto md:py-20
                     ` }>
                         <div className='flex flex-col space-y-5'>
-                            <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>building my own <span className='font-bold'>energy system</span></h1>   
-                            <div className='bg-white h-5 w-5'></div>
+                            <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>building my own <span className='font-bold'>energy system</span></h1>   
+                            <div className='bg-white h-4 sm:h-5 w-4 sm:w-5'></div>
                         </div>
                     </div>
 
@@ -50,13 +50,15 @@ export default function SystemBuilderContent ( props: Props ) {
                             />
                         </svg>
                     </button>
-                    {
-                            steps === 1
-                                ?   <SystemBuilderForm1 />
-                        :   steps === 2
-                                ?   <SystemBuilderForm2 />
-                        :   <></>
-                    }
+                    <div className='min-h-[420px]'>
+                        {
+                                steps === 1
+                                    ?   <SystemBuilderForm1 />
+                            :   steps === 2
+                                    ?   <SystemBuilderForm2 />
+                            :   <></>
+                        }
+                    </div>
                     <button
                         onClick={ () => setSteps( steps + 1 ) }
                         className='hidden md:block absolute right-4 text-sky-700 outline-none cursor-auto p-1 transition ease-in-out duration-300 hover:scale-125 focus:scale-125 disabled:opacity-75 disabled:text-gray-300 disabled:hover:scale-100 disabled:focus:scale-100'

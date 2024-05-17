@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout( { children , }: { children: React.ReactNode } ) {
 
+    const maintenace: boolean = false
+
     return (
         <html lang='en'>
             <body className='relative z-50'>
@@ -33,17 +35,25 @@ export default function RootLayout( { children , }: { children: React.ReactNode 
                 {/* for icon */}
                 <link rel='icon' href='/assets/app/favicon.ico' />
 
-                <MainNavbar />
+                {
+                    maintenace
+                        ?   <>
+                            
+                            </>
+                        :   <>
+                                <MainNavbar />
 
-                <main className='relative -z-10'>
-                    { children }
-                </main>
+                                <main className='relative -z-10'>
+                                    { children }
+                                </main>
 
-                <Toaster />
+                                <Toaster />
 
-                <QuickUp />
+                                <QuickUp />
 
-                <Chat />
+                                <Chat />
+                            </>
+                }
 
             </body>
         </html>

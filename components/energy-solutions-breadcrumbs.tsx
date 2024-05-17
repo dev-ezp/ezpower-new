@@ -41,7 +41,7 @@ export default function EnergySolutionsBreadcrumbs ( props: Props ) {
                         energy solutions
                     </Link>
                     <div className='flex items-center justify-center bg-white border-gray-200 text-gray-400 text-xs md:text-sm font-medium uppercase h-10 px-4 rounded-r border-2'>
-                        { params.route }
+                        { params.route.replace( '-and-' , ' & ' ) }
                     </div>
                 </div>
 

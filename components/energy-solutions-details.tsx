@@ -22,12 +22,12 @@ export default function EnergySolutionsDetails ( props: Props ) {
                     
                 <div className='block w-full'>
                     <div className='flex flex-col space-y-2'>
-                        <h1 className='text-[#111827] text-4xl font-bold'>Overview</h1>
+                        <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Overview</h1>
                     </div>
                     <br />
-                    <div className='bg-sky-700 h-5 w-5'></div>
+                    <div className='bg-sky-700 h-4 sm:h-5 w-4 sm:w-5'></div>
                     <br />
-                    <p className='text-gray-950 font-medium'>
+                    <p className='text-gray-950 text-sm sm:text-base'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae delectus saepe incidunt, error aspernatur, dolore cupiditate architecto porro explicabo ex, ut dolor atque recusandae repellendus. Praesentium expedita accusamus earum, est, ipsam eveniet voluptate quod repudiandae sapiente iure odio voluptatibus eaque illum illo magni dolorem, optio iusto suscipit cumque voluptas!
                     </p>
                 </div>
@@ -146,10 +146,10 @@ export default function EnergySolutionsDetails ( props: Props ) {
 
                 <div className='block w-full'>
                     <div className='flex flex-col space-y-2'>
-                        <h1 className='text-[#111827] text-4xl font-bold'>How it works</h1>
+                        <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>How it works</h1>
                     </div>
                     <br />
-                    <p className='text-gray-950 font-medium'>
+                    <p className='text-gray-950 text-sm sm:text-base'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae delectus saepe incidunt, error aspernatur, dolore cupiditate architecto porro explicabo ex, ut dolor atque recusandae repellendus. Praesentium expedita accusamus earum, est, ipsam eveniet voluptate quod repudiandae sapiente iure odio voluptatibus eaque illum illo magni dolorem, optio iusto suscipit cumque voluptas!
                     </p>
                 </div>

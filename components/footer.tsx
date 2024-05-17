@@ -22,7 +22,7 @@ export default function Footer ( props: Props ) {
 
                 <div className='grid grid-cols-2 xl:grid-cols-4 gap-5 md:gap-10 xl:gap-20'>
                     <div className='flex flex-col'>
-                        <h5 className='text-white text-2xl font-bold'>legal</h5>
+                        <h5 className='text-white text-xl sm:text-2xl font-bold'>legal</h5>
                         <div className='bg-white h-2 w-2 my-5'></div>
                         <div className='grid gap-3'>
                             <Link
@@ -40,7 +40,7 @@ export default function Footer ( props: Props ) {
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <h5 className='text-white text-2xl font-bold'>services</h5>
+                        <h5 className='text-white text-xl sm:text-2xl font-bold'>services</h5>
                         <div className='bg-white h-2 w-2 my-5'></div>
                         <div className='grid gap-3'>
                             <Link
@@ -94,7 +94,7 @@ export default function Footer ( props: Props ) {
                         </div>
                     </div>
                     <div className='col-span-2 flex flex-col'>
-                        <h5 className='text-white text-2xl font-bold'>visit us</h5>
+                        <h5 className='text-white text-xl sm:text-2xl font-bold'>visit us</h5>
                         <div className='bg-white h-2 w-2 my-5'></div>
                         <div className='grid gap-3'>
                             <div className='flex items-center space-x-2 text-white'>
@@ -105,7 +105,7 @@ export default function Footer ( props: Props ) {
                                 <Clock className='h-4 w-4'/>
                                 <p className='text-xs'>Mon - Fri 9am to 6pm</p>
                             </div>
-                            <div className='relative flex items-center justify-center bg-white rounded-[0.3rem] h-[180px] w-full'>
+                            <div className='relative flex items-center justify-center bg-white rounded-[0.3rem] h-[180px] w-full my-10'>
                                 <p className='absolute text-[#111827] text-xs'>loading...</p>
                                 <Map
                                     initialViewState={ {
@@ -157,7 +157,7 @@ export default function Footer ( props: Props ) {
                     </div>
                 </div>
 
-                <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-5 sm:space-x-0 py-10'>
+                <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-5 sm:space-x-0 py-5'>
 
                     <div className='flex items-center space-x-2 text-white'>
                         <svg

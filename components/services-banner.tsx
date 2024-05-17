@@ -41,7 +41,7 @@ export default function ServicesBanner ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[600px] lg:h-[720px] pb-12` }>
+        <div className={ `relative z-10 ${ switchImage( params.route ) } bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[580px] lg:h-[720px] pb-12` }>
             
             <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
 
@@ -53,31 +53,31 @@ export default function ServicesBanner ( props: Props ) {
                     <div className='flex flex-col space-y-5'>
                         {
                                 params.route === 'planning-and-design'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>planning and <span className='font-bold'>design</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>planning and <span className='font-bold'>design</span></h1>
                             :   params.route === 'site-survey'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>site <span className='font-bold'>survey</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>site <span className='font-bold'>survey</span></h1>
                             :   params.route === 'testing'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'><span className='font-bold'>testing</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'><span className='font-bold'>testing</span></h1>
                             :   params.route === 'analysis'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'><span className='font-bold'>analysis</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'><span className='font-bold'>analysis</span></h1>
                             :   params.route === 'skilled-workforce'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>skilled <span className='font-bold'>workforce</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>skilled <span className='font-bold'>workforce</span></h1>
                             :   params.route === 'system-quotation'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>system <span className='font-bold'>quotation</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>system <span className='font-bold'>quotation</span></h1>
                             :   params.route === 'consultancy'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'><span className='font-bold'>consultancy</span></h1>
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'><span className='font-bold'>consultancy</span></h1>
                             :   params.route === 'customer-support'
-                                    ?   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>customer <span className='font-bold'>support</span></h1>
-                            :   <h1 className='text-white font-thin text-5xl lg:text-6xl uppercase'>our <span className='font-bold'>services</span></h1>   
+                                    ?   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>customer <span className='font-bold'>support</span></h1>
+                            :   <h1 className='text-white font-thin text-4xl sm:text-5xl lg:text-6xl uppercase'>our <span className='font-bold'>services</span></h1>   
                         }
                         {
                             params.route === undefined || params.route === null
-                                ?   <h5 className='text-white font-semibold italic'>
+                                ?   <h5 className='text-white font-semibold italic text-sm sm:text-base'>
                                         &quot;Cost Effective and Responsive&quot;
                                     </h5>
                                 :   <></>
                         }
-                        <div className='bg-white h-5 w-5'></div>
+                        <div className='bg-white h-4 sm:h-5 w-4 sm:w-5'></div>
                     </div>
                     
                 </div>

@@ -42,15 +42,15 @@ export default function HomeProjects ( props: Props ) {
             >
                 <div className='flex flex-col xl:flex-row justify-center'>                    
                     <div className='grid gap-2 w-full xl:w-2/3'>
-                        <h5 className='text-white text-sm uppercase'>our projects.</h5>
-                        <h1 className='text-white text-4xl font-bold'>Providing lasting benefits to households, businesses, communities, government and non-government organizations.</h1>
-                        <p className='text-white py-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
+                        <h5 className='text-white text-sm sm:text-base uppercase'>our projects.</h5>
+                        <h1 className='text-white text-2xl sm:text-4xl font-bold'>Providing lasting benefits to households, businesses, communities, government and non-government organizations.</h1>
+                        <p className='text-white text-sm sm:text-base py-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum quaerat. Voluptatem enim quis fuga? Ipsam reiciendis sint esse itaque voluptas quasi commodi totam officiis nam eius natus, excepturi saepe pariatur, beatae earum, enim harum iste. Voluptatum rerum consequatur quae placeat enim cumque soluta temporibus ipsam, quas, sunt corrupti quos.</p>
                     </div>
 
                     <div className='flex items-center justify-start xl:justify-center w-full lg:w-1/3'>
                         <Link
                             href='/projects'
-                            className='flex items-center justify-center bg-white border-white text-[#111827] border-2 font-medium uppercase cursor-pointer rounded-sm py-4 px-8 h-max w-full sm:w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 hover:text-white'
+                            className='flex items-center justify-center bg-white border-white text-[#111827] text-sm border-2 font-medium uppercase cursor-pointer rounded-sm py-3 sm:py-4 px-8 h-max w-full sm:w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700 hover:text-white'
                         >
                             see all projects
                             <svg
@@ -69,7 +69,7 @@ export default function HomeProjects ( props: Props ) {
                     </div>
                 </div>
                 
-                <div className='py-10'>
+                <div className='py-10 px-5'>
                     <Slider
                         infinite={ true }
                         autoplay={ true }

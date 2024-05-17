@@ -68,7 +68,7 @@ export default function ProjectsDeployedDevices ( props: Props ) {
                                 if ( toggle ) {
                                     setClasses( { left: 'left-0' , rotate: 'rotate-0' } )
                                 } else {
-                                    setClasses( { left: 'left-[50%]' , rotate: 'rotate-180' } )
+                                    setClasses( { left: 'left-[75%]' , rotate: 'rotate-180' } )
                                 }
                             } }
                             type='button'

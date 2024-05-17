@@ -18,8 +18,8 @@ export default function HomeAboutUs ( props: Props ) {
 
                 <div className='flex justify-start sm:justify-center'>
                     <div className='grid gap-2'>
-                        <h5 className='text-sky-700 text-sm uppercase'>about our company.</h5>
-                        <h1 className='text-[#111827] text-4xl font-bold'>Energy, Environment and Efficiency</h1>
+                        <h5 className='text-sky-700 text-sm sm:text-base uppercase'>about our company.</h5>
+                        <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Energy, Environment and Efficiency</h1>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ export default function HomeAboutUs ( props: Props ) {
                             />
                         </div>
                         <div className='absolute inset-0 bg-black/50 h-[320px] w-[320px] sm:w-[480px]'>
-                            <button className='flex items-center bg-white border-white text-[#111827] text-sm border-2 font-medium uppercase cursor-pointer rounded-sm m-5 p-5 w-max transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
+                            <button className='flex items-center bg-white border-white text-[#111827] text-sm sm:text-base border-2 font-medium uppercase cursor-pointer rounded-sm m-5 p-3 sm:p-4 w-max transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white'>
                                 <div className='relative'>
                                     <svg
                                         className='h-5 w-5 mr-2 animate-ping'
@@ -73,8 +73,8 @@ export default function HomeAboutUs ( props: Props ) {
                     </div>
 
                     <div className='block'>
-                        <div className='bg-sky-700 h-5 w-5 mb-5'></div>
-                        <div className='grid gap-5'>
+                        <div className='bg-sky-700 h-4 sm:h-5 w-4 sm:w-5 mb-5'></div>
+                        <div className='text-sm sm:text-base grid gap-5'>
                             <p className='text-gray-950'>
                                 Established on October of 2018, EZ Power by Edge-Systems Engineering Services had humble beginnings and modest resources but also was coming from solid grounds with its founder Engr. Edzel Galguerra, who had progressive 15 years career in design and development of electronics and power systems fro global markets.
                             </p>
@@ -83,7 +83,7 @@ export default function HomeAboutUs ( props: Props ) {
                             </p>
                         </div>
                         <br />
-                        <Link href='/about-us#goals' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm p-5 h-max w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
+                        <Link href='/about-us#goals' className='flex items-center bg-[#111827] border-[#111827] text-white text-sm sm:text-base border-2 font-medium uppercase cursor-pointer rounded-sm p-3 sm:p-4 h-max w-max transition ease-in-out duration-300 hover:bg-sky-700 hover:border-sky-700'>
                             <svg
                                 className='h-5 w-5 mr-2'
                                 xmlns='http://www.w3.org/2000/svg'

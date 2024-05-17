@@ -195,14 +195,14 @@ export default function Qoute ( props: Props ) {
                 
                     <div className='block'>
                         <div className='flex flex-col space-y-2'>
-                            <h5 className='text-sky-700 text-sm uppercase'>get some professional advice from our engineers.</h5>
-                            <h1 className='text-[#111827] text-4xl font-bold'>Energy Solution that fits to my needs</h1>
-                            <p className='text-[#111827] py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
+                            <h5 className='text-sky-700 text-sm sm:text-base uppercase'>get some professional advice from our engineers.</h5>
+                            <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Energy Solution that fits to my needs</h1>
+                            <p className='text-[#111827] text-sm sm:text-base py-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, itaque eaque error molestiae incidunt cum a nam distinctio temporibus. Laboriosam?</p>
                         </div>
-                        <div className='bg-sky-700 h-5 w-5 my-5'></div>
+                        <div className='bg-sky-700 h-4 sm:h-5 w-4 sm:w-5 my-3 sm:my-5'></div>
                         <div className='flex flex-col space-y-2'>
-                            <h1 className='text-[#111827] text-2xl font-bold'>get in touch.</h1>
-                            <p className='text-[#111827] py-5'>We are open between 9am to 6pm, monday to friday. We also offer consultation everyday including weekends except holidays; Call us and we were happy to help you.</p>
+                            <h1 className='text-[#111827] text-xl sm:text-2xl font-bold'>get in touch.</h1>
+                            <p className='text-[#111827] text-sm sm:text-base py-5'>We are open between 9am to 6pm, monday to friday. We also offer consultation everyday including weekends except holidays; Call us and we were happy to help you.</p>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                                 <button
                                     onClick={ () => {
@@ -215,7 +215,7 @@ export default function Qoute ( props: Props ) {
                                             )
                                         } )
                                     } }
-                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] font-medium border-2 cursor-pointer outline-none rounded py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
+                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] text-sm sm:text-base font-medium border-2 cursor-pointer outline-none rounded py-3 sm:py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
                                 >
                                     <Phone className='text-sky-700 h-6 w-6 mr-2 transition ease-in-out duration-300 group-hover:text-white' />
                                     044 482 4405
@@ -231,7 +231,7 @@ export default function Qoute ( props: Props ) {
                                             )
                                         } )
                                     } }
-                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] font-medium border-2 cursor-pointer outline-none rounded py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
+                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] text-sm sm:text-base font-medium border-2 cursor-pointer outline-none rounded py-3 sm:py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
                                 >
                                     <Smartphone className='text-sky-700 h-6 w-6 mr-2 transition ease-in-out duration-300 group-hover:text-white' />
                                     0949 885 4308
@@ -247,7 +247,7 @@ export default function Qoute ( props: Props ) {
                                             )
                                         } )
                                     } }
-                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] font-medium border-2 cursor-pointer outline-none rounded py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
+                                    className='flex items-center justify-center bg-gray-100 border-gray-300 text-[#111827] text-sm sm:text-base font-medium border-2 cursor-pointer outline-none rounded py-3 sm:py-4 transition ease-in-out duration-300 hover:bg-[#111827] hover:border-[#111827] hover:text-white group'
                                 >
                                     <MailIcon className='text-sky-700 h-6 w-6 mr-2 transition ease-in-out duration-300 group-hover:text-white' />
                                     info@ezpower.tech
@@ -261,7 +261,7 @@ export default function Qoute ( props: Props ) {
                         className='flex flex-col space-y-3 bg-white shadow-black/10 shadow-lg drop-shadow-lg rounded p-5 sm:p-10'
                         typeof='submit'
                     >
-                        <h1 className='text-sky-700 text-2xl font-medium capitalize'>request a qoute</h1>
+                        <h1 className='text-sky-700 text-xl sm:text-2xl font-medium capitalize'>request a qoute</h1>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                             <input
                                 id='name'
@@ -269,7 +269,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Name'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.name } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.name } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='email'
@@ -277,7 +277,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Email'
                                 type='email'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.email } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.email } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='phone'
@@ -285,7 +285,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Phone'
                                 type='number'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.phone } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.phone } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='address'
@@ -293,10 +293,10 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Address'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.address } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.address } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                         </div>
-                        <h1 className='text-sky-700 text-base font-medium capitalize'>System data</h1>
+                        <h1 className='text-sky-700 text-sm sm:text-base font-medium capitalize'>System data</h1>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                             <input
                                 id='fa'
@@ -305,7 +305,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Field A'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.fieldA } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.fieldA } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='fb'
@@ -314,7 +314,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Field B'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.fieldB } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.fieldB } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='fc'
@@ -322,7 +322,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Field C'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.fieldC } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.fieldC } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <input
                                 id='fd'
@@ -330,7 +330,7 @@ export default function Qoute ( props: Props ) {
                                 placeholder='Field D'
                                 type='text'
                                 disabled={ disabled }
-                                className={ `bg-transparent ${ border.fieldD } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
+                                className={ `bg-transparent ${ border.fieldD } text-gray-950 text-sm border-2 cursor-auto outline-none rounded p-3 sm:p-4 transition ease-in-out duration-300 hover:border-gray-400 disabled:opacity-50` }
                             />
                             <div className={ `${ warning.length === 0 ? 'hidden' : 'block' } col-span-1 md:col-span-2 bg-red-100 text-red-500 text-xs p-5 rounded` }>
                                 {
@@ -342,7 +342,7 @@ export default function Qoute ( props: Props ) {
                                 }
                             </div>
                         </div>
-                        <h1 className='text-sky-700 text-base font-medium capitalize'>We will contact you via?</h1>
+                        <h1 className='text-sky-700 text-sm sm:text-base font-medium capitalize'>We will contact you via?</h1>
                         <div className='flex items-center space-x-3'>
                             <div className='flex items-center w-max'>
                                 <input
@@ -383,7 +383,7 @@ export default function Qoute ( props: Props ) {
                         </div>
                         <button
                             type='submit'
-                            className={ `flex items-center justify-center ${ pass ? 'bg-green-500 border-green-500 hover:bg-green-500 hover:border-green-500' : 'bg-[#111827] border-[#111827] hover:bg-sky-700 hover:border-sky-700' } text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm py-4 w-full transition ease-in-out duration-300 group` }
+                            className={ `flex items-center justify-center ${ pass ? 'bg-green-500 border-green-500 hover:bg-green-500 hover:border-green-500' : 'bg-[#111827] border-[#111827] hover:bg-sky-700 hover:border-sky-700' } text-white text-sm border-2 font-medium uppercase cursor-pointer rounded-sm py-3 sm:py-4 w-full transition ease-in-out duration-300 group` }
                             disabled={ disabled }
                         >
                             {

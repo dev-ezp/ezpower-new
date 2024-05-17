@@ -22,15 +22,15 @@ export default function HomeFAQ ( props: Props ) {
 
                 <div className='flex justify-center'>
                     <div className='grid gap-2 w-full xl:w-2/3'>
-                        <h5 className='text-sky-700 text-sm text-center font-semibold uppercase'>what our clients usually ask.</h5>
-                        <h1 className='text-[#111827] text-4xl text-center font-bold'>Frequently Ask Questions</h1>
+                        <h5 className='text-sky-700 text-center text-sm sm:text-base uppercase'>what our clients usually ask.</h5>
+                        <h1 className='text-[#111827] text-center text-2xl sm:text-4xl font-bold'>Frequently Ask Questions</h1>
                     </div>
                 </div>
 
                 <br />
 
                 <div className='flex items-center justify-center'>
-                    <Accordion type='single' collapsible className='w-full xl:w-2/3'>
+                    <Accordion type='single' collapsible className='text-sm sm:text-base w-full xl:w-2/3'>
                         <AccordionItem value='item-1'>
                             <AccordionTrigger>Lorem ipsum dolor sit amet?</AccordionTrigger>
                             <AccordionContent>

@@ -15,13 +15,13 @@ export default function ServicesBrands ( props: Props ) {
 
                 <div className='flex items-center justify-center w-full pb-10'>
                     <div className='flex flex-col space-y-2 w-[720px]'>
-                        <h5 className='text-sky-700 text-sm text-center font-semibold uppercase'>quality products</h5>
-                        <h1 className='text-[#111827] text-4xl text-center font-bold'>Our Trusted Brands</h1>
+                        <h5 className='text-sky-700 text-center text-sm sm:text-base uppercase'>quality products</h5>
+                        <h1 className='text-[#111827] text-center text-2xl sm:text-4xl font-bold'>Our Trusted Brands</h1>
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 items-center'>
-                    <div className='p-10'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 items-center'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/deye.png'
                             alt='img'
@@ -29,7 +29,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/dyness.png'
                             alt='img'
@@ -37,7 +37,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/hoymiles.png'
                             alt='img'
@@ -45,7 +45,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/jolywood.png'
                             alt='img'
@@ -53,7 +53,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/luxpowertek.png'
                             alt='img'
@@ -61,7 +61,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/seplos.png'
                             alt='img'
@@ -69,7 +69,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/seraphim.png'
                             alt='img'
@@ -77,7 +77,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/solaredge.png'
                             alt='img'
@@ -85,7 +85,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/sunpal.png'
                             alt='img'
@@ -93,7 +93,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/suntree.png'
                             alt='img'
@@ -101,7 +101,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/sunways.png'
                             alt='img'
@@ -109,7 +109,7 @@ export default function ServicesBrands ( props: Props ) {
                             width={ 1920 }
                         />
                     </div>
-                    <div className='p-10'>
+                    <div className='p-5'>
                         <Image
                             src='/assets/brands/thinkpower.png'
                             alt='img'
