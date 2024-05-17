@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import ProjectsBanner from '@/components/projects-banner'
 import ProjectsContent from '@/components/projects-content'
 import ProjectsDeployedDevices from '@/components/projects-deployed-devices'
@@ -21,17 +26,29 @@ export default function Page ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className='w-full'>
+        <div className='relative z-50'>
 
-            <ProjectsBanner params={ params } searchParams={ searchParams } />
+            <MainNavbar />
 
-            <ProjectsContent />
+            <div className='relative w-full -z-10'>
 
-            <ProjectsDeployedDevices />
+                <ProjectsBanner params={ params } searchParams={ searchParams } />
 
-            <Qoute/>
+                <ProjectsContent />
 
-            <Footer />
+                <ProjectsDeployedDevices />
+
+                <Qoute/>
+
+                <Footer />
+
+            </div>
+
+            <Toaster />
+
+            <QuickUp />
+
+            <Chat />
 
         </div>
     )

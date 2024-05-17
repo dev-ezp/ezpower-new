@@ -1,3 +1,8 @@
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import ProjectsBanner from '@/components/projects-banner'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
@@ -12,14 +17,26 @@ export default function Page ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className='w-full'>
+        <div className='relative z-50'>
 
-            <ProjectsBanner params={ params } searchParams={ searchParams } />
-
-            <Qoute/>
-
-            <Footer />
-
+            <MainNavbar />
+    
+            <div className='relative w-full -z-10'>
+    
+                <ProjectsBanner params={ params } searchParams={ searchParams } />
+    
+                <Qoute/>
+    
+                <Footer />
+    
+            </div>
+    
+            <Toaster />
+    
+            <QuickUp />
+    
+            <Chat />
+            
         </div>
     )
 

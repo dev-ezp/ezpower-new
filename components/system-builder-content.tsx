@@ -11,7 +11,7 @@ export default function SystemBuilderContent ( props: Props ) {
     const [ steps , setSteps ] = useState <number> ( 1 ) 
 
     return (
-        <div className='grid xl:flex items-center'>
+        <div id='top' className='grid xl:flex items-center'>
 
             <div className='relative z-10 bg-[url("/assets/content/system-builder/sa-01.png")] bg-center bg-[length:1920px_1080px] bg-fixed bg-no-repeat flex items-center justify-center h-[580px] lg:h-[720px] w-full xl:w-[60%] pb-12'>
                 <div className='absolute inset-0 flex items-center bg-black/50 h-full w-full'>
@@ -50,7 +50,7 @@ export default function SystemBuilderContent ( props: Props ) {
                             />
                         </svg>
                     </button>
-                    <div className='min-h-[420px]'>
+                    <div className='min-h-[420px] w-full'>
                         {
                                 steps === 1
                                     ?   <SystemBuilderForm1 />

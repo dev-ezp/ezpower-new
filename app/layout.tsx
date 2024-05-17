@@ -1,23 +1,20 @@
 import type { Metadata } from 'next'
-import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
-import MainNavbar from '@/components/main-navbar'
-import QuickUp from '@/components/quick-up'
-import Chat from '@/components/chat'
+import ServiceUnavailable from '@/components/misc/service-unavailable'
 
 export const metadata: Metadata = {
     title: 'ezpower | home',
     description: 'leading the way to sustainable and inclusive energy solutions.'
 }
 
-export default function RootLayout( { children , }: { children: React.ReactNode } ) {
+const maintenace: any = process.env.MAINTENANCE
 
-    const maintenace: boolean = false
+export default function RootLayout( { children , }: { children: React.ReactNode } ) {
 
     return (
         <html lang='en'>
-            <body className='relative z-50'>
+            <body>
 
                 {/* for react-slick see: banner-home.tsx */}
                 <link
@@ -36,23 +33,9 @@ export default function RootLayout( { children , }: { children: React.ReactNode 
                 <link rel='icon' href='/assets/app/favicon.ico' />
 
                 {
-                    maintenace
-                        ?   <>
-                            
-                            </>
-                        :   <>
-                                <MainNavbar />
-
-                                <main className='relative -z-10'>
-                                    { children }
-                                </main>
-
-                                <Toaster />
-
-                                <QuickUp />
-
-                                <Chat />
-                            </>
+                    maintenace === 'true'
+                        ?   <ServiceUnavailable />
+                        :   <main>{ children }</main>
                 }
 
             </body>

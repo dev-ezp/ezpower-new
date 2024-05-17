@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import CarbonPlatformBanner from '@/components/carbon-platform-banner'
 import CarbonPlatformContent from '@/components/carbon-platform-content'
 import Footer from '@/components/footer'
@@ -19,13 +24,25 @@ export default function Page ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className='w-full'>
+        <div className='relative z-50'>
 
-            <CarbonPlatformBanner />
+            <MainNavbar />
 
-            <CarbonPlatformContent />
+            <div className='relative w-full -z-10'>
 
-            <Footer />
+                <CarbonPlatformBanner />
+
+                <CarbonPlatformContent />
+
+                <Footer />
+
+            </div>
+
+            <Toaster />
+
+            <QuickUp />
+
+            <Chat />
 
         </div>
     )

@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import SystemBuilderContent from '@/components/system-builder-content'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
@@ -9,18 +14,35 @@ export const metadata: Metadata = {
     description: ''
 }
 
-type Props = {}
+type Props = { 
+    params?: any
+    searchParams?: any
+}
 
 export default function Page ( props: Props ) {
 
-    return (
-        <div className='w-full'>
+    const { params , searchParams } = props
 
-            <SystemBuilderContent />
-            
-            <Qoute/>
-            
-            <Footer />
+    return (
+        <div className='relative z-50'>
+
+            <MainNavbar />
+
+            <div className='relative w-full -z-10'>
+
+                <SystemBuilderContent />
+                
+                <Qoute/>
+                
+                <Footer />
+
+            </div>
+
+            <Toaster />
+
+            <QuickUp />
+
+            <Chat />
 
         </div>
     )

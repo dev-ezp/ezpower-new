@@ -1,3 +1,8 @@
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import HomeBanner from '@/components/home-banner'
 import HomeAboutUs from '@/components/home-about-us'
 import HomeServices from '@/components/home-services'
@@ -13,26 +18,38 @@ type Props = { searchParams?: any }
 export default function Page ( props: Props ) {
 
     return (
-        <div className='w-full'>
+        <div className='relative z-50'>
+
+            <MainNavbar />
+
+            <div className='relative w-full -z-10'>
+                
+                <HomeBanner />
+
+                <HomeStats />
+
+                <HomeAboutUs />
+
+                <HomeServices />
+
+                <HomeWhyChooseUs />
+
+                <HomeProjects />
+
+                <HomeFAQ />
+
+                <Qoute/>
+
+                <Footer />
+
+            </div>
+
+            <Toaster />
+
+            <QuickUp />
+
+            <Chat />
             
-            <HomeBanner />
-
-            <HomeStats />
-
-            <HomeAboutUs />
-
-            <HomeServices />
-
-            <HomeWhyChooseUs />
-
-            <HomeProjects />
-
-            <HomeFAQ />
-
-            <Qoute/>
-
-            <Footer />
-
         </div>
     )
 

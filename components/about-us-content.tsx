@@ -16,55 +16,59 @@ export default function AboutUsContent ( props: Props ) {
 
                 <div className='flex start'>
                     <div className='grid gap-5 w-full'>
-                        <p className='text-gray-950'>
+                        <p className='text-gray-950 text-sm sm:text-base'>
                             Established on October of 2018, EZ Power by Edge-Systems Engineering Services had humble beginnings and modest resources but also was coming from solid grounds with its founder Engr. Edzel Galguerra, who had progressive 15 years career in design and development of electronics and power systems for global markets.
                         </p>
-                        <p className='text-gray-600'>
+                        <p className='text-gray-600 text-sm sm:text-base'>
                             We are motivated by the belief that the next big impact to the economy will be defined by Energy, Environment and Efficiency on which the company was also founded for.
                         </p>
                     </div>
                 </div>
 
-                <br /> <br />
+                <div className='my-5 sm:my-10'></div>
 
                 <div className='grid gap-2'>
-                    <h1 className='text-[#111827] text-4xl font-bold'>Our Vision</h1>
-                    <p className='text-gray-950 py-5'>
+                    <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Our Vision</h1>
+                    <p className='text-gray-950 text-sm sm:text-base py-5'>
                         we provide innovative and high-quality yet affordable clean energy solutions to everyone: households, businesses, communities, governments and agriculture to reduce their dependence on grid electricity powered by fossil and non-renewable sources.
                     </p>
                 </div>
 
-                <br /> <br />
+                <div className='my-5 sm:my-10'></div>
 
                 <div className='grid gap-2'>
-                    <h1 className='text-[#111827] text-4xl font-bold'>Our Mission</h1>
-                    <p className='text-gray-950 py-5'>
+                    <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Our Mission</h1>
+                    <p className='text-gray-950 text-sm sm:text-base py-5'>
                         We envision our distributed clean energy systems and technologies, their integrations and derivatives operational to every home, office, factory, community and farm across the philippines.
                     </p>
                 </div>
 
-                <br /> <br />
+                <div className='my-5 sm:my-10'></div>
 
                 <div className='grid gap-2'>
-                    <h1 className='text-[#111827] text-4xl font-bold'>Our Values</h1>
-                    <p className='text-gray-950 py-5'>
+                    <h1 className='text-[#111827] text-2xl sm:text-4xl font-bold'>Our Values</h1>
+                    <p className='text-gray-950 text-sm sm:text-base py-5'>
                         While every business is built to create wealth, we also believe that wealth creation is secondary to our mission, a reward for doing our job diligently and passionately. our topmost priority is to deliver lasting value and benefits for our clients and the people and organizations that work with us. This reflects in our business decisions, work ethics and culture. 
                     </p>
                 </div>
 
-                <br /> <br />
+                <div className='my-5 sm:my-10'></div>
 
                 <div className='bg-red-100 rounded-md p-5 sm:p-10'>
-                    <blockquote className='border-red-400 border-l-4 text-lg p-5'>
+                    <blockquote className='border-red-400 text-sm sm:text-base border-l-4 p-5'>
                         <q>through increased self-consumption and reduced dependence on grid electricity, we can provide solutions to energy and imminent energy crisis that are truly inclusive and sustainable.</q>
                     </blockquote>
                 </div>
 
-                <br /> <br />
+                <div className='my-5 sm:my-10'></div>
+
+                <br /> <br /> <br />
 
                 <div className='flex justify-center'>
-                    <div className='bg-sky-700 h-40 w-1'></div>
+                    <div className='bg-sky-700 h-52 rounded-full w-0.5'></div>
                 </div>
+
+                <br /> <br /> <br />
 
             </div>
         </section>

@@ -1,3 +1,8 @@
+import { Toaster } from '@/components/ui/toaster'
+import MainNavbar from '@/components/main-navbar'
+import QuickUp from '@/components/quick-up'
+import Chat from '@/components/chat'
+
 import ServicesBanner from '@/components/services-banner'
 import ServicesBreadcrumbs from '@/components/services-breadcrumbs'
 import ServicesDetails from '@/components/services-details'
@@ -14,18 +19,30 @@ export default function Page ( props: Props ) {
     const { params , searchParams } = props
 
     return (
-        <div className='w-full'>
+        <div className='relative z-50'>
 
-            <ServicesBanner params={ params } searchParams={ searchParams } />
+            <MainNavbar />
 
-            <ServicesBreadcrumbs params={ params } searchParams={ searchParams }/>
+            <div className='relative w-full -z-10'>
 
-            <ServicesDetails params={ params } searchParams={ searchParams } />
+                <ServicesBanner params={ params } searchParams={ searchParams } />
 
-            <Qoute/>
+                <ServicesBreadcrumbs params={ params } searchParams={ searchParams }/>
 
-            <Footer />
+                <ServicesDetails params={ params } searchParams={ searchParams } />
 
+                <Qoute/>
+
+                <Footer />
+
+            </div>
+
+            <Toaster />
+
+            <QuickUp />
+
+            <Chat />
+            
         </div>
     )
 
