@@ -7,7 +7,10 @@ import Chat from '@/components/chat'
 
 import AboutUsBanner from '@/components/about-us-banner'
 import AboutUsContent from '@/components/about-us-content'
+import AboutUsCookiePolicy from '@/components/about-us-cookie-policy'
 import Footer from '@/components/footer'
+
+import CookieConsent from '@/components/cookie-consent'
 
 export const metadata: Metadata = {
     title: 'ezpower | about us',
@@ -32,7 +35,19 @@ export default function Page ( props: Props ) {
 
                 <AboutUsBanner />
 
+                <div className='py-5'></div>
+
                 <AboutUsContent />
+
+                <AboutUsCookiePolicy />
+
+                <br /> <br /> <br /> <br />
+
+                <div className='flex justify-center'>
+                    <div className='bg-sky-700 h-52 rounded-full w-0.5'></div>
+                </div>
+
+                <br /> <br /> <br /> <br />
 
                 <Footer />
 
@@ -43,6 +58,8 @@ export default function Page ( props: Props ) {
             <QuickUp />
 
             <Chat />
+
+            <CookieConsent />
             
         </div>
     )

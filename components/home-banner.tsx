@@ -31,7 +31,7 @@ export default function HomeBanner ( props: Props ) {
             >
                 {
                     imgSrc.map( ( arr: string , ind: number ) => (
-                        <div key={ ind } className='h-[1080px] w-[1920px]'>
+                        <div key={ ind } className='relative h-[1080px] w-[1920px]'>
                             <Image
                                 src={ arr }
                                 alt='img'
@@ -40,6 +40,7 @@ export default function HomeBanner ( props: Props ) {
                                     objectPosition: '50% 50'
                                 } }
                                 priority
+                                sizes='(max-width: 1920px) 100vw, (max-width: 1080px) 50vw, 33vw'
                                 fill
                             />
                         </div>

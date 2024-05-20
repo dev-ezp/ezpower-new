@@ -11,6 +11,8 @@ import ProjectsDeployedDevices from '@/components/projects-deployed-devices'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
+import CookieConsent from '@/components/cookie-consent'
+
 export const metadata: Metadata = {
     title: 'ezpower | projects',
     description: ''
@@ -49,6 +51,8 @@ export default function Page ( props: Props ) {
             <QuickUp />
 
             <Chat />
+
+            <CookieConsent />
 
         </div>
     )

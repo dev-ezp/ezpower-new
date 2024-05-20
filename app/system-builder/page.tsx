@@ -9,6 +9,8 @@ import SystemBuilderContent from '@/components/system-builder-content'
 import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 
+import CookieConsent from '@/components/cookie-consent'
+
 export const metadata: Metadata = {
     title: 'ezpower | system builder',
     description: ''
@@ -43,6 +45,8 @@ export default function Page ( props: Props ) {
             <QuickUp />
 
             <Chat />
+
+            <CookieConsent />
 
         </div>
     )

@@ -13,6 +13,8 @@ import Qoute from '@/components/qoute'
 import Footer from '@/components/footer'
 import HomeStats from '@/components/home-stats'
 
+import CookieConsent from '@/components/cookie-consent'
+
 type Props = { searchParams?: any }
 
 export default function Page ( props: Props ) {
@@ -49,6 +51,8 @@ export default function Page ( props: Props ) {
             <QuickUp />
 
             <Chat />
+
+            <CookieConsent />
             
         </div>
     )
