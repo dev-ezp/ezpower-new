@@ -12,7 +12,7 @@ export default function AboutUsCookiePolicy ( props: Props ) {
                 w-auto mx-5 pb-10
                 md:w-2/3 md:mx-auto
             ` }>
-                <h1 className='text-2xl font-bold'>COOKIE POLICY</h1>
+                <h1 className='text-3xl font-bold'>COOKIE POLICY</h1>
                 <h5 className='text-sm font-thin italic'>Last updated May 19, 2024</h5>
             
                 <br />
@@ -283,7 +283,7 @@ export default function AboutUsCookiePolicy ( props: Props ) {
 
                 <br />
 
-                <div className='grid bg-green-100 rounded w-max p-5 text-sm'>
+                <div className='grid bg-green-100 rounded w-full sm:w-max p-5 text-sm'>
                     <span>Edge Systems Engineering Services</span>
                     <span>125 Pipino Street, Barangay Tamana, Santa Maria, Bulacan.</span>
                     <span>Sta. Maria Bulacan 3022</span>

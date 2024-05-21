@@ -8,6 +8,7 @@ import Chat from '@/components/chat'
 import AboutUsBanner from '@/components/about-us-banner'
 import AboutUsContent from '@/components/about-us-content'
 import AboutUsCookiePolicy from '@/components/about-us-cookie-policy'
+import AboutUsPrivacyPolicy from '@/components/about-us-privacy-policy'
 import Footer from '@/components/footer'
 
 import CookieConsent from '@/components/cookie-consent'
@@ -40,6 +41,8 @@ export default function Page ( props: Props ) {
                 <AboutUsContent />
 
                 <AboutUsCookiePolicy />
+
+                <AboutUsPrivacyPolicy />
 
                 <br /> <br /> <br /> <br />
 

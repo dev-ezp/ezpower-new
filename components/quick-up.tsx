@@ -13,7 +13,7 @@ export default function QuickUp ( props: Props ) {
     // Todo: move this to a better place.
 
     return (
-        <div className={ `hidden md:block fixed top-[50%] bottom-[50%] w-max h-max transition-all ease-in-out duration-300 ${ height >= 720 ? 'right-6' : '-right-20' }` }>
+        <div className={ `fixed top-[50%] bottom-[50%] w-max h-max transition-all ease-in-out duration-300 ${ height >= 720 ? 'right-6' : '-right-20' }` }>
             <Link href='#top' scroll={ true } className='flex bg-[#0a7cff] text-white rounded-lg p-3 outline-none cursor-pointer transition ease-in-out duration-300 hover:scale-110 group'>                
                 <div className='relative'>
                     <svg
