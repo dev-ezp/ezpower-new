@@ -12,10 +12,10 @@ export default function Chat ( props: Props ) {
 
     return (
         <div className='fixed bottom-7 right-7 w-max h-max transition-all ease-in-out duration-300'>
-            <Link href='https://m.me/254352434418146' className='flex bg-blue-500 text-white rounded-full p-3 outline-none cursor-pointer transition ease-in-out duration-300 group'>
+            <Link href='https://m.me/254352434418146' className='flex bg-blue-500 text-white rounded-full p-3 outline-none cursor-pointer group'>
                 <div className='relative'>
                     <svg
-                        className='h-7 w-7 group-hover:animate-ping'
+                        className='h-7 w-7 transition ease-in-out duration-300 group-hover:scale-125'
                         xmlns='http://www.w3.org/2000/svg'
                         width='1em'
                         height='1em'
