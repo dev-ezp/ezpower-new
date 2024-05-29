@@ -6,9 +6,6 @@ import { useRouter } from 'next/navigation'
 import axios from 'axios'
 import clipboard from 'clipboardy'
 
-import Cipher from '@/classes/cipher'
-import GenerateSerial from '@/classes/generate-serial'
-
 import { ToastAction } from '@/components/ui/toast'
 import { useToast } from '@/components/ui/use-toast'
 import { Phone , Smartphone , MailIcon } from 'lucide-react'
@@ -69,10 +66,7 @@ export default function Qoute ( props: Props ) {
         setDisabled( true )
         setLoading( true )
 
-        const generateSerial = new GenerateSerial()
-        const cipher = new Cipher()
-
-        const serial: string = String( cipher.hash( String( generateSerial.keyCode() ) ) )
+        const serial: string = '73657269616C'
 
         await axios ( {
             method: 'post',
